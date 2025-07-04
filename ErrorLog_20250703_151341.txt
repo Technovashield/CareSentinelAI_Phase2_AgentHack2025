@@ -1,0 +1,722 @@
+❌ Patient failed: Phillip Harvey
+{
+  "PatientID": "P00001",
+  "FirstName": "Phillip",
+  "LastName": "Harvey",
+  "DateOfBirth": "1991-04-21",
+  "Gender": "Male",
+  "PhoneNumber": "(547)074-1557",
+  "Email": "owilson@gmail.com",
+  "Address": {
+    "Street": "466 Watkins Pike Suite 217",
+    "City": "South Angelaville",
+    "State": "Nevada",
+    "PostalCode": "72780"
+  },
+  "Insurance": {
+    "Provider": "Martin, Caldwell and Reyes",
+    "PolicyNumber": "dv71228"
+  },
+  "MedicalHistory": [
+    "process",
+    "green",
+    "rather",
+    "speech"
+  ],
+  "CurrentMedications": [
+    "now",
+    "may",
+    "lead"
+  ]
+}
+
+❌ Patient failed: Steven Stewart
+{
+  "PatientID": "P00002",
+  "FirstName": "Steven",
+  "LastName": "Stewart",
+  "DateOfBirth": "1982-03-18",
+  "Gender": "Other",
+  "PhoneNumber": "(850)200-7670",
+  "Email": "daniel97@gmail.com",
+  "Address": {
+    "Street": "32589 Tonya View",
+    "City": "Martinfort",
+    "State": "Ohio",
+    "PostalCode": "59575"
+  },
+  "Insurance": {
+    "Provider": "Miller-Torres",
+    "PolicyNumber": "kM68930"
+  },
+  "MedicalHistory": [
+    "many"
+  ],
+  "CurrentMedications": [
+    "concern",
+    "building",
+    "enjoy"
+  ]
+}
+
+❌ Patient failed: Kayla Young
+{
+  "PatientID": "P00003",
+  "FirstName": "Kayla",
+  "LastName": "Young",
+  "DateOfBirth": "2005-12-04",
+  "Gender": "Male",
+  "PhoneNumber": "041.533.1875",
+  "Email": "gomezdaniel@hotmail.com",
+  "Address": {
+    "Street": "29662 Samuel Vista Suite 637",
+    "City": "Martinezfort",
+    "State": "Michigan",
+    "PostalCode": "09261"
+  },
+  "Insurance": {
+    "Provider": "Ballard-Howe",
+    "PolicyNumber": "mV51260"
+  },
+  "MedicalHistory": [
+    "health",
+    "their"
+  ],
+  "CurrentMedications": []
+}
+
+❌ Patient failed: Brooke Munoz
+{
+  "PatientID": "P00004",
+  "FirstName": "Brooke",
+  "LastName": "Munoz",
+  "DateOfBirth": "1942-06-18",
+  "Gender": "Other",
+  "PhoneNumber": "146.725.2739",
+  "Email": "samanthaward@ramirez.com",
+  "Address": {
+    "Street": "3474 Catherine Island Suite 911",
+    "City": "Rodriguezstad",
+    "State": "North Carolina",
+    "PostalCode": "32869"
+  },
+  "Insurance": {
+    "Provider": "Norton, Jones and Haynes",
+    "PolicyNumber": "pC53079"
+  },
+  "MedicalHistory": [
+    "like",
+    "break"
+  ],
+  "CurrentMedications": [
+    "opportunity",
+    "war",
+    "stand"
+  ]
+}
+
+❌ Patient failed: Raymond Gordon
+{
+  "PatientID": "P00005",
+  "FirstName": "Raymond",
+  "LastName": "Gordon",
+  "DateOfBirth": "1946-03-21",
+  "Gender": "Male",
+  "PhoneNumber": "001-832-093-2575x4166",
+  "Email": "thall@barrett-gonzales.biz",
+  "Address": {
+    "Street": "66601 Garrett Mountains Apt. 637",
+    "City": "Williamsmouth",
+    "State": "Nebraska",
+    "PostalCode": "45785"
+  },
+  "Insurance": {
+    "Provider": "Powell-Knight",
+    "PolicyNumber": "lp25723"
+  },
+  "MedicalHistory": [
+    "fund",
+    "discuss",
+    "others"
+  ],
+  "CurrentMedications": [
+    "fast"
+  ]
+}
+
+❌ Patient failed: Cameron Hammond
+{
+  "PatientID": "P00006",
+  "FirstName": "Cameron",
+  "LastName": "Hammond",
+  "DateOfBirth": "2000-08-06",
+  "Gender": "Female",
+  "PhoneNumber": "519.313.7388",
+  "Email": "adkinsbrittney@hotmail.com",
+  "Address": {
+    "Street": "7194 Nathan Shore Suite 201",
+    "City": "Sharonburgh",
+    "State": "South Dakota",
+    "PostalCode": "69799"
+  },
+  "Insurance": {
+    "Provider": "Perkins-Lucas",
+    "PolicyNumber": "rV46074"
+  },
+  "MedicalHistory": [
+    "series"
+  ],
+  "CurrentMedications": [
+    "involve"
+  ]
+}
+
+❌ Patient failed: Mark Kelly
+{
+  "PatientID": "P00007",
+  "FirstName": "Mark",
+  "LastName": "Kelly",
+  "DateOfBirth": "1961-01-03",
+  "Gender": "Other",
+  "PhoneNumber": "(056)784-9214x041",
+  "Email": "gina74@gmail.com",
+  "Address": {
+    "Street": "6247 Ochoa Common",
+    "City": "New Kristy",
+    "State": "Wyoming",
+    "PostalCode": "76196"
+  },
+  "Insurance": {
+    "Provider": "Smith-Vega",
+    "PolicyNumber": "TR10439"
+  },
+  "MedicalHistory": [
+    "compare",
+    "take",
+    "laugh",
+    "fine",
+    "whole"
+  ],
+  "CurrentMedications": []
+}
+
+❌ Patient failed: Amy Ruiz
+{
+  "PatientID": "P00008",
+  "FirstName": "Amy",
+  "LastName": "Ruiz",
+  "DateOfBirth": "1964-05-08",
+  "Gender": "Other",
+  "PhoneNumber": "001-317-797-4561x845",
+  "Email": "ybrooks@hotmail.com",
+  "Address": {
+    "Street": "6184 Erin Villages Suite 329",
+    "City": "Chungstad",
+    "State": "Missouri",
+    "PostalCode": "87879"
+  },
+  "Insurance": {
+    "Provider": "Snyder Ltd",
+    "PolicyNumber": "vw79730"
+  },
+  "MedicalHistory": [
+    "leave",
+    "institution"
+  ],
+  "CurrentMedications": [
+    "ability",
+    "public",
+    "eye"
+  ]
+}
+
+❌ Patient failed: Crystal Jackson
+{
+  "PatientID": "P00009",
+  "FirstName": "Crystal",
+  "LastName": "Jackson",
+  "DateOfBirth": "1935-10-25",
+  "Gender": "Male",
+  "PhoneNumber": "+1-975-619-8991x181",
+  "Email": "fsalazar@parker.info",
+  "Address": {
+    "Street": "707 Torres Courts Suite 758",
+    "City": "Lake Brian",
+    "State": "Mississippi",
+    "PostalCode": "00584"
+  },
+  "Insurance": {
+    "Provider": "Hoffman, Murray and Richardson",
+    "PolicyNumber": "Pk21253"
+  },
+  "MedicalHistory": [
+    "yard",
+    "space",
+    "decide",
+    "work"
+  ],
+  "CurrentMedications": [
+    "reflect",
+    "season",
+    "ball"
+  ]
+}
+
+❌ Patient failed: Julie Wood
+{
+  "PatientID": "P00010",
+  "FirstName": "Julie",
+  "LastName": "Wood",
+  "DateOfBirth": "2013-09-10",
+  "Gender": "Male",
+  "PhoneNumber": "(467)932-8390x87636",
+  "Email": "carlaconrad@clark-phillips.org",
+  "Address": {
+    "Street": "7344 Gray Inlet",
+    "City": "Rachelburgh",
+    "State": "New Jersey",
+    "PostalCode": "38197"
+  },
+  "Insurance": {
+    "Provider": "Crawford, Phillips and Smith",
+    "PolicyNumber": "rq22274"
+  },
+  "MedicalHistory": [
+    "reveal",
+    "war",
+    "war"
+  ],
+  "CurrentMedications": [
+    "least"
+  ]
+}
+
+❌ Patient failed: Eric Ortiz
+{
+  "PatientID": "P00011",
+  "FirstName": "Eric",
+  "LastName": "Ortiz",
+  "DateOfBirth": "1973-03-07",
+  "Gender": "Female",
+  "PhoneNumber": "001-234-714-3292x67091",
+  "Email": "xsandoval@daniels.net",
+  "Address": {
+    "Street": "5561 Eric Harbor",
+    "City": "Kathyshire",
+    "State": "North Dakota",
+    "PostalCode": "98721"
+  },
+  "Insurance": {
+    "Provider": "Davis-Dunlap",
+    "PolicyNumber": "Vn17205"
+  },
+  "MedicalHistory": [
+    "space",
+    "natural",
+    "out",
+    "inside"
+  ],
+  "CurrentMedications": []
+}
+
+❌ Patient failed: Jackson Beck
+{
+  "PatientID": "P00012",
+  "FirstName": "Jackson",
+  "LastName": "Beck",
+  "DateOfBirth": "1972-11-23",
+  "Gender": "Female",
+  "PhoneNumber": "276-945-3661x36625",
+  "Email": "smithkimberly@hotmail.com",
+  "Address": {
+    "Street": "49487 Arnold Overpass Apt. 398",
+    "City": "New Kennethberg",
+    "State": "Maine",
+    "PostalCode": "23420"
+  },
+  "Insurance": {
+    "Provider": "Harris-Brooks",
+    "PolicyNumber": "zU69760"
+  },
+  "MedicalHistory": [
+    "meet",
+    "eye"
+  ],
+  "CurrentMedications": [
+    "we"
+  ]
+}
+
+❌ Patient failed: Marc Thompson
+{
+  "PatientID": "P00013",
+  "FirstName": "Marc",
+  "LastName": "Thompson",
+  "DateOfBirth": "1941-10-24",
+  "Gender": "Male",
+  "PhoneNumber": "(429)697-9022x697",
+  "Email": "reidmark@ramirez.biz",
+  "Address": {
+    "Street": "6872 Williams Oval Suite 924",
+    "City": "Calebberg",
+    "State": "Minnesota",
+    "PostalCode": "17507"
+  },
+  "Insurance": {
+    "Provider": "Daniels, Nguyen and Murphy",
+    "PolicyNumber": "da21170"
+  },
+  "MedicalHistory": [
+    "center",
+    "student"
+  ],
+  "CurrentMedications": [
+    "fire",
+    "husband",
+    "organization"
+  ]
+}
+
+❌ Patient failed: Aaron Hogan
+{
+  "PatientID": "P00014",
+  "FirstName": "Aaron",
+  "LastName": "Hogan",
+  "DateOfBirth": "1976-04-16",
+  "Gender": "Male",
+  "PhoneNumber": "843-435-7927x0548",
+  "Email": "craigwilson@crawford.net",
+  "Address": {
+    "Street": "2087 Clark Road Suite 685",
+    "City": "Jonchester",
+    "State": "Montana",
+    "PostalCode": "39281"
+  },
+  "Insurance": {
+    "Provider": "Weaver, Kennedy and Nielsen",
+    "PolicyNumber": "pO40886"
+  },
+  "MedicalHistory": [
+    "soldier",
+    "describe",
+    "card",
+    "appear",
+    "cup"
+  ],
+  "CurrentMedications": [
+    "town"
+  ]
+}
+
+❌ Patient failed: Alec Jones
+{
+  "PatientID": "P00015",
+  "FirstName": "Alec",
+  "LastName": "Jones",
+  "DateOfBirth": "1952-07-26",
+  "Gender": "Female",
+  "PhoneNumber": "001-453-967-7684x970",
+  "Email": "tina08@hardin.com",
+  "Address": {
+    "Street": "36494 Janet Ford",
+    "City": "North Kristinemouth",
+    "State": "Iowa",
+    "PostalCode": "18879"
+  },
+  "Insurance": {
+    "Provider": "Ortiz-Carter",
+    "PolicyNumber": "Lx72439"
+  },
+  "MedicalHistory": [
+    "final",
+    "anything",
+    "economy",
+    "magazine"
+  ],
+  "CurrentMedications": []
+}
+
+❌ Patient failed: Jacob Jackson
+{
+  "PatientID": "P00016",
+  "FirstName": "Jacob",
+  "LastName": "Jackson",
+  "DateOfBirth": "1981-05-30",
+  "Gender": "Other",
+  "PhoneNumber": "(136)301-5639",
+  "Email": "oholder@yahoo.com",
+  "Address": {
+    "Street": "60380 Orozco Neck",
+    "City": "New Joel",
+    "State": "Connecticut",
+    "PostalCode": "10189"
+  },
+  "Insurance": {
+    "Provider": "Mitchell-Delacruz",
+    "PolicyNumber": "rO52215"
+  },
+  "MedicalHistory": [
+    "start",
+    "black",
+    "idea"
+  ],
+  "CurrentMedications": [
+    "could"
+  ]
+}
+
+❌ Patient failed: Julie Drake
+{
+  "PatientID": "P00017",
+  "FirstName": "Julie",
+  "LastName": "Drake",
+  "DateOfBirth": "1954-12-23",
+  "Gender": "Other",
+  "PhoneNumber": "(456)912-2033x6496",
+  "Email": "carlos77@yahoo.com",
+  "Address": {
+    "Street": "085, Tristan Unions",
+    "City": "Lindachester",
+    "State": "Washington",
+    "PostalCode": "22278"
+  },
+  "Insurance": {
+    "Provider": "Simmons, Greene and Yates",
+    "PolicyNumber": "zZ74305"
+  },
+  "MedicalHistory": [
+    "require",
+    "rise",
+    "wall"
+  ],
+  "CurrentMedications": [
+    "trade",
+    "Republican",
+    "south"
+  ]
+}
+
+❌ Patient failed: Jason Le
+{
+  "PatientID": "P00018",
+  "FirstName": "Jason",
+  "LastName": "Le",
+  "DateOfBirth": "2018-01-21",
+  "Gender": "Other",
+  "PhoneNumber": "785.829.1521x7501",
+  "Email": "qsmith@morris.com",
+  "Address": {
+    "Street": "909 Robert Roads",
+    "City": "Johnberg",
+    "State": "New Jersey",
+    "PostalCode": "41558"
+  },
+  "Insurance": {
+    "Provider": "Tyler Group",
+    "PolicyNumber": "PA37078"
+  },
+  "MedicalHistory": [
+    "sometimes",
+    "environmental",
+    "per",
+    "determine"
+  ],
+  "CurrentMedications": [
+    "build",
+    "affect",
+    "community"
+  ]
+}
+
+❌ Patient failed: Sandra White
+{
+  "PatientID": "P00019",
+  "FirstName": "Sandra",
+  "LastName": "White",
+  "DateOfBirth": "2018-10-01",
+  "Gender": "Other",
+  "PhoneNumber": "+1-598-215-2232x4943",
+  "Email": "vcosta@miller.net",
+  "Address": {
+    "Street": "883 Jennifer Falls Apt. 777",
+    "City": "Millerbury",
+    "State": "Alaska",
+    "PostalCode": "78073"
+  },
+  "Insurance": {
+    "Provider": "Miller-Wagner",
+    "PolicyNumber": "ij60879"
+  },
+  "MedicalHistory": [
+    "star",
+    "prove",
+    "happen"
+  ],
+  "CurrentMedications": []
+}
+
+❌ Patient failed: Paul Cardenas
+{
+  "PatientID": "P00020",
+  "FirstName": "Paul",
+  "LastName": "Cardenas",
+  "DateOfBirth": "2004-01-06",
+  "Gender": "Other",
+  "PhoneNumber": "6138468717",
+  "Email": "william37@gmail.com",
+  "Address": {
+    "Street": "80276 Miller Hollow Apt. 199",
+    "City": "Lake Louis",
+    "State": "Minnesota",
+    "PostalCode": "64605"
+  },
+  "Insurance": {
+    "Provider": "Todd, Jackson and Thomas",
+    "PolicyNumber": "cf69266"
+  },
+  "MedicalHistory": [
+    "tough"
+  ],
+  "CurrentMedications": [
+    "thank",
+    "table"
+  ]
+}
+
+❌ Patient failed: Lisa Drake
+{
+  "PatientID": "P00021",
+  "FirstName": "Lisa",
+  "LastName": "Drake",
+  "DateOfBirth": "2021-07-18",
+  "Gender": "Other",
+  "PhoneNumber": "248-044-4325x25132",
+  "Email": "zprice@yahoo.com",
+  "Address": {
+    "Street": "0629 Miller Gateway Suite 412",
+    "City": "West Edwin",
+    "State": "Vermont",
+    "PostalCode": "92658"
+  },
+  "Insurance": {
+    "Provider": "Jones Inc",
+    "PolicyNumber": "Bq25791"
+  },
+  "MedicalHistory": [
+    "direction",
+    "herself"
+  ],
+  "CurrentMedications": []
+}
+
+❌ Patient failed: Jamie Henry
+{
+  "PatientID": "P00022",
+  "FirstName": "Jamie",
+  "LastName": "Henry",
+  "DateOfBirth": "2009-09-23",
+  "Gender": "Male",
+  "PhoneNumber": "(091)780-3356x19536",
+  "Email": "dmaxwell@gmail.com",
+  "Address": {
+    "Street": "0933 Donald Ford",
+    "City": "Youngtown",
+    "State": "Nebraska",
+    "PostalCode": "24822"
+  },
+  "Insurance": {
+    "Provider": "Barr, Jones and Powell",
+    "PolicyNumber": "ap28363"
+  },
+  "MedicalHistory": [
+    "offer",
+    "return",
+    "strategy"
+  ],
+  "CurrentMedications": []
+}
+
+❌ Patient failed: Ryan Webb
+{
+  "PatientID": "P00023",
+  "FirstName": "Ryan",
+  "LastName": "Webb",
+  "DateOfBirth": "1993-07-31",
+  "Gender": "Male",
+  "PhoneNumber": "945-102-5110",
+  "Email": "jeffrey31@yahoo.com",
+  "Address": {
+    "Street": "5140 Lisa Crescent",
+    "City": "Michelletown",
+    "State": "Wisconsin",
+    "PostalCode": "79342"
+  },
+  "Insurance": {
+    "Provider": "Jones, Diaz and Wright",
+    "PolicyNumber": "Cl69630"
+  },
+  "MedicalHistory": [
+    "specific"
+  ],
+  "CurrentMedications": []
+}
+
+❌ Patient failed: Jasmine Dalton
+{
+  "PatientID": "P00024",
+  "FirstName": "Jasmine",
+  "LastName": "Dalton",
+  "DateOfBirth": "2015-09-29",
+  "Gender": "Male",
+  "PhoneNumber": "227-455-2789x50398",
+  "Email": "erica10@taylor.com",
+  "Address": {
+    "Street": "820 Schultz Glens",
+    "City": "Bobbybury",
+    "State": "Hawaii",
+    "PostalCode": "02603"
+  },
+  "Insurance": {
+    "Provider": "Smith Ltd",
+    "PolicyNumber": "NO44879"
+  },
+  "MedicalHistory": [
+    "yet",
+    "mission",
+    "bit",
+    "find",
+    "appear"
+  ],
+  "CurrentMedications": [
+    "western"
+  ]
+}
+
+❌ Patient failed: Lisa Rodriguez
+{
+  "PatientID": "P00025",
+  "FirstName": "Lisa",
+  "LastName": "Rodriguez",
+  "DateOfBirth": "2022-06-10",
+  "Gender": "Female",
+  "PhoneNumber": "(270)021-4899x776",
+  "Email": "johnlarson@gmail.com",
+  "Address": {
+    "Street": "9341 Christopher Summit Suite 974",
+    "City": "Reyeshaven",
+    "State": "Alaska",
+    "PostalCode": "46115"
+  },
+  "Insurance": {
+    "Provider": "Cisneros, Walls and Hudson",
+    "PolicyNumber": "RV68325"
+  },
+  "MedicalHistory": [
+    "modern"
+  ],
+  "CurrentMedications": [
+    "issue",
+    "provide",
+    "cold"
+  ]
+}

@@ -1,0 +1,42 @@
+﻿2025-06-11 14:14:47 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250611_141444.pkl
+2025-06-11 14:21:52 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250611_142149.pkl
+2025-06-11 14:29:56 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250611_142953.pkl
+2025-06-11 14:44:52 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250611_144450.pkl
+2025-06-11 14:53:41 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250611_145338.pkl
+2025-06-11 15:31:53 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250611_153150.pkl
+2025-06-11 15:58:10 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250611_155808.pkl
+2025-06-11 20:12:55 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250611_201253.pkl
+2025-06-13 13:56:52 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250613_135649.pkl
+2025-06-13 15:57:43 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250613_155741.pkl
+2025-06-13 16:30:25 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250613_163022.pkl
+2025-06-13 16:31:31 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250613_163128.pkl
+2025-06-13 17:31:13 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250613_173110.pkl
+2025-06-13 22:16:04 - Model training failed: Activity timeout exceeded
+2025-06-13 22:28:20 - Model training failed: Activity timeout exceeded
+2025-06-13 22:43:58 - Model training failed: Activity timeout exceeded
+2025-06-14 08:02:53 - Model training failed: Activity timeout exceeded
+2025-06-14 08:17:20 - Model training failed: Activity timeout exceeded
+2025-06-14 08:25:59 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250614_082554.pkl
+2025-06-14 10:27:31 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250614_102725.pkl
+2025-06-15 09:32:13 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250615_093208.pkl
+2025-06-15 11:48:53 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250615_114846.pkl
+2025-06-15 15:18:55 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250615_151838.pkl
+2025-06-20 18:21:37 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250620_182119.pkl
+2025-06-21 18:14:19 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250621_181413.pkl
+2025-06-21 18:23:19 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250621_182312.pkl
+2025-06-22 17:21:06 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250622_172049.pkl
+2025-06-23 11:17:38 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250623_111721.pkl
+2025-06-23 11:26:58 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250623_112650.pkl
+2025-06-23 11:39:19 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250623_113912.pkl
+2025-06-23 12:17:32 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250623_121725.pkl
+2025-06-23 13:00:34 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250623_130026.pkl
+2025-06-25 10:37:44 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250625_103728.pkl
+2025-06-25 10:42:45 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250625_104239.pkl
+2025-06-27 13:48:41 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250627_134824.pkl
+2025-06-30 18:13:39 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250630_181330.pkl
+2025-06-30 18:30:11 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250630_183004.pkl
+2025-06-30 18:49:03 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250630_184856.pkl
+2025-07-02 13:41:09 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250702_134051.pkl
+2025-07-02 13:47:37 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250702_134730.pkl
+2025-07-02 13:53:16 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250702_135309.pkl
+2025-07-02 14:08:03 - ✅ Model training completed. Model saved at: UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier_20250702_140755.pkl

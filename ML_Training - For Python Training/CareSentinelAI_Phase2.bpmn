@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:uipath="http://uipath.org/schema/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="sample-diagram" targetNamespace="http://www.omg.org/spec/BPMN/20100524/MODEL" exporter="UiPath Studio Web (https://uipath.com)" exporterVersion="b1501e12">
+  <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">alertCondition == true</bpmn:conditionExpression>
+    <bpmn:extensionElements>
+  <uipath:variables version="v1" />
+  <uipath:bindings version="v1">
+    <uipath:binding 
+      id="alertVar" 
+      name="alertCondition" 
+      type="boolean" 
+      default="false" 
+      resource="process" 
+      resourceKey="CareSentinelAI.CareSentinelAI_Phase2_Main" 
+      propertyAttribute="alertCondition" />
+  </uipath:bindings>
+</bpmn:extensionElements>
+    <bpmn:serviceTask id="LogNormalCondition" name="Log Normal Condition">
+      <bpmn:incoming>seq-19</bpmn:incoming>
+      <bpmn:outgoing>seq-20</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="SendAlertEmail" name="Send Alert Email">
+      <bpmn:incoming>seq-17</bpmn:incoming>
+      <bpmn:outgoing>seq-18</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:userTask id="StartPatientMonitoring" name="Start Patient Monitoring">
+      <bpmn:incoming>seq-0</bpmn:incoming>
+      <bpmn:outgoing>seq-1</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="InitializeMonitoringSystem" name="Initialize Monitoring System">
+      <bpmn:incoming>seq-1</bpmn:incoming>
+      <bpmn:outgoing>seq-2</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="ConnectToPatientSensors" name="Connect to Patient Sensors">
+      <bpmn:incoming>seq-2</bpmn:incoming>
+      <bpmn:outgoing>seq-3</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:userTask id="ConfigureAlertParameters" name="Configure Alert Parameters">
+      <bpmn:incoming>seq-3</bpmn:incoming>
+      <bpmn:outgoing>seq-4</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="BeginDataCollection" name="Begin Data Collection">
+      <bpmn:incoming>seq-4</bpmn:incoming>
+      <bpmn:outgoing>seq-5</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:parallelGateway id="ParallelGatewaySplit" name="Parallel Gateway Split">
+      <bpmn:incoming>seq-5</bpmn:incoming>
+      <bpmn:outgoing>seq-6</bpmn:outgoing>
+      <bpmn:outgoing>seq-7</bpmn:outgoing>
+      <bpmn:outgoing>seq-8</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:serviceTask id="MonitorVitalSigns" name="Monitor Vital Signs">
+      <bpmn:incoming>seq-6</bpmn:incoming>
+      <bpmn:outgoing>seq-9</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="MonitorMedicationSchedule" name="Monitor Medication Schedule">
+      <bpmn:incoming>seq-7</bpmn:incoming>
+      <bpmn:outgoing>seq-10</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="TrackPatientMovement" name="Track Patient Movement">
+      <bpmn:incoming>seq-8</bpmn:incoming>
+      <bpmn:outgoing>seq-11</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:parallelGateway id="ParallelGatewayJoin" name="Parallel Gateway Join">
+      <bpmn:incoming>seq-9</bpmn:incoming>
+      <bpmn:incoming>seq-10</bpmn:incoming>
+      <bpmn:incoming>seq-11</bpmn:incoming>
+      <bpmn:outgoing>seq-12</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:exclusiveGateway id="AlertCondition" name="Alert Condition?" default="seq-19">
+      <bpmn:incoming>seq-12</bpmn:incoming>
+      <bpmn:incoming>seq-15</bpmn:incoming>
+      <bpmn:outgoing>seq-19</bpmn:outgoing>
+      <bpmn:outgoing>seq-13</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:serviceTask id="GenerateAlert" name="Generate Alert">
+      <bpmn:incoming>seq-13</bpmn:incoming>
+      <bpmn:outgoing>seq-17</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:userTask id="RespondToAlert" name="Respond to Alert">
+      <bpmn:incoming>seq-18</bpmn:incoming>
+      <bpmn:outgoing>seq-15</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:endEvent id="MonitoringComplete" name="Monitoring Complete">
+      <bpmn:incoming>seq-20</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:startEvent id="Event_F4g9az" name="Start Event">
+      <bpmn:documentation>Initiates the CareSentinelAI patient risk detection and alerting process.</bpmn:documentation>
+      <bpmn:extensionElements>
+        <uipath:entryPointId value="1c59bb18-ccdf-4388-93c2-0440a9abc0a5" />
+      </bpmn:extensionElements>
+      <bpmn:outgoing>seq-0</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:sequenceFlow id="seq-19" name="No" sourceRef="AlertCondition" targetRef="LogNormalCondition">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=alertCondition == false</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="seq-20" sourceRef="LogNormalCondition" targetRef="MonitoringComplete" />
+    <bpmn:sequenceFlow id="seq-17" sourceRef="GenerateAlert" targetRef="SendAlertEmail" />
+    <bpmn:sequenceFlow id="seq-18" sourceRef="SendAlertEmail" targetRef="RespondToAlert" />
+    <bpmn:sequenceFlow id="seq-0" sourceRef="Event_F4g9az" targetRef="StartPatientMonitoring" />
+    <bpmn:sequenceFlow id="seq-1" sourceRef="StartPatientMonitoring" targetRef="InitializeMonitoringSystem" />
+    <bpmn:sequenceFlow id="seq-2" sourceRef="InitializeMonitoringSystem" targetRef="ConnectToPatientSensors" />
+    <bpmn:sequenceFlow id="seq-3" sourceRef="ConnectToPatientSensors" targetRef="ConfigureAlertParameters" />
+    <bpmn:sequenceFlow id="seq-4" sourceRef="ConfigureAlertParameters" targetRef="BeginDataCollection" />
+    <bpmn:sequenceFlow id="seq-5" sourceRef="BeginDataCollection" targetRef="ParallelGatewaySplit" />
+    <bpmn:sequenceFlow id="seq-6" sourceRef="ParallelGatewaySplit" targetRef="MonitorVitalSigns" />
+    <bpmn:sequenceFlow id="seq-7" sourceRef="ParallelGatewaySplit" targetRef="MonitorMedicationSchedule" />
+    <bpmn:sequenceFlow id="seq-8" sourceRef="ParallelGatewaySplit" targetRef="TrackPatientMovement" />
+    <bpmn:sequenceFlow id="seq-9" sourceRef="MonitorVitalSigns" targetRef="ParallelGatewayJoin" />
+    <bpmn:sequenceFlow id="seq-10" sourceRef="MonitorMedicationSchedule" targetRef="ParallelGatewayJoin" />
+    <bpmn:sequenceFlow id="seq-11" sourceRef="TrackPatientMovement" targetRef="ParallelGatewayJoin" />
+    <bpmn:sequenceFlow id="seq-12" sourceRef="ParallelGatewayJoin" targetRef="AlertCondition" />
+    <bpmn:sequenceFlow id="seq-13" name="Yes" sourceRef="AlertCondition" targetRef="GenerateAlert">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">alertCondition == true</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="seq-15" sourceRef="RespondToAlert" targetRef="AlertCondition" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="S_LogNormalCondition" bpmnElement="LogNormalCondition">
+        <dc:Bounds x="1525" y="30" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1525" y="115" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_SendAlertEmail" bpmnElement="SendAlertEmail">
+        <dc:Bounds x="1675" y="30" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1675" y="115" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_StartPatientMonitoring" bpmnElement="StartPatientMonitoring">
+        <dc:Bounds x="175" y="30" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="175" y="115" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_InitializeMonitoringSystem" bpmnElement="InitializeMonitoringSystem">
+        <dc:Bounds x="325" y="30" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="325" y="115" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_ConnectToPatientSensors" bpmnElement="ConnectToPatientSensors">
+        <dc:Bounds x="475" y="30" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="475" y="115" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_ConfigureAlertParameters" bpmnElement="ConfigureAlertParameters">
+        <dc:Bounds x="625" y="30" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="625" y="115" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_BeginDataCollection" bpmnElement="BeginDataCollection">
+        <dc:Bounds x="775" y="30" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="775" y="115" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_ParallelGatewaySplit" bpmnElement="ParallelGatewaySplit">
+        <dc:Bounds x="950" y="45" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="950" y="100" width="50" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_MonitorVitalSigns" bpmnElement="MonitorVitalSigns">
+        <dc:Bounds x="1075" y="30" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1075" y="115" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_MonitorMedicationSchedule" bpmnElement="MonitorMedicationSchedule">
+        <dc:Bounds x="1075" y="170" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1075" y="255" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_TrackPatientMovement" bpmnElement="TrackPatientMovement">
+        <dc:Bounds x="1075" y="310" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1075" y="395" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_ParallelGatewayJoin" bpmnElement="ParallelGatewayJoin">
+        <dc:Bounds x="1248.312509822411" y="50.06247053276756" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1248.312509822411" y="105.06247053276756" width="50" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_AlertCondition" bpmnElement="AlertCondition">
+        <dc:Bounds x="1400" y="45" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1400" y="100" width="50" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_GenerateAlert" bpmnElement="GenerateAlert">
+        <dc:Bounds x="1525" y="30" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1525" y="115" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_RespondToAlert" bpmnElement="RespondToAlert">
+        <dc:Bounds x="1825" y="30" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1825" y="115" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_MonitoringComplete" bpmnElement="MonitoringComplete">
+        <dc:Bounds x="1638.0632911392406" y="-150.6621226874392" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1638.0632911392406" y="-109.6621226874392" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Event_F4g9az" bpmnElement="Event_F4g9az">
+        <dc:Bounds x="57" y="52" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="57" y="93" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-19" bpmnElement="seq-19">
+        <di:waypoint x="1450" y="70" />
+        <di:waypoint x="1525" y="70" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-20" bpmnElement="seq-20">
+        <di:waypoint x="1625" y="70" />
+        <di:waypoint x="1656" y="70" />
+        <di:waypoint x="1656" y="-115" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-17" bpmnElement="seq-17">
+        <di:waypoint x="1625" y="70" />
+        <di:waypoint x="1675" y="70" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-18" bpmnElement="seq-18">
+        <di:waypoint x="1775" y="70" />
+        <di:waypoint x="1825" y="70" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-0" bpmnElement="seq-0">
+        <di:waypoint x="93" y="70" />
+        <di:waypoint x="175" y="70" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-1" bpmnElement="seq-1">
+        <di:waypoint x="275" y="70" />
+        <di:waypoint x="325" y="70" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-2" bpmnElement="seq-2">
+        <di:waypoint x="425" y="70" />
+        <di:waypoint x="475" y="70" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-3" bpmnElement="seq-3">
+        <di:waypoint x="575" y="70" />
+        <di:waypoint x="625" y="70" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-4" bpmnElement="seq-4">
+        <di:waypoint x="725" y="70" />
+        <di:waypoint x="775" y="70" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-5" bpmnElement="seq-5">
+        <di:waypoint x="875" y="70" />
+        <di:waypoint x="950" y="70" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-6" bpmnElement="seq-6">
+        <di:waypoint x="1000" y="70" />
+        <di:waypoint x="1075" y="70" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-7" bpmnElement="seq-7">
+        <di:waypoint x="975" y="95" />
+        <di:waypoint x="975" y="210" />
+        <di:waypoint x="1075" y="210" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-8" bpmnElement="seq-8">
+        <di:waypoint x="975" y="95" />
+        <di:waypoint x="975" y="350" />
+        <di:waypoint x="1075" y="350" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-9" bpmnElement="seq-9">
+        <di:waypoint x="1175" y="70" />
+        <di:waypoint x="1212" y="70" />
+        <di:waypoint x="1212" y="75" />
+        <di:waypoint x="1248" y="75" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-10" bpmnElement="seq-10">
+        <di:waypoint x="1175" y="210" />
+        <di:waypoint x="1273" y="210" />
+        <di:waypoint x="1273" y="100" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-11" bpmnElement="seq-11">
+        <di:waypoint x="1175" y="350" />
+        <di:waypoint x="1273" y="350" />
+        <di:waypoint x="1273" y="100" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-12" bpmnElement="seq-12">
+        <di:waypoint x="1298" y="75" />
+        <di:waypoint x="1349" y="75" />
+        <di:waypoint x="1349" y="70" />
+        <di:waypoint x="1400" y="70" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-13" bpmnElement="seq-13">
+        <di:waypoint x="1450" y="70" />
+        <di:waypoint x="1525" y="70" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-15" bpmnElement="seq-15">
+        <di:waypoint x="1875" y="110" />
+        <di:waypoint x="1875" y="130" />
+        <di:waypoint x="1425" y="130" />
+        <di:waypoint x="1425" y="95" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

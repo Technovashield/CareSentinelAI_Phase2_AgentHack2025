@@ -1,0 +1,1244 @@
+﻿@echo off
+echo [INFO] Batch file triggered >> "C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\script_trace.txt"
+
+python "C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py" ^
+"C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250611_201253.csv" ^
+"C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\RiskClassifier.pkl" ^
+"C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250613_113800.csv"
+
+echo [INFO] Script complete >> "C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\script_trace.txt"
+
+
+
+2025-06-15 11:38:39 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-15 11:38:39 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-15 11:38:39 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-15 11:38:39 - [TRACE] scikit-learn version: 1.3.2
+2025-06-15 11:38:39 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-15 11:38:39 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-15 11:38:39 - [INFO] Script started
+2025-06-15 11:38:39 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250615_093208.csv
+2025-06-15 11:38:39 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-15 11:38:39 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250615_113839.csv
+2025-06-15 11:38:39 - [OK] Input CSV loaded
+2025-06-15 11:38:39 - [OK] Age computed from DOB
+2025-06-15 11:38:40 - [OK] Model loaded: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-06-15 11:38:40 - [SUCCESS] Prediction completed and saved.
+2025-06-15 11:44:26 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-15 11:44:26 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-15 11:44:26 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-15 11:44:26 - [TRACE] scikit-learn version: 1.3.2
+2025-06-15 11:44:26 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-15 11:44:26 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-15 11:44:26 - [INFO] Script started
+2025-06-15 11:44:26 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250615_093208.csv
+2025-06-15 11:44:26 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-15 11:44:26 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250615_114426.csv
+2025-06-15 11:44:26 - [OK] Input CSV loaded
+2025-06-15 11:44:26 - [OK] Age computed from DOB
+2025-06-15 11:44:26 - [OK] Model loaded: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-06-15 11:44:26 - [SUCCESS] Prediction completed and saved.
+2025-06-15 11:48:50 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-15 11:48:50 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-15 11:48:50 - [TRACE] Python executable: C:\Python312\python.exe
+2025-06-15 11:48:50 - [TRACE] scikit-learn version: 1.6.1
+2025-06-15 11:48:50 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python312\site-packages\sklearn\__init__.py
+2025-06-15 11:48:50 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Python312\\python312.zip', 'C:\\Python312\\DLLs', 'C:\\Python312\\Lib', 'C:\\Python312', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python312\\site-packages', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python312\\site-packages\\win32', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python312\\site-packages\\win32\\lib', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python312\\site-packages\\Pythonwin', 'C:\\Python312\\Lib\\site-packages']
+2025-06-15 11:48:50 - [INFO] Script started
+2025-06-15 11:48:50 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250615_114846.csv
+2025-06-15 11:48:50 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-15 11:48:51 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250615_114850.csv
+2025-06-15 11:48:51 - [OK] Input CSV loaded
+2025-06-15 11:48:51 - [OK] Age computed from DOB
+2025-06-15 11:48:51 - [OK] Model loaded: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-06-15 11:48:51 - [ERROR] Prediction failed: 'DecisionTreeClassifier' object has no attribute 'monotonic_cst'
+2025-06-15 11:48:55 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-15 11:48:55 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-15 11:48:55 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-15 11:48:55 - [TRACE] scikit-learn version: 1.3.2
+2025-06-15 11:48:55 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-15 11:48:55 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-15 11:48:55 - [INFO] Script started
+2025-06-15 11:48:55 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250615_114846.csv
+2025-06-15 11:48:55 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-15 11:48:55 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250615_114855.csv
+2025-06-15 11:48:55 - [OK] Input CSV loaded
+2025-06-15 11:48:55 - [OK] Age computed from DOB
+2025-06-15 11:48:56 - [OK] Model loaded: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-06-15 11:48:56 - [SUCCESS] Prediction completed and saved.
+2025-06-15 15:04:39 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-15 15:04:39 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-15 15:04:39 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-15 15:04:39 - [TRACE] scikit-learn version: 1.3.2
+2025-06-15 15:04:39 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-15 15:04:39 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-15 15:04:39 - [INFO] Script started
+2025-06-15 15:04:39 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250615_144144.csv
+2025-06-15 15:04:39 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-15 15:04:39 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250615_150439.csv
+2025-06-15 15:04:39 - [OK] Input CSV loaded
+2025-06-15 15:04:39 - [OK] Age computed from DOB
+2025-06-15 15:04:39 - [OK] Model loaded: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-06-15 15:04:39 - [ERROR] Prediction failed: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- Cholesterol
+
+2025-06-15 15:05:32 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-15 15:05:32 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-15 15:05:32 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-15 15:05:32 - [TRACE] scikit-learn version: 1.3.2
+2025-06-15 15:05:32 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-15 15:05:32 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-15 15:05:32 - [INFO] Script started
+2025-06-15 15:05:32 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250615_144144.csv
+2025-06-15 15:05:32 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-15 15:05:32 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250615_150532.csv
+2025-06-15 15:05:32 - [OK] Input CSV loaded
+2025-06-15 15:05:32 - [OK] Age computed from DOB
+2025-06-15 15:05:32 - [OK] Model loaded: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-06-15 15:05:32 - [ERROR] Prediction failed: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- Cholesterol
+
+2025-06-15 15:10:21 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-15 15:10:21 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-15 15:10:21 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-15 15:10:21 - [TRACE] scikit-learn version: 1.3.2
+2025-06-15 15:10:21 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-15 15:10:21 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-15 15:10:21 - [INFO] Script started
+2025-06-15 15:10:21 - [ERROR] File detection failed: No matching files with prefix 'RiskClassifier' in C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-15 15:15:16 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-15 15:15:16 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-15 15:15:16 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-15 15:15:16 - [TRACE] scikit-learn version: 1.3.2
+2025-06-15 15:15:16 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-15 15:15:16 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-15 15:15:16 - [INFO] Script started
+2025-06-15 15:15:16 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250615_144144.csv
+2025-06-15 15:15:16 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-15 15:15:16 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250615_151516.csv
+2025-06-15 15:15:16 - [OK] Input CSV loaded
+2025-06-15 15:15:16 - [OK] Age computed from DOB
+2025-06-15 15:15:17 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-15 15:15:17 - [SUCCESS] Prediction completed and saved.
+2025-06-15 15:15:51 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-15 15:15:51 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-15 15:15:51 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-15 15:15:51 - [TRACE] scikit-learn version: 1.3.2
+2025-06-15 15:15:51 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-15 15:15:51 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-15 15:15:51 - [INFO] Script started
+2025-06-15 15:15:51 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250615_144144.csv
+2025-06-15 15:15:51 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-15 15:15:51 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250615_151551.csv
+2025-06-15 15:15:51 - [OK] Input CSV loaded
+2025-06-15 15:15:51 - [OK] Age computed from DOB
+2025-06-15 15:15:51 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-15 15:15:51 - [SUCCESS] Prediction completed and saved.
+2025-06-15 15:18:51 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-15 15:18:51 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-15 15:18:51 - [TRACE] Python executable: C:\Python312\python.exe
+2025-06-15 15:18:51 - [TRACE] scikit-learn version: 1.6.1
+2025-06-15 15:18:51 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python312\site-packages\sklearn\__init__.py
+2025-06-15 15:18:51 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Python312\\python312.zip', 'C:\\Python312\\DLLs', 'C:\\Python312\\Lib', 'C:\\Python312', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python312\\site-packages', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python312\\site-packages\\win32', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python312\\site-packages\\win32\\lib', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python312\\site-packages\\Pythonwin', 'C:\\Python312\\Lib\\site-packages']
+2025-06-15 15:18:51 - [INFO] Script started
+2025-06-15 15:18:51 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250615_144144.csv
+2025-06-15 15:18:51 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-15 15:18:51 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250615_151851.csv
+2025-06-15 15:18:51 - [OK] Input CSV loaded
+2025-06-15 15:18:51 - [OK] Age computed from DOB
+2025-06-15 15:18:53 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-15 15:18:53 - [ERROR] Prediction failed: 'HistGradientBoostingClassifier' object has no attribute '_preprocessor'
+2025-06-15 15:19:30 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-15 15:19:30 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-15 15:19:30 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-15 15:19:30 - [TRACE] scikit-learn version: 1.3.2
+2025-06-15 15:19:30 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-15 15:19:30 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-15 15:19:30 - [INFO] Script started
+2025-06-15 15:19:30 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250615_144144.csv
+2025-06-15 15:19:30 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-15 15:19:30 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250615_151930.csv
+2025-06-15 15:19:30 - [OK] Input CSV loaded
+2025-06-15 15:19:30 - [OK] Age computed from DOB
+2025-06-15 15:19:30 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-15 15:19:31 - [SUCCESS] Prediction completed and saved.
+2025-06-20 18:21:32 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-20 18:21:32 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-20 18:21:32 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-20 18:21:32 - [TRACE] scikit-learn version: 1.3.2
+2025-06-20 18:21:32 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-20 18:21:32 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-20 18:21:32 - [INFO] Script started
+2025-06-20 18:21:32 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250620_182119.csv
+2025-06-20 18:21:32 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-20 18:21:32 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250620_182132.csv
+2025-06-20 18:21:32 - [OK] Input CSV loaded
+2025-06-20 18:21:32 - [OK] Age computed from DOB
+2025-06-20 18:21:34 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-20 18:21:35 - [SUCCESS] Prediction completed and saved.
+2025-06-20 18:21:40 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-20 18:21:40 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-20 18:21:40 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-20 18:21:40 - [TRACE] scikit-learn version: 1.3.2
+2025-06-20 18:21:40 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-20 18:21:40 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-20 18:21:40 - [INFO] Script started
+2025-06-20 18:21:40 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250620_182119.csv
+2025-06-20 18:21:40 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-20 18:21:40 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250620_182140.csv
+2025-06-20 18:21:40 - [OK] Input CSV loaded
+2025-06-20 18:21:40 - [OK] Age computed from DOB
+2025-06-20 18:21:40 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-20 18:21:41 - [SUCCESS] Prediction completed and saved.
+2025-06-21 17:10:48 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-21 17:10:48 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-21 17:10:48 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-21 17:10:48 - [TRACE] scikit-learn version: 1.3.2
+2025-06-21 17:10:48 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-21 17:10:48 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-21 17:10:48 - [INFO] Script started
+2025-06-21 17:10:48 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250620_182119.csv
+2025-06-21 17:10:48 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-21 17:10:48 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250621_171048.csv
+2025-06-21 17:10:48 - [OK] Input CSV loaded
+2025-06-21 17:10:48 - [OK] Age computed from DOB
+2025-06-21 17:10:50 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-21 17:10:51 - [SUCCESS] Prediction completed and saved.
+2025-06-21 18:09:40 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-21 18:09:40 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-21 18:09:40 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-21 18:09:40 - [TRACE] scikit-learn version: 1.3.2
+2025-06-21 18:09:40 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-21 18:09:40 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-21 18:09:40 - [INFO] Script started
+2025-06-21 18:09:40 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250621_180046.csv
+2025-06-21 18:09:40 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-21 18:09:40 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250621_180940.csv
+2025-06-21 18:09:40 - [OK] Input CSV loaded
+2025-06-21 18:09:40 - [OK] Age computed from DOB
+2025-06-21 18:09:41 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-21 18:09:41 - [SUCCESS] Prediction completed and saved.
+2025-06-21 18:14:16 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-21 18:14:16 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-21 18:14:16 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-21 18:14:16 - [TRACE] scikit-learn version: 1.3.2
+2025-06-21 18:14:16 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-21 18:14:16 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-21 18:14:16 - [INFO] Script started
+2025-06-21 18:14:16 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250621_180046.csv
+2025-06-21 18:14:16 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-21 18:14:16 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250621_181416.csv
+2025-06-21 18:14:16 - [OK] Input CSV loaded
+2025-06-21 18:14:16 - [OK] Age computed from DOB
+2025-06-21 18:14:17 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-21 18:14:17 - [SUCCESS] Prediction completed and saved.
+2025-06-21 18:23:16 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-21 18:23:16 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-21 18:23:16 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-21 18:23:16 - [TRACE] scikit-learn version: 1.3.2
+2025-06-21 18:23:16 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-21 18:23:16 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-21 18:23:16 - [INFO] Script started
+2025-06-21 18:23:16 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250621_182312.csv
+2025-06-21 18:23:16 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-21 18:23:16 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250621_182316.csv
+2025-06-21 18:23:16 - [OK] Input CSV loaded
+2025-06-21 18:23:16 - [OK] Age computed from DOB
+2025-06-21 18:23:17 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-21 18:23:17 - [SUCCESS] Prediction completed and saved.
+2025-06-21 18:23:22 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-21 18:23:22 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-21 18:23:22 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-21 18:23:22 - [TRACE] scikit-learn version: 1.3.2
+2025-06-21 18:23:22 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-21 18:23:22 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-21 18:23:22 - [INFO] Script started
+2025-06-21 18:23:23 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250621_182312.csv
+2025-06-21 18:23:23 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-21 18:23:23 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250621_182323.csv
+2025-06-21 18:23:23 - [OK] Input CSV loaded
+2025-06-21 18:23:23 - [OK] Age computed from DOB
+2025-06-21 18:23:23 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-21 18:23:23 - [SUCCESS] Prediction completed and saved.
+2025-06-22 17:21:01 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-22 17:21:01 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-22 17:21:01 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-22 17:21:01 - [TRACE] scikit-learn version: 1.3.2
+2025-06-22 17:21:01 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-22 17:21:01 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-22 17:21:01 - [INFO] Script started
+2025-06-22 17:21:01 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250622_172049.csv
+2025-06-22 17:21:01 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-22 17:21:01 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250622_172101.csv
+2025-06-22 17:21:01 - [OK] Input CSV loaded
+2025-06-22 17:21:01 - [OK] Age computed from DOB
+2025-06-22 17:21:03 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-22 17:21:03 - [SUCCESS] Prediction completed and saved.
+2025-06-22 17:21:09 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-22 17:21:09 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-22 17:21:09 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-22 17:21:09 - [TRACE] scikit-learn version: 1.3.2
+2025-06-22 17:21:09 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-22 17:21:09 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-22 17:21:09 - [INFO] Script started
+2025-06-22 17:21:09 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250622_172049.csv
+2025-06-22 17:21:09 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-22 17:21:09 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250622_172109.csv
+2025-06-22 17:21:09 - [OK] Input CSV loaded
+2025-06-22 17:21:09 - [OK] Age computed from DOB
+2025-06-22 17:21:09 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-22 17:21:09 - [SUCCESS] Prediction completed and saved.
+2025-06-23 11:17:34 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-23 11:17:34 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-23 11:17:34 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-23 11:17:34 - [TRACE] scikit-learn version: 1.3.2
+2025-06-23 11:17:34 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-23 11:17:34 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-23 11:17:34 - [INFO] Script started
+2025-06-23 11:17:34 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250622_172049.csv
+2025-06-23 11:17:34 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-23 11:17:34 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250623_111734.csv
+2025-06-23 11:17:34 - [OK] Input CSV loaded
+2025-06-23 11:17:34 - [OK] Age computed from DOB
+2025-06-23 11:17:36 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-23 11:17:36 - [SUCCESS] Prediction completed and saved.
+2025-06-23 11:26:55 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-23 11:26:55 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-23 11:26:55 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-23 11:26:55 - [TRACE] scikit-learn version: 1.3.2
+2025-06-23 11:26:55 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-23 11:26:55 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-23 11:26:55 - [INFO] Script started
+2025-06-23 11:26:55 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250622_172049.csv
+2025-06-23 11:26:55 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-23 11:26:55 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250623_112655.csv
+2025-06-23 11:26:55 - [OK] Input CSV loaded
+2025-06-23 11:26:55 - [OK] Age computed from DOB
+2025-06-23 11:26:55 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-23 11:26:55 - [SUCCESS] Prediction completed and saved.
+2025-06-23 11:39:16 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-23 11:39:16 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-23 11:39:16 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-23 11:39:16 - [TRACE] scikit-learn version: 1.3.2
+2025-06-23 11:39:16 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-23 11:39:16 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-23 11:39:16 - [INFO] Script started
+2025-06-23 11:39:16 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250622_172049.csv
+2025-06-23 11:39:16 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-23 11:39:16 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250623_113916.csv
+2025-06-23 11:39:16 - [OK] Input CSV loaded
+2025-06-23 11:39:16 - [OK] Age computed from DOB
+2025-06-23 11:39:16 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-23 11:39:16 - [SUCCESS] Prediction completed and saved.
+2025-06-23 11:48:37 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-23 11:48:37 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-23 11:48:37 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-23 11:48:37 - [TRACE] scikit-learn version: 1.3.2
+2025-06-23 11:48:37 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-23 11:48:37 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-23 11:48:37 - [INFO] Script started
+2025-06-23 11:48:37 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250622_172049.csv
+2025-06-23 11:48:37 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-23 11:48:37 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250623_114837.csv
+2025-06-23 11:48:37 - [OK] Input CSV loaded
+2025-06-23 11:48:37 - [OK] Age computed from DOB
+2025-06-23 11:48:38 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-23 11:48:38 - [SUCCESS] Prediction completed and saved.
+2025-06-23 11:49:53 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-23 11:49:53 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-23 11:49:53 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-23 11:49:53 - [TRACE] scikit-learn version: 1.3.2
+2025-06-23 11:49:53 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-23 11:49:53 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-23 11:49:53 - [INFO] Script started
+2025-06-23 11:49:53 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250622_172049.csv
+2025-06-23 11:49:53 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-23 11:49:53 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250623_114953.csv
+2025-06-23 11:49:53 - [OK] Input CSV loaded
+2025-06-23 11:49:53 - [OK] Age computed from DOB
+2025-06-23 11:49:53 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-23 11:49:54 - [SUCCESS] Prediction completed and saved.
+2025-06-23 12:17:29 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-23 12:17:29 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-23 12:17:29 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-23 12:17:29 - [TRACE] scikit-learn version: 1.3.2
+2025-06-23 12:17:29 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-23 12:17:29 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-23 12:17:29 - [INFO] Script started
+2025-06-23 12:17:29 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250623_121725.csv
+2025-06-23 12:17:29 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-23 12:17:29 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250623_121729.csv
+2025-06-23 12:17:29 - [OK] Input CSV loaded
+2025-06-23 12:17:29 - [OK] Age computed from DOB
+2025-06-23 12:17:30 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-23 12:17:30 - [SUCCESS] Prediction completed and saved.
+2025-06-23 12:17:35 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-23 12:17:35 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-23 12:17:35 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-23 12:17:35 - [TRACE] scikit-learn version: 1.3.2
+2025-06-23 12:17:35 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-23 12:17:35 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-23 12:17:35 - [INFO] Script started
+2025-06-23 12:17:35 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250623_121725.csv
+2025-06-23 12:17:35 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-23 12:17:35 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250623_121735.csv
+2025-06-23 12:17:35 - [OK] Input CSV loaded
+2025-06-23 12:17:35 - [OK] Age computed from DOB
+2025-06-23 12:17:35 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-23 12:17:36 - [SUCCESS] Prediction completed and saved.
+2025-06-23 13:00:31 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-23 13:00:31 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-23 13:00:31 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-23 13:00:31 - [TRACE] scikit-learn version: 1.3.2
+2025-06-23 13:00:31 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-23 13:00:31 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-23 13:00:31 - [INFO] Script started
+2025-06-23 13:00:31 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250623_130026.csv
+2025-06-23 13:00:31 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-23 13:00:31 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250623_130031.csv
+2025-06-23 13:00:31 - [OK] Input CSV loaded
+2025-06-23 13:00:31 - [OK] Age computed from DOB
+2025-06-23 13:00:32 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-23 13:00:32 - [SUCCESS] Prediction completed and saved.
+2025-06-23 13:00:38 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-23 13:00:38 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-23 13:00:38 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-23 13:00:38 - [TRACE] scikit-learn version: 1.3.2
+2025-06-23 13:00:38 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-23 13:00:38 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-23 13:00:38 - [INFO] Script started
+2025-06-23 13:00:38 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250623_130026.csv
+2025-06-23 13:00:38 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-23 13:00:38 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250623_130038.csv
+2025-06-23 13:00:38 - [OK] Input CSV loaded
+2025-06-23 13:00:38 - [OK] Age computed from DOB
+2025-06-23 13:00:38 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-23 13:00:38 - [SUCCESS] Prediction completed and saved.
+2025-06-25 10:37:39 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-25 10:37:39 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-25 10:37:39 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-25 10:37:39 - [TRACE] scikit-learn version: 1.3.2
+2025-06-25 10:37:39 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-25 10:37:39 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-25 10:37:39 - [INFO] Script started
+2025-06-25 10:37:39 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250625_103727.csv
+2025-06-25 10:37:39 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-25 10:37:39 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250625_103739.csv
+2025-06-25 10:37:39 - [OK] Input CSV loaded
+2025-06-25 10:37:39 - [OK] Age computed from DOB
+2025-06-25 10:37:41 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-25 10:37:41 - [SUCCESS] Prediction completed and saved.
+2025-06-25 10:37:46 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-25 10:37:46 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-25 10:37:46 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-25 10:37:46 - [TRACE] scikit-learn version: 1.3.2
+2025-06-25 10:37:46 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-25 10:37:46 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-25 10:37:46 - [INFO] Script started
+2025-06-25 10:37:46 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250625_103727.csv
+2025-06-25 10:37:46 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-25 10:37:46 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250625_103746.csv
+2025-06-25 10:37:46 - [OK] Input CSV loaded
+2025-06-25 10:37:46 - [OK] Age computed from DOB
+2025-06-25 10:37:47 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-25 10:37:47 - [SUCCESS] Prediction completed and saved.
+2025-06-25 10:42:42 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-25 10:42:42 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-25 10:42:42 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-25 10:42:42 - [TRACE] scikit-learn version: 1.3.2
+2025-06-25 10:42:42 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-25 10:42:42 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-25 10:42:42 - [INFO] Script started
+2025-06-25 10:42:42 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250625_104239.csv
+2025-06-25 10:42:42 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-25 10:42:42 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250625_104242.csv
+2025-06-25 10:42:42 - [OK] Input CSV loaded
+2025-06-25 10:42:42 - [OK] Age computed from DOB
+2025-06-25 10:42:42 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-25 10:42:42 - [SUCCESS] Prediction completed and saved.
+2025-06-25 10:42:47 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-25 10:42:47 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-25 10:42:47 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-25 10:42:47 - [TRACE] scikit-learn version: 1.3.2
+2025-06-25 10:42:47 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-25 10:42:47 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-25 10:42:47 - [INFO] Script started
+2025-06-25 10:42:47 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250625_104239.csv
+2025-06-25 10:42:47 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-25 10:42:47 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250625_104247.csv
+2025-06-25 10:42:47 - [OK] Input CSV loaded
+2025-06-25 10:42:47 - [OK] Age computed from DOB
+2025-06-25 10:42:47 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-25 10:42:47 - [SUCCESS] Prediction completed and saved.
+2025-06-25 13:26:39 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-25 13:26:39 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-25 13:26:39 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-25 13:26:39 - [TRACE] scikit-learn version: 1.3.2
+2025-06-25 13:26:39 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-25 13:26:39 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-25 13:26:39 - [INFO] Script started
+2025-06-25 13:26:39 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250625_104239.csv
+2025-06-25 13:26:39 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-25 13:26:39 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250625_132639.csv
+2025-06-25 13:26:40 - [OK] Input CSV loaded
+2025-06-25 13:26:40 - [OK] Age computed from DOB
+2025-06-25 13:26:40 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-25 13:26:40 - [SUCCESS] Prediction completed and saved.
+2025-06-25 13:26:46 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-25 13:26:46 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-25 13:26:46 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-25 13:26:46 - [TRACE] scikit-learn version: 1.3.2
+2025-06-25 13:26:46 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-25 13:26:46 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-25 13:26:46 - [INFO] Script started
+2025-06-25 13:26:46 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250625_104239.csv
+2025-06-25 13:26:46 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-25 13:26:46 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250625_132646.csv
+2025-06-25 13:26:46 - [OK] Input CSV loaded
+2025-06-25 13:26:46 - [OK] Age computed from DOB
+2025-06-25 13:26:46 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-25 13:26:46 - [SUCCESS] Prediction completed and saved.
+2025-06-27 13:48:36 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-27 13:48:36 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-27 13:48:36 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-27 13:48:36 - [TRACE] scikit-learn version: 1.3.2
+2025-06-27 13:48:36 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-27 13:48:36 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-27 13:48:36 - [INFO] Script started
+2025-06-27 13:48:36 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250627_134824.csv
+2025-06-27 13:48:36 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-27 13:48:36 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250627_134836.csv
+2025-06-27 13:48:36 - [OK] Input CSV loaded
+2025-06-27 13:48:36 - [OK] Age computed from DOB
+2025-06-27 13:48:38 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-27 13:48:39 - [SUCCESS] Prediction completed and saved.
+2025-06-27 13:48:43 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-27 13:48:43 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-27 13:48:43 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-27 13:48:43 - [TRACE] scikit-learn version: 1.3.2
+2025-06-27 13:48:43 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-27 13:48:43 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-27 13:48:43 - [INFO] Script started
+2025-06-27 13:48:43 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250627_134824.csv
+2025-06-27 13:48:43 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-27 13:48:43 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250627_134843.csv
+2025-06-27 13:48:43 - [OK] Input CSV loaded
+2025-06-27 13:48:43 - [OK] Age computed from DOB
+2025-06-27 13:48:44 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-27 13:48:44 - [SUCCESS] Prediction completed and saved.
+2025-06-28 20:13:46 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-28 20:13:46 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-28 20:13:46 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-28 20:13:46 - [TRACE] scikit-learn version: 1.3.2
+2025-06-28 20:13:46 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-28 20:13:46 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-28 20:13:46 - [INFO] Script started
+2025-06-28 20:13:46 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250627_134824.csv
+2025-06-28 20:13:46 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-28 20:13:46 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250628_201346.csv
+2025-06-28 20:13:46 - [OK] Input CSV loaded
+2025-06-28 20:13:46 - [OK] Age computed from DOB
+2025-06-28 20:13:49 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-28 20:13:49 - [SUCCESS] Prediction completed and saved.
+2025-06-28 20:13:56 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-28 20:13:56 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-28 20:13:56 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-28 20:13:56 - [TRACE] scikit-learn version: 1.3.2
+2025-06-28 20:13:56 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-28 20:13:56 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-28 20:13:56 - [INFO] Script started
+2025-06-28 20:13:56 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250627_134824.csv
+2025-06-28 20:13:56 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-28 20:13:56 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250628_201356.csv
+2025-06-28 20:13:57 - [OK] Input CSV loaded
+2025-06-28 20:13:57 - [OK] Age computed from DOB
+2025-06-28 20:13:57 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-28 20:13:57 - [SUCCESS] Prediction completed and saved.
+2025-06-30 10:08:03 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-30 10:08:03 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-30 10:08:03 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-30 10:08:03 - [TRACE] scikit-learn version: 1.3.2
+2025-06-30 10:08:03 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-30 10:08:03 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-30 10:08:03 - [INFO] Script started
+2025-06-30 10:08:03 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250627_134824.csv
+2025-06-30 10:08:03 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-30 10:08:03 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250630_100803.csv
+2025-06-30 10:08:03 - [OK] Input CSV loaded
+2025-06-30 10:08:03 - [OK] Age computed from DOB
+2025-06-30 10:08:05 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-30 10:08:05 - [SUCCESS] Prediction completed and saved.
+2025-06-30 10:08:10 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-30 10:08:10 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-30 10:08:10 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-30 10:08:10 - [TRACE] scikit-learn version: 1.3.2
+2025-06-30 10:08:10 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-30 10:08:10 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-30 10:08:10 - [INFO] Script started
+2025-06-30 10:08:10 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250627_134824.csv
+2025-06-30 10:08:10 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-30 10:08:10 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250630_100810.csv
+2025-06-30 10:08:10 - [OK] Input CSV loaded
+2025-06-30 10:08:10 - [OK] Age computed from DOB
+2025-06-30 10:08:10 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-30 10:08:10 - [SUCCESS] Prediction completed and saved.
+2025-06-30 13:26:40 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-30 13:26:40 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-30 13:26:40 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-30 13:26:40 - [TRACE] scikit-learn version: 1.3.2
+2025-06-30 13:26:40 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-30 13:26:40 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-30 13:26:40 - [INFO] Script started
+2025-06-30 13:26:40 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250627_134824.csv
+2025-06-30 13:26:40 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-30 13:26:40 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250630_132640.csv
+2025-06-30 13:26:40 - [OK] Input CSV loaded
+2025-06-30 13:26:40 - [OK] Age computed from DOB
+2025-06-30 13:26:42 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-30 13:26:43 - [SUCCESS] Prediction completed and saved.
+2025-06-30 13:26:47 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-30 13:26:47 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-30 13:26:47 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-30 13:26:47 - [TRACE] scikit-learn version: 1.3.2
+2025-06-30 13:26:47 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-30 13:26:47 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-30 13:26:47 - [INFO] Script started
+2025-06-30 13:26:47 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250627_134824.csv
+2025-06-30 13:26:47 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-30 13:26:47 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250630_132647.csv
+2025-06-30 13:26:47 - [OK] Input CSV loaded
+2025-06-30 13:26:47 - [OK] Age computed from DOB
+2025-06-30 13:26:47 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-30 13:26:47 - [SUCCESS] Prediction completed and saved.
+2025-06-30 15:03:37 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-30 15:03:37 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-30 15:03:37 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-30 15:03:37 - [TRACE] scikit-learn version: 1.3.2
+2025-06-30 15:03:37 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-30 15:03:37 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-30 15:03:37 - [INFO] Script started
+2025-06-30 15:03:37 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250627_134824.csv
+2025-06-30 15:03:37 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-30 15:03:37 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250630_150337.csv
+2025-06-30 15:03:37 - [OK] Input CSV loaded
+2025-06-30 15:03:37 - [OK] Age computed from DOB
+2025-06-30 15:03:37 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-30 15:03:37 - [SUCCESS] Prediction completed and saved.
+2025-06-30 15:03:43 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-30 15:03:43 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-30 15:03:43 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-30 15:03:43 - [TRACE] scikit-learn version: 1.3.2
+2025-06-30 15:03:43 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-30 15:03:43 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-30 15:03:43 - [INFO] Script started
+2025-06-30 15:03:43 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250627_134824.csv
+2025-06-30 15:03:43 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-30 15:03:43 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250630_150343.csv
+2025-06-30 15:03:43 - [OK] Input CSV loaded
+2025-06-30 15:03:43 - [OK] Age computed from DOB
+2025-06-30 15:03:43 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-30 15:03:43 - [SUCCESS] Prediction completed and saved.
+2025-06-30 15:06:15 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-30 15:06:15 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-30 15:06:15 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-30 15:06:15 - [TRACE] scikit-learn version: 1.3.2
+2025-06-30 15:06:15 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-30 15:06:15 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-30 15:06:15 - [INFO] Script started
+2025-06-30 15:06:15 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250627_134824.csv
+2025-06-30 15:06:15 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-30 15:06:15 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250630_150615.csv
+2025-06-30 15:06:15 - [OK] Input CSV loaded
+2025-06-30 15:06:15 - [OK] Age computed from DOB
+2025-06-30 15:06:15 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-30 15:06:15 - [SUCCESS] Prediction completed and saved.
+2025-06-30 15:06:21 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-30 15:06:21 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-30 15:06:21 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-30 15:06:21 - [TRACE] scikit-learn version: 1.3.2
+2025-06-30 15:06:21 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-30 15:06:21 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-30 15:06:21 - [INFO] Script started
+2025-06-30 15:06:21 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250627_134824.csv
+2025-06-30 15:06:21 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-30 15:06:21 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250630_150621.csv
+2025-06-30 15:06:21 - [OK] Input CSV loaded
+2025-06-30 15:06:21 - [OK] Age computed from DOB
+2025-06-30 15:06:21 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-30 15:06:21 - [SUCCESS] Prediction completed and saved.
+2025-06-30 15:08:51 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-30 15:08:51 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-30 15:08:51 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-30 15:08:51 - [TRACE] scikit-learn version: 1.3.2
+2025-06-30 15:08:51 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-30 15:08:51 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-30 15:08:51 - [INFO] Script started
+2025-06-30 15:08:51 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250627_134824.csv
+2025-06-30 15:08:51 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-30 15:08:51 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250630_150851.csv
+2025-06-30 15:08:51 - [OK] Input CSV loaded
+2025-06-30 15:08:51 - [OK] Age computed from DOB
+2025-06-30 15:08:51 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-30 15:08:51 - [SUCCESS] Prediction completed and saved.
+2025-06-30 15:08:57 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-30 15:08:57 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-30 15:08:57 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-30 15:08:57 - [TRACE] scikit-learn version: 1.3.2
+2025-06-30 15:08:57 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-30 15:08:57 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-30 15:08:57 - [INFO] Script started
+2025-06-30 15:08:57 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250627_134824.csv
+2025-06-30 15:08:57 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-30 15:08:57 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250630_150857.csv
+2025-06-30 15:08:57 - [OK] Input CSV loaded
+2025-06-30 15:08:57 - [OK] Age computed from DOB
+2025-06-30 15:08:57 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-30 15:08:57 - [SUCCESS] Prediction completed and saved.
+2025-06-30 18:13:35 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-30 18:13:35 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-30 18:13:35 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-30 18:13:35 - [TRACE] scikit-learn version: 1.3.2
+2025-06-30 18:13:35 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-30 18:13:35 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-30 18:13:35 - [INFO] Script started
+2025-06-30 18:13:35 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250630_181330.csv
+2025-06-30 18:13:35 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-30 18:13:35 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250630_181335.csv
+2025-06-30 18:13:35 - [OK] Input CSV loaded
+2025-06-30 18:13:36 - [OK] Age computed from DOB
+2025-06-30 18:13:36 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-30 18:13:36 - [SUCCESS] Prediction completed and saved.
+2025-06-30 18:13:42 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-30 18:13:42 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-30 18:13:42 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-30 18:13:42 - [TRACE] scikit-learn version: 1.3.2
+2025-06-30 18:13:42 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-30 18:13:42 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-30 18:13:42 - [INFO] Script started
+2025-06-30 18:13:42 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250630_181330.csv
+2025-06-30 18:13:42 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-30 18:13:42 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250630_181342.csv
+2025-06-30 18:13:42 - [OK] Input CSV loaded
+2025-06-30 18:13:42 - [OK] Age computed from DOB
+2025-06-30 18:13:42 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-30 18:13:42 - [SUCCESS] Prediction completed and saved.
+2025-06-30 18:30:08 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-30 18:30:08 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-30 18:30:08 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-30 18:30:08 - [TRACE] scikit-learn version: 1.3.2
+2025-06-30 18:30:08 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-30 18:30:08 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-30 18:30:08 - [INFO] Script started
+2025-06-30 18:30:08 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250630_183004.csv
+2025-06-30 18:30:08 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-30 18:30:08 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250630_183008.csv
+2025-06-30 18:30:08 - [OK] Input CSV loaded
+2025-06-30 18:30:09 - [OK] Age computed from DOB
+2025-06-30 18:30:09 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-30 18:30:09 - [SUCCESS] Prediction completed and saved.
+2025-06-30 18:30:14 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-30 18:30:14 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-30 18:30:14 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-30 18:30:14 - [TRACE] scikit-learn version: 1.3.2
+2025-06-30 18:30:14 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-30 18:30:14 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-30 18:30:14 - [INFO] Script started
+2025-06-30 18:30:14 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250630_183004.csv
+2025-06-30 18:30:14 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-30 18:30:14 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250630_183014.csv
+2025-06-30 18:30:14 - [OK] Input CSV loaded
+2025-06-30 18:30:14 - [OK] Age computed from DOB
+2025-06-30 18:30:14 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-30 18:30:14 - [SUCCESS] Prediction completed and saved.
+2025-06-30 18:49:00 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-30 18:49:00 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-30 18:49:00 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-30 18:49:00 - [TRACE] scikit-learn version: 1.3.2
+2025-06-30 18:49:00 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-30 18:49:00 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-30 18:49:00 - [INFO] Script started
+2025-06-30 18:49:00 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250630_184856.csv
+2025-06-30 18:49:00 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-30 18:49:00 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250630_184900.csv
+2025-06-30 18:49:00 - [OK] Input CSV loaded
+2025-06-30 18:49:00 - [OK] Age computed from DOB
+2025-06-30 18:49:01 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-30 18:49:01 - [SUCCESS] Prediction completed and saved.
+2025-06-30 18:49:06 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-06-30 18:49:06 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-06-30 18:49:06 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-30 18:49:06 - [TRACE] scikit-learn version: 1.3.2
+2025-06-30 18:49:06 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-30 18:49:06 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-30 18:49:06 - [INFO] Script started
+2025-06-30 18:49:06 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250630_184856.csv
+2025-06-30 18:49:06 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-06-30 18:49:06 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250630_184906.csv
+2025-06-30 18:49:06 - [OK] Input CSV loaded
+2025-06-30 18:49:06 - [OK] Age computed from DOB
+2025-06-30 18:49:06 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-06-30 18:49:06 - [SUCCESS] Prediction completed and saved.
+2025-07-01 15:06:23 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-01 15:06:23 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-01 15:06:23 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-01 15:06:23 - [TRACE] scikit-learn version: 1.3.2
+2025-07-01 15:06:23 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-01 15:06:23 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-01 15:06:23 - [INFO] Script started
+2025-07-01 15:06:23 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250630_184856.csv
+2025-07-01 15:06:23 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-01 15:06:23 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250701_150623.csv
+2025-07-01 15:06:23 - [OK] Input CSV loaded
+2025-07-01 15:06:23 - [OK] Age computed from DOB
+2025-07-01 15:06:25 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-01 15:06:25 - [SUCCESS] Prediction completed and saved.
+2025-07-01 15:06:30 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-01 15:06:30 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-01 15:06:30 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-01 15:06:30 - [TRACE] scikit-learn version: 1.3.2
+2025-07-01 15:06:30 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-01 15:06:30 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-01 15:06:30 - [INFO] Script started
+2025-07-01 15:06:30 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250630_184856.csv
+2025-07-01 15:06:30 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-01 15:06:30 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250701_150630.csv
+2025-07-01 15:06:30 - [OK] Input CSV loaded
+2025-07-01 15:06:30 - [OK] Age computed from DOB
+2025-07-01 15:06:30 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-01 15:06:30 - [SUCCESS] Prediction completed and saved.
+2025-07-02 13:41:04 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-02 13:41:04 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-02 13:41:04 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-02 13:41:04 - [TRACE] scikit-learn version: 1.3.2
+2025-07-02 13:41:04 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-02 13:41:04 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-02 13:41:04 - [INFO] Script started
+2025-07-02 13:41:04 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250702_134051.csv
+2025-07-02 13:41:04 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-02 13:41:04 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250702_134104.csv
+2025-07-02 13:41:04 - [OK] Input CSV loaded
+2025-07-02 13:41:04 - [OK] Age computed from DOB
+2025-07-02 13:41:06 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-02 13:41:07 - [SUCCESS] Prediction completed and saved.
+2025-07-02 13:41:12 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-02 13:41:12 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-02 13:41:12 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-02 13:41:12 - [TRACE] scikit-learn version: 1.3.2
+2025-07-02 13:41:12 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-02 13:41:12 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-02 13:41:12 - [INFO] Script started
+2025-07-02 13:41:12 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250702_134051.csv
+2025-07-02 13:41:12 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-02 13:41:12 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250702_134112.csv
+2025-07-02 13:41:12 - [OK] Input CSV loaded
+2025-07-02 13:41:12 - [OK] Age computed from DOB
+2025-07-02 13:41:12 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-02 13:41:12 - [SUCCESS] Prediction completed and saved.
+2025-07-02 13:47:34 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-02 13:47:34 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-02 13:47:34 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-02 13:47:34 - [TRACE] scikit-learn version: 1.3.2
+2025-07-02 13:47:34 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-02 13:47:34 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-02 13:47:34 - [INFO] Script started
+2025-07-02 13:47:34 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250702_134730.csv
+2025-07-02 13:47:34 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-02 13:47:34 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250702_134734.csv
+2025-07-02 13:47:34 - [OK] Input CSV loaded
+2025-07-02 13:47:34 - [OK] Age computed from DOB
+2025-07-02 13:47:34 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-02 13:47:34 - [SUCCESS] Prediction completed and saved.
+2025-07-02 13:47:39 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-02 13:47:39 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-02 13:47:39 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-02 13:47:39 - [TRACE] scikit-learn version: 1.3.2
+2025-07-02 13:47:39 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-02 13:47:39 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-02 13:47:39 - [INFO] Script started
+2025-07-02 13:47:39 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250702_134730.csv
+2025-07-02 13:47:39 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-02 13:47:39 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250702_134739.csv
+2025-07-02 13:47:39 - [OK] Input CSV loaded
+2025-07-02 13:47:39 - [OK] Age computed from DOB
+2025-07-02 13:47:40 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-02 13:47:40 - [SUCCESS] Prediction completed and saved.
+2025-07-02 13:53:13 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-02 13:53:13 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-02 13:53:13 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-02 13:53:13 - [TRACE] scikit-learn version: 1.3.2
+2025-07-02 13:53:13 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-02 13:53:13 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-02 13:53:13 - [INFO] Script started
+2025-07-02 13:53:13 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250702_135309.csv
+2025-07-02 13:53:13 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-02 13:53:13 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250702_135313.csv
+2025-07-02 13:53:13 - [OK] Input CSV loaded
+2025-07-02 13:53:13 - [OK] Age computed from DOB
+2025-07-02 13:53:13 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-02 13:53:13 - [SUCCESS] Prediction completed and saved.
+2025-07-02 13:53:18 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-02 13:53:18 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-02 13:53:18 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-02 13:53:18 - [TRACE] scikit-learn version: 1.3.2
+2025-07-02 13:53:18 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-02 13:53:18 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-02 13:53:18 - [INFO] Script started
+2025-07-02 13:53:18 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250702_135309.csv
+2025-07-02 13:53:18 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-02 13:53:18 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250702_135318.csv
+2025-07-02 13:53:18 - [OK] Input CSV loaded
+2025-07-02 13:53:18 - [OK] Age computed from DOB
+2025-07-02 13:53:18 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-02 13:53:19 - [SUCCESS] Prediction completed and saved.
+2025-07-02 14:08:00 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-02 14:08:00 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-02 14:08:00 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-02 14:08:00 - [TRACE] scikit-learn version: 1.3.2
+2025-07-02 14:08:00 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-02 14:08:00 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-02 14:08:00 - [INFO] Script started
+2025-07-02 14:08:00 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250702_140755.csv
+2025-07-02 14:08:00 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-02 14:08:00 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250702_140800.csv
+2025-07-02 14:08:00 - [OK] Input CSV loaded
+2025-07-02 14:08:00 - [OK] Age computed from DOB
+2025-07-02 14:08:00 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-02 14:08:00 - [SUCCESS] Prediction completed and saved.
+2025-07-02 14:08:05 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-02 14:08:05 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-02 14:08:05 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-02 14:08:05 - [TRACE] scikit-learn version: 1.3.2
+2025-07-02 14:08:05 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-02 14:08:05 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-02 14:08:05 - [INFO] Script started
+2025-07-02 14:08:05 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250702_140755.csv
+2025-07-02 14:08:05 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-02 14:08:05 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250702_140805.csv
+2025-07-02 14:08:05 - [OK] Input CSV loaded
+2025-07-02 14:08:05 - [OK] Age computed from DOB
+2025-07-02 14:08:05 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-02 14:08:05 - [SUCCESS] Prediction completed and saved.
+2025-07-02 14:49:56 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-02 14:49:56 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-02 14:49:56 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-02 14:49:56 - [TRACE] scikit-learn version: 1.3.2
+2025-07-02 14:49:56 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-02 14:49:56 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-02 14:49:56 - [INFO] Script started
+2025-07-02 14:49:56 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250702_144952.csv
+2025-07-02 14:49:56 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-02 14:49:56 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250702_144956.csv
+2025-07-02 14:49:56 - [OK] Input CSV loaded
+2025-07-02 14:49:56 - [OK] Age computed from DOB
+2025-07-02 14:49:57 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-02 14:49:57 - [SUCCESS] Prediction completed and saved.
+2025-07-02 16:01:25 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-02 16:01:25 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-02 16:01:25 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-02 16:01:25 - [TRACE] scikit-learn version: 1.3.2
+2025-07-02 16:01:25 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-02 16:01:25 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-02 16:01:25 - [INFO] Script started
+2025-07-02 16:01:25 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250702_160114.csv
+2025-07-02 16:01:25 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-02 16:01:25 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250702_160125.csv
+2025-07-02 16:01:25 - [OK] Input CSV loaded
+2025-07-02 16:01:25 - [OK] Age computed from DOB
+2025-07-02 16:01:27 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-02 16:01:28 - [SUCCESS] Prediction completed and saved.
+2025-07-02 16:15:09 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-02 16:15:09 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-02 16:15:09 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-02 16:15:09 - [TRACE] scikit-learn version: 1.3.2
+2025-07-02 16:15:09 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-02 16:15:09 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-02 16:15:09 - [INFO] Script started
+2025-07-02 16:15:09 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250702_160114.csv
+2025-07-02 16:15:09 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-02 16:15:09 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250702_161509.csv
+2025-07-02 16:15:09 - [OK] Input CSV loaded
+2025-07-02 16:15:09 - [OK] Age computed from DOB
+2025-07-02 16:15:09 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-02 16:15:09 - [SUCCESS] Prediction completed and saved.
+2025-07-02 19:39:13 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-02 19:39:13 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-02 19:39:13 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-02 19:39:13 - [TRACE] scikit-learn version: 1.3.2
+2025-07-02 19:39:13 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-02 19:39:13 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-02 19:39:13 - [INFO] Script started
+2025-07-02 19:39:13 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250702_160114.csv
+2025-07-02 19:39:13 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-02 19:39:13 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250702_193913.csv
+2025-07-02 19:39:13 - [OK] Input CSV loaded
+2025-07-02 19:39:13 - [OK] Age computed from DOB
+2025-07-02 19:39:14 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-02 19:39:14 - [SUCCESS] Prediction completed and saved.
+2025-07-02 19:39:19 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-02 19:39:19 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-02 19:39:19 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-02 19:39:19 - [TRACE] scikit-learn version: 1.3.2
+2025-07-02 19:39:19 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-02 19:39:19 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-02 19:39:19 - [INFO] Script started
+2025-07-02 19:39:19 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250702_160114.csv
+2025-07-02 19:39:19 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-02 19:39:19 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250702_193919.csv
+2025-07-02 19:39:19 - [OK] Input CSV loaded
+2025-07-02 19:39:19 - [OK] Age computed from DOB
+2025-07-02 19:39:20 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-02 19:39:20 - [SUCCESS] Prediction completed and saved.
+2025-07-02 20:28:21 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-02 20:28:21 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-02 20:28:21 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-02 20:28:21 - [TRACE] scikit-learn version: 1.3.2
+2025-07-02 20:28:21 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-02 20:28:21 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-02 20:28:21 - [INFO] Script started
+2025-07-02 20:28:21 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250702_160114.csv
+2025-07-02 20:28:21 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-02 20:28:21 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250702_202821.csv
+2025-07-02 20:28:21 - [OK] Input CSV loaded
+2025-07-02 20:28:21 - [OK] Age computed from DOB
+2025-07-02 20:28:21 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-02 20:28:22 - [SUCCESS] Prediction completed and saved.
+2025-07-02 20:28:26 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-02 20:28:26 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-02 20:28:26 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-02 20:28:26 - [TRACE] scikit-learn version: 1.3.2
+2025-07-02 20:28:26 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-02 20:28:26 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-02 20:28:26 - [INFO] Script started
+2025-07-02 20:28:26 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250702_160114.csv
+2025-07-02 20:28:26 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-02 20:28:26 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250702_202826.csv
+2025-07-02 20:28:26 - [OK] Input CSV loaded
+2025-07-02 20:28:27 - [OK] Age computed from DOB
+2025-07-02 20:28:27 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-02 20:28:27 - [SUCCESS] Prediction completed and saved.
+2025-07-02 21:04:44 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-02 21:04:44 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-02 21:04:44 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-02 21:04:44 - [TRACE] scikit-learn version: 1.3.2
+2025-07-02 21:04:44 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-02 21:04:44 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-02 21:04:44 - [INFO] Script started
+2025-07-02 21:04:44 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250702_160114.csv
+2025-07-02 21:04:44 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-02 21:04:44 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250702_210444.csv
+2025-07-02 21:04:44 - [OK] Input CSV loaded
+2025-07-02 21:04:44 - [OK] Age computed from DOB
+2025-07-02 21:04:45 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-02 21:04:45 - [SUCCESS] Prediction completed and saved.
+2025-07-02 21:04:50 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-02 21:04:50 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-02 21:04:50 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-02 21:04:50 - [TRACE] scikit-learn version: 1.3.2
+2025-07-02 21:04:50 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-02 21:04:50 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-02 21:04:50 - [INFO] Script started
+2025-07-02 21:04:50 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250702_160114.csv
+2025-07-02 21:04:50 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-02 21:04:50 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250702_210450.csv
+2025-07-02 21:04:50 - [OK] Input CSV loaded
+2025-07-02 21:04:50 - [OK] Age computed from DOB
+2025-07-02 21:04:50 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-02 21:04:50 - [SUCCESS] Prediction completed and saved.
+2025-07-03 13:15:26 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-03 13:15:26 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-03 13:15:26 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-03 13:15:26 - [TRACE] scikit-learn version: 1.3.2
+2025-07-03 13:15:26 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-03 13:15:26 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-03 13:15:26 - [INFO] Script started
+2025-07-03 13:15:26 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250703_131513.csv
+2025-07-03 13:15:26 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-03 13:15:26 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250703_131526.csv
+2025-07-03 13:15:26 - [OK] Input CSV loaded
+2025-07-03 13:15:26 - [OK] Age computed from DOB
+2025-07-03 13:15:28 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-03 13:15:28 - [SUCCESS] Prediction completed and saved.
+2025-07-03 13:28:48 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-03 13:28:48 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-03 13:28:48 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-03 13:28:48 - [TRACE] scikit-learn version: 1.3.2
+2025-07-03 13:28:48 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-03 13:28:48 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-03 13:28:48 - [INFO] Script started
+2025-07-03 13:28:48 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250703_131513.csv
+2025-07-03 13:28:48 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-03 13:28:48 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250703_132848.csv
+2025-07-03 13:28:48 - [OK] Input CSV loaded
+2025-07-03 13:28:48 - [OK] Age computed from DOB
+2025-07-03 13:28:49 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-03 13:28:49 - [SUCCESS] Prediction completed and saved.
+2025-07-03 13:33:23 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-03 13:33:23 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-03 13:33:23 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-03 13:33:23 - [TRACE] scikit-learn version: 1.3.2
+2025-07-03 13:33:23 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-03 13:33:23 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-03 13:33:23 - [INFO] Script started
+2025-07-03 13:33:23 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250703_131513.csv
+2025-07-03 13:33:23 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-03 13:33:23 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250703_133323.csv
+2025-07-03 13:33:23 - [OK] Input CSV loaded
+2025-07-03 13:33:23 - [OK] Age computed from DOB
+2025-07-03 13:33:24 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-03 13:33:24 - [SUCCESS] Prediction completed and saved.
+2025-07-03 13:33:29 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-03 13:33:29 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-03 13:33:29 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-03 13:33:29 - [TRACE] scikit-learn version: 1.3.2
+2025-07-03 13:33:29 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-03 13:33:29 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-03 13:33:29 - [INFO] Script started
+2025-07-03 13:33:29 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250703_131513.csv
+2025-07-03 13:33:29 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-03 13:33:29 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250703_133329.csv
+2025-07-03 13:33:29 - [OK] Input CSV loaded
+2025-07-03 13:33:29 - [OK] Age computed from DOB
+2025-07-03 13:33:30 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-03 13:33:30 - [SUCCESS] Prediction completed and saved.
+2025-07-03 15:14:49 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-03 15:14:49 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-03 15:14:49 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-03 15:14:49 - [TRACE] scikit-learn version: 1.3.2
+2025-07-03 15:14:49 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-03 15:14:49 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-03 15:14:49 - [INFO] Script started
+2025-07-03 15:14:49 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250703_151437.csv
+2025-07-03 15:14:49 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-03 15:14:49 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250703_151449.csv
+2025-07-03 15:14:49 - [OK] Input CSV loaded
+2025-07-03 15:14:49 - [OK] Age computed from DOB
+2025-07-03 15:14:52 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-03 15:14:52 - [SUCCESS] Prediction completed and saved.
+2025-07-03 15:40:42 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-03 15:40:42 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-03 15:40:42 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-03 15:40:42 - [TRACE] scikit-learn version: 1.3.2
+2025-07-03 15:40:42 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-03 15:40:42 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-03 15:40:42 - [INFO] Script started
+2025-07-03 15:40:42 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250703_151437.csv
+2025-07-03 15:40:42 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-03 15:40:42 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250703_154042.csv
+2025-07-03 15:40:42 - [OK] Input CSV loaded
+2025-07-03 15:40:42 - [OK] Age computed from DOB
+2025-07-03 15:40:44 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-03 15:40:45 - [SUCCESS] Prediction completed and saved.
+2025-07-03 15:44:08 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-03 15:44:08 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-03 15:44:08 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-03 15:44:08 - [TRACE] scikit-learn version: 1.3.2
+2025-07-03 15:44:08 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-03 15:44:08 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-03 15:44:08 - [INFO] Script started
+2025-07-03 15:44:08 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250703_151437.csv
+2025-07-03 15:44:08 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-03 15:44:08 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250703_154408.csv
+2025-07-03 15:44:08 - [OK] Input CSV loaded
+2025-07-03 15:44:08 - [OK] Age computed from DOB
+2025-07-03 15:44:08 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-03 15:44:09 - [SUCCESS] Prediction completed and saved.
+2025-07-03 15:59:57 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-03 15:59:57 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-03 15:59:57 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-03 15:59:57 - [TRACE] scikit-learn version: 1.3.2
+2025-07-03 15:59:57 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-03 15:59:57 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-03 15:59:57 - [INFO] Script started
+2025-07-03 15:59:57 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250703_151437.csv
+2025-07-03 15:59:57 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-03 15:59:57 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250703_155957.csv
+2025-07-03 15:59:57 - [OK] Input CSV loaded
+2025-07-03 15:59:57 - [OK] Age computed from DOB
+2025-07-03 15:59:58 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-03 15:59:58 - [SUCCESS] Prediction completed and saved.
+2025-07-03 16:00:03 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-03 16:00:03 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-03 16:00:03 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-03 16:00:03 - [TRACE] scikit-learn version: 1.3.2
+2025-07-03 16:00:03 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-03 16:00:03 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-03 16:00:03 - [INFO] Script started
+2025-07-03 16:00:03 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250703_151437.csv
+2025-07-03 16:00:03 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-03 16:00:03 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250703_160003.csv
+2025-07-03 16:00:03 - [OK] Input CSV loaded
+2025-07-03 16:00:03 - [OK] Age computed from DOB
+2025-07-03 16:00:03 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-03 16:00:03 - [SUCCESS] Prediction completed and saved.
+2025-07-04 14:07:22 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-04 14:07:23 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-04 14:07:23 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-04 14:07:23 - [TRACE] scikit-learn version: 1.3.2
+2025-07-04 14:07:23 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-04 14:07:23 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-04 14:07:23 - [INFO] Script started
+2025-07-04 14:07:23 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250703_151437.csv
+2025-07-04 14:07:23 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-04 14:07:23 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250704_140723.csv
+2025-07-04 14:07:23 - [OK] Input CSV loaded
+2025-07-04 14:07:23 - [OK] Age computed from DOB
+2025-07-04 14:07:25 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-04 14:07:25 - [SUCCESS] Prediction completed and saved.
+2025-07-04 14:16:28 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-04 14:16:28 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-04 14:16:28 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-04 14:16:28 - [TRACE] scikit-learn version: 1.3.2
+2025-07-04 14:16:28 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-04 14:16:28 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-04 14:16:28 - [INFO] Script started
+2025-07-04 14:16:28 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250703_151437.csv
+2025-07-04 14:16:28 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-04 14:16:28 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250704_141628.csv
+2025-07-04 14:16:28 - [OK] Input CSV loaded
+2025-07-04 14:16:28 - [OK] Age computed from DOB
+2025-07-04 14:16:29 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-04 14:16:29 - [SUCCESS] Prediction completed and saved.
+2025-07-04 14:16:34 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-04 14:16:34 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-04 14:16:34 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-04 14:16:34 - [TRACE] scikit-learn version: 1.3.2
+2025-07-04 14:16:34 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-04 14:16:34 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-04 14:16:34 - [INFO] Script started
+2025-07-04 14:16:34 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250703_151437.csv
+2025-07-04 14:16:34 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-04 14:16:34 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250704_141634.csv
+2025-07-04 14:16:34 - [OK] Input CSV loaded
+2025-07-04 14:16:34 - [OK] Age computed from DOB
+2025-07-04 14:16:35 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-04 14:16:35 - [SUCCESS] Prediction completed and saved.
+2025-07-04 15:04:09 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-04 15:04:09 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-04 15:04:09 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-04 15:04:09 - [TRACE] scikit-learn version: 1.3.2
+2025-07-04 15:04:09 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-04 15:04:09 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-04 15:04:09 - [INFO] Script started
+2025-07-04 15:04:09 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250703_151437.csv
+2025-07-04 15:04:09 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-04 15:04:09 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250704_150409.csv
+2025-07-04 15:04:09 - [OK] Input CSV loaded
+2025-07-04 15:04:09 - [OK] Age computed from DOB
+2025-07-04 15:04:10 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-04 15:04:10 - [SUCCESS] Prediction completed and saved.
+2025-07-04 15:04:15 - [DEBUG] Working directory: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict
+2025-07-04 15:04:15 - [DEBUG] Script path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\predict_risk.py
+2025-07-04 15:04:15 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-07-04 15:04:15 - [TRACE] scikit-learn version: 1.3.2
+2025-07-04 15:04:15 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-07-04 15:04:15 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training\\OutputTrainedPredict', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-07-04 15:04:15 - [INFO] Script started
+2025-07-04 15:04:15 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250703_151437.csv
+2025-07-04 15:04:15 - [MODEL] Model path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict\RiskClassifier.pkl
+2025-07-04 15:04:15 - [OUTPUT] Prediction output path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\Predictions\PatientRiskPredictions_20250704_150415.csv
+2025-07-04 15:04:15 - [OK] Input CSV loaded
+2025-07-04 15:04:15 - [OK] Age computed from DOB
+2025-07-04 15:04:16 - [OK] Model loaded: <class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>
+2025-07-04 15:04:16 - [SUCCESS] Prediction completed and saved.

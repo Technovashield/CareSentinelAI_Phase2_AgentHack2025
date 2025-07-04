@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48138284",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-04T02:15:39.581+00:00",
+    "source": "#rDVlSEegL36gvFVK"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Julie <b>WOOD </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>7344 Gray Inlet </span><br/><span>Rachelburgh </span><span>New Jersey </span></td></tr><tr><td>Date of birth</td><td><span>10 September 2013</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "Wood",
+    "given": [ "Julie" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(467)932-8390x87636"
+  }, {
+    "system": "email",
+    "value": "carlaconrad@clark-phillips.org"
+  } ],
+  "gender": "male",
+  "birthDate": "2013-09-10",
+  "address": [ {
+    "line": [ "7344 Gray Inlet" ],
+    "city": "Rachelburgh",
+    "state": "New Jersey",
+    "postalCode": "38197"
+  } ]
+}

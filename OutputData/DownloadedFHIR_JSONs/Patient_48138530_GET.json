@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48138530",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-04T03:03:13.047+00:00",
+    "source": "#UkgOYgZdoQTomTM4"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Brooke <b>MUNOZ </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>3474 Catherine Island Suite 911 </span><br/><span>Rodriguezstad </span><span>North Carolina </span></td></tr><tr><td>Date of birth</td><td><span>18 June 1942</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "Munoz",
+    "given": [ "Brooke" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "146.725.2739"
+  }, {
+    "system": "email",
+    "value": "samanthaward@ramirez.com"
+  } ],
+  "gender": "other",
+  "birthDate": "1942-06-18",
+  "address": [ {
+    "line": [ "3474 Catherine Island Suite 911" ],
+    "city": "Rodriguezstad",
+    "state": "North Carolina",
+    "postalCode": "32869"
+  } ]
+}

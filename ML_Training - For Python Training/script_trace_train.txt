@@ -1,0 +1,57 @@
+2025-06-15 10:24:42.733526 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-15 10:24:42.734528 - [TRACE] scikit-learn version: 1.3.2
+2025-06-15 10:24:42.734528 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-15 10:24:42.735527 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-15 10:24:42.735527 - [ERROR] Invalid number of arguments. Expected: <input_csv> <output_model>
+2025-06-15 10:25:55.141805 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-15 10:25:55.142311 - [TRACE] scikit-learn version: 1.3.2
+2025-06-15 10:25:55.142311 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-15 10:25:55.142311 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-15 10:25:55.143536 - [ERROR] Invalid number of arguments. Expected: <input_csv> <output_model>
+2025-06-15 10:44:02.534770 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-15 10:44:02.535737 - [TRACE] scikit-learn version: 1.3.2
+2025-06-15 10:44:02.535737 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-15 10:44:02.535737 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-15 10:44:02.535737 - [ERROR] Invalid number of arguments. Expected: <input_csv> <output_model>
+2025-06-15 14:51:34.358434 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-15 14:51:34.358434 - [TRACE] scikit-learn version: 1.3.2
+2025-06-15 14:51:34.358434 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-15 14:51:34.359579 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-15 14:51:34.359579 - [ERROR] Invalid number of arguments. Expected: <input_csv> <output_model>
+2025-06-15 14:53:10.595876 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-15 14:53:10.595876 - [TRACE] scikit-learn version: 1.3.2
+2025-06-15 14:53:10.596883 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-15 14:53:10.596883 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-15 14:53:10.597884 - [ERROR] Invalid number of arguments. Expected: <input_csv> <output_model>
+2025-06-15 14:55:41.957229 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-15 14:55:41.958425 - [TRACE] scikit-learn version: 1.3.2
+2025-06-15 14:55:41.958928 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-15 14:55:41.958928 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-15 14:55:41.958928 - [ERROR] Invalid number of arguments. Expected: <input_csv> <output_model>
+2025-06-15 14:59:03.481169 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-15 14:59:03.481169 - [TRACE] scikit-learn version: 1.3.2
+2025-06-15 14:59:03.482131 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-15 14:59:03.482131 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-15 14:59:03.482131 - [INFO] Training started
+2025-06-15 14:59:03.482131 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250615_144144.csv
+2025-06-15 14:59:03.483497 - [OUTPUT] Model path: RiskClassifier.pkl
+2025-06-15 14:59:03.499416 - [INFO] Computing Age from DOB
+2025-06-15 14:59:03.822215 - [SUCCESS] Model trained and saved successfully
+2025-06-15 15:09:11.165414 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-15 15:09:11.166632 - [TRACE] scikit-learn version: 1.3.2
+2025-06-15 15:09:11.166632 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-15 15:09:11.166632 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-15 15:09:11.167784 - [INFO] Training started
+2025-06-15 15:09:11.167784 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250615_144144.csv
+2025-06-15 15:09:11.167784 - [OUTPUT] Model path: RiskClassifier.pkl
+2025-06-15 15:09:11.173005 - [INFO] Computing Age from DOB
+2025-06-15 15:09:11.387251 - [SUCCESS] Model trained and saved successfully
+2025-06-15 15:10:02.282307 - [TRACE] Python executable: C:\Program Files\Python38\python.exe
+2025-06-15 15:10:02.283349 - [TRACE] scikit-learn version: 1.3.2
+2025-06-15 15:10:02.283349 - [TRACE] sklearn location: C:\Users\PatelR\AppData\Roaming\Python\Python38\site-packages\sklearn\__init__.py
+2025-06-15 15:10:02.284308 - [TRACE] sys.path: ['C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\ML_Training - For Python Training', 'C:\\Program Files\\Python38\\python38.zip', 'C:\\Program Files\\Python38\\DLLs', 'C:\\Program Files\\Python38\\lib', 'C:\\Program Files\\Python38', 'C:\\Users\\PatelR\\AppData\\Roaming\\Python\\Python38\\site-packages', 'C:\\Program Files\\Python38\\lib\\site-packages']
+2025-06-15 15:10:02.284308 - [INFO] Training started
+2025-06-15 15:10:02.284308 - [INPUT] CSV path: C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\MergedFinalOutput\MasterPatientMetrics_20250615_144144.csv
+2025-06-15 15:10:02.285307 - [OUTPUT] Model path: RiskClassifier.pkl
+2025-06-15 15:10:02.289305 - [INFO] Computing Age from DOB
+2025-06-15 15:10:02.494912 - [SUCCESS] Model trained and saved successfully

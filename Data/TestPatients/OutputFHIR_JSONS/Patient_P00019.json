@@ -1,0 +1,34 @@
+{
+  "resourceType": "Patient",
+  "id": "P00019",
+  "name": [
+    {
+      "given": [
+        "Sandra"
+      ],
+      "family": "White"
+    }
+  ],
+  "gender": "other",
+  "birthDate": "2018-10-01",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+1-598-215-2232x4943"
+    },
+    {
+      "system": "email",
+      "value": "vcosta@miller.net"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "883 Jennifer Falls Apt. 777"
+      ],
+      "city": "Millerbury",
+      "state": "Alaska",
+      "postalCode": "78073"
+    }
+  ]
+}

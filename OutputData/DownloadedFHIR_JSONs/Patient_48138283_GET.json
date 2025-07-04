@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48138283",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-04T02:15:38.581+00:00",
+    "source": "#nBG4sFoZYcsUA9H9"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Crystal <b>JACKSON </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>707 Torres Courts Suite 758 </span><br/><span>Lake Brian </span><span>Mississippi </span></td></tr><tr><td>Date of birth</td><td><span>25 October 1935</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "Jackson",
+    "given": [ "Crystal" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "+1-975-619-8991x181"
+  }, {
+    "system": "email",
+    "value": "fsalazar@parker.info"
+  } ],
+  "gender": "male",
+  "birthDate": "1935-10-25",
+  "address": [ {
+    "line": [ "707 Torres Courts Suite 758" ],
+    "city": "Lake Brian",
+    "state": "Mississippi",
+    "postalCode": "00584"
+  } ]
+}

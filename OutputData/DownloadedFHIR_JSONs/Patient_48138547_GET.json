@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48138547",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-04T03:03:26.047+00:00",
+    "source": "#sxn8nhvOcJ7BSwnJ"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Julie <b>DRAKE </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>085, Tristan Unions </span><br/><span>Lindachester </span><span>Washington </span></td></tr><tr><td>Date of birth</td><td><span>23 December 1954</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "Drake",
+    "given": [ "Julie" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(456)912-2033x6496"
+  }, {
+    "system": "email",
+    "value": "carlos77@yahoo.com"
+  } ],
+  "gender": "other",
+  "birthDate": "1954-12-23",
+  "address": [ {
+    "line": [ "085, Tristan Unions" ],
+    "city": "Lindachester",
+    "state": "Washington",
+    "postalCode": "22278"
+  } ]
+}

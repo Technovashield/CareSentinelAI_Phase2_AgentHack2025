@@ -1,0 +1,34 @@
+{
+  "resourceType": "Patient",
+  "id": "P00014",
+  "name": [
+    {
+      "given": [
+        "Aaron"
+      ],
+      "family": "Hogan"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1976-04-16",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "843-435-7927x0548"
+    },
+    {
+      "system": "email",
+      "value": "craigwilson@crawford.net"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "2087 Clark Road Suite 685"
+      ],
+      "city": "Jonchester",
+      "state": "Montana",
+      "postalCode": "39281"
+    }
+  ]
+}

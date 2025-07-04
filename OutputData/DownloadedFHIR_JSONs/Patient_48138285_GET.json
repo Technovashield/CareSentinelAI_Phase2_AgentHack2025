@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48138285",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-04T02:15:40.581+00:00",
+    "source": "#JhYObMeVwcIqkqZb"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Eric <b>ORTIZ </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>5561 Eric Harbor </span><br/><span>Kathyshire </span><span>North Dakota </span></td></tr><tr><td>Date of birth</td><td><span>07 March 1973</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "Ortiz",
+    "given": [ "Eric" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "001-234-714-3292x67091"
+  }, {
+    "system": "email",
+    "value": "xsandoval@daniels.net"
+  } ],
+  "gender": "female",
+  "birthDate": "1973-03-07",
+  "address": [ {
+    "line": [ "5561 Eric Harbor" ],
+    "city": "Kathyshire",
+    "state": "North Dakota",
+    "postalCode": "98721"
+  } ]
+}

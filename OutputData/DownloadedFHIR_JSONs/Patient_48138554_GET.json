@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48138554",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-04T03:03:33.047+00:00",
+    "source": "#ikJml3JZ2xgOvjOe"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Jasmine <b>DALTON </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>820 Schultz Glens </span><br/><span>Bobbybury </span><span>Hawaii </span></td></tr><tr><td>Date of birth</td><td><span>29 September 2015</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "Dalton",
+    "given": [ "Jasmine" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "227-455-2789x50398"
+  }, {
+    "system": "email",
+    "value": "erica10@taylor.com"
+  } ],
+  "gender": "male",
+  "birthDate": "2015-09-29",
+  "address": [ {
+    "line": [ "820 Schultz Glens" ],
+    "city": "Bobbybury",
+    "state": "Hawaii",
+    "postalCode": "02603"
+  } ]
+}

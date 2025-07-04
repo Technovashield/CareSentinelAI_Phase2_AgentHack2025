@@ -1,0 +1,34 @@
+{
+  "resourceType": "Patient",
+  "id": "P00009",
+  "name": [
+    {
+      "given": [
+        "Crystal"
+      ],
+      "family": "Jackson"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1935-10-25",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+1-975-619-8991x181"
+    },
+    {
+      "system": "email",
+      "value": "fsalazar@parker.info"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "707 Torres Courts Suite 758"
+      ],
+      "city": "Lake Brian",
+      "state": "Mississippi",
+      "postalCode": "00584"
+    }
+  ]
+}

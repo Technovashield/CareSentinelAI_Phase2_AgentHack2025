@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48138551",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-04T03:03:30.047+00:00",
+    "source": "#p681M1XclK3YvtnQ"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Lisa <b>DRAKE </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>0629 Miller Gateway Suite 412 </span><br/><span>West Edwin </span><span>Vermont </span></td></tr><tr><td>Date of birth</td><td><span>18 July 2021</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "Drake",
+    "given": [ "Lisa" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "248-044-4325x25132"
+  }, {
+    "system": "email",
+    "value": "zprice@yahoo.com"
+  } ],
+  "gender": "other",
+  "birthDate": "2021-07-18",
+  "address": [ {
+    "line": [ "0629 Miller Gateway Suite 412" ],
+    "city": "West Edwin",
+    "state": "Vermont",
+    "postalCode": "92658"
+  } ]
+}

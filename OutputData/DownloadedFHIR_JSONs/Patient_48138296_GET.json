@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48138296",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-04T02:15:51.581+00:00",
+    "source": "#XEBfwXNnGWXVA9hS"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Jamie <b>HENRY </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>0933 Donald Ford </span><br/><span>Youngtown </span><span>Nebraska </span></td></tr><tr><td>Date of birth</td><td><span>23 September 2009</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "Henry",
+    "given": [ "Jamie" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(091)780-3356x19536"
+  }, {
+    "system": "email",
+    "value": "dmaxwell@gmail.com"
+  } ],
+  "gender": "male",
+  "birthDate": "2009-09-23",
+  "address": [ {
+    "line": [ "0933 Donald Ford" ],
+    "city": "Youngtown",
+    "state": "Nebraska",
+    "postalCode": "24822"
+  } ]
+}

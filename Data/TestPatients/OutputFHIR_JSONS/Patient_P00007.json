@@ -1,0 +1,34 @@
+{
+  "resourceType": "Patient",
+  "id": "P00007",
+  "name": [
+    {
+      "given": [
+        "Mark"
+      ],
+      "family": "Kelly"
+    }
+  ],
+  "gender": "other",
+  "birthDate": "1961-01-03",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(056)784-9214x041"
+    },
+    {
+      "system": "email",
+      "value": "gina74@gmail.com"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "6247 Ochoa Common"
+      ],
+      "city": "New Kristy",
+      "state": "Wyoming",
+      "postalCode": "76196"
+    }
+  ]
+}

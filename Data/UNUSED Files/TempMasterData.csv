@@ -1,0 +1,32 @@
+﻿PatientID,FirstName,LastName,Gender,DOB,Missing Fields,MissingFields,FileName,text,Column1,Column2,Column3,Column4,Column5,Column6
+597069,UnKnown,Unknown,Unknown,,"LastName, Gender, DOB, ",,PatientData_Phase2,,,,,,,
+597070,UnKnown,Unknown,Unknown,,"LastName, Gender, DOB, ",,PatientData_Phase2,,,,,,,
+597071,Somawathi,Siriyawathi,Unknown,,"Gender, DOB, ",,PatientData_Phase2,,,,,,,
+597072,Somawathi,Siriyawathi,Unknown,,"Gender, DOB, ",,PatientData_Phase2,,,,,,,
+597083,Somawathi,Siriyawathi,Unknown,,"Gender, DOB, ",,PatientData_Phase2,,,,,,,
+597086,Somawathi,Siriyawathi,Unknown,,"Gender, DOB, ",,PatientData_Phase2,,,,,,,
+597088,Somawathi,Siriyawathi,Unknown,,"Gender, DOB, ",,PatientData_Phase2,,,,,,,
+597103,Serena,Mustermann,Unknown,,"Gender, DOB, ",,PatientData_Phase2,,,,,,,
+597107,Serena,Mustermann,Unknown,,"Gender, DOB, ",,PatientData_Phase2,,,,,,,
+597108,Serena,Mustermann,Unknown,,"Gender, DOB, ",,PatientData_Phase2,,,,,,,
+597110,Serena,Mustermann,Unknown,,"Gender, DOB, ",,PatientData_Phase2,,,,,,,
+597111,Serena,Mustermann,Unknown,,"Gender, DOB, ",,PatientData_Phase2,,,,,,,
+597112,Serena,Mustermann,Unknown,,"Gender, DOB, ",,PatientData_Phase2,,,,,,,
+597113,Serena,Mustermann,Unknown,,"Gender, DOB, ",,PatientData_Phase2,,,,,,,
+597114,Serena,Mustermann,Unknown,,"Gender, DOB, ",,PatientData_Phase2,,,,,,,
+597115,Serena,Mustermann,Unknown,,"Gender, DOB, ",,PatientData_Phase2,,,,,,,
+597116,Serena,Mustermann,Unknown,,"Gender, DOB, ",,PatientData_Phase2,,,,,,,
+597117,Serena,Mustermann,Unknown,,"Gender, DOB, ",,PatientData_Phase2,,,,,,,
+597118,Serena,Mustermann,Unknown,,"Gender, DOB, ",,PatientData_Phase2,,,,,,,
+597141,Sowmya,Mellatur Sreedhar,female,1994-11-17,,,PatientData_Phase2,,,,,,,
+,,,,,,,WearableMetrics_20250529,P001,05/01/2025 08:00:00,65,8000,7.5,22.5,Low
+,,,,,,,WearableMetrics_20250529,P002,05/01/2025 08:00:00,72,6000,6.8,23,Low
+,,,,,,,WearableMetrics_20250529,P003,05/01/2025 08:00:00,85,4000,5.5,27.8,Medium
+,,,,,,,WearableMetrics_20250529,P004,05/01/2025 08:00:00,90,3500,6,28.3,Medium
+,,,,,,,WearableMetrics_20250529,P005,05/01/2025 08:00:00,95,2000,4.5,31.2,High
+,,,,,,,WearableMetrics_20250529,P006,05/01/2025 08:00:00,100,1000,4,34.1,High
+,,,,,,,WearableMetrics_20250529,P007,05/01/2025 08:00:00,60,9000,8,21.9,Low
+,,,,,,,WearableMetrics_20250529,P008,05/01/2025 08:00:00,70,7500,6.9,22.1,Low
+,,,,,,,WearableMetrics_20250529,P009,05/01/2025 08:00:00,82,4500,6.2,26.9,Medium
+,,,,,,,WearableMetrics_20250529,P010,05/01/2025 08:00:00,98,2200,5,32.5,High
+,,,,,,,WearableMetrics_20250529,P011,05/01/2025 08:00:00,68,7000,7.1,23.7,Low

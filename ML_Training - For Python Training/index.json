@@ -1,0 +1,14 @@
+{
+  "files": [
+    {
+      "name": "FinalRiskReport_20250702_210451.xlsx",
+      "type": "report",
+      "description": "Final Risk Report listing patients and their risk scores."
+    },
+    {
+      "name": "AlertEmailList_20250702_161528.csv",
+      "type": "email_list",
+      "description": "Email addresses of GPs and nurses for alerting high-risk patients."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "resourceType": "Patient",
+  "id": "P00002",
+  "name": [
+    {
+      "given": [
+        "Steven"
+      ],
+      "family": "Stewart"
+    }
+  ],
+  "gender": "other",
+  "birthDate": "1982-03-18",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(850)200-7670"
+    },
+    {
+      "system": "email",
+      "value": "daniel97@gmail.com"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "32589 Tonya View"
+      ],
+      "city": "Martinfort",
+      "state": "Ohio",
+      "postalCode": "59575"
+    }
+  ]
+}

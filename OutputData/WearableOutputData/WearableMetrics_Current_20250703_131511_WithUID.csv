@@ -1,0 +1,17 @@
+﻿PatientID,Timestamp,HeartRate,Steps,SleepHours,BMI,RiskLevel,SourceFile,UID
+text,,,,,,,WearableMetrics_Current_20250703_131510.csv,UID_0
+P001,2025-06-01,58,8200,7.5,22.1,Low,WearableMetrics_Current_20250703_131510.csv,UID_1
+P002,2025-06-01,102,2500,4.2,29.5,High,WearableMetrics_Current_20250703_131510.csv,UID_2
+P003,2025-06-01,76,6000,6.8,25.4,Medium,WearableMetrics_Current_20250703_131510.csv,UID_3
+P004,2025-06-01,110,1800,3.5,31.2,High,WearableMetrics_Current_20250703_131510.csv,UID_4
+P005,2025-06-01,64,9100,8.2,23,Low,WearableMetrics_Current_20250703_131510.csv,UID_5
+P006,2025-06-01,85,4500,5.7,27.6,Medium,WearableMetrics_Current_20250703_131510.csv,UID_6
+P007,2025-06-01,70,9800,7.9,21.8,Low,WearableMetrics_Current_20250703_131510.csv,UID_7
+P008,2025-06-01,95,3200,4.9,28.3,High,WearableMetrics_Current_20250703_131510.csv,UID_8
+P009,2025-06-01,78,6200,6.3,26.2,Medium,WearableMetrics_Current_20250703_131510.csv,UID_9
+P010,2025-06-01,65,8900,7.6,24.2,Low,WearableMetrics_Current_20250703_131510.csv,UID_10
+P011,2025-06-01,100,2100,3.9,30.5,High,WearableMetrics_Current_20250703_131510.csv,UID_11
+P012,2025-06-01,68,7600,6.9,23.8,Low,WearableMetrics_Current_20250703_131510.csv,UID_12
+P013,2025-06-01,88,5100,5.2,26.9,Medium,WearableMetrics_Current_20250703_131510.csv,UID_13
+P014,2025-06-01,60,9400,8.1,22.6,Low,WearableMetrics_Current_20250703_131510.csv,UID_14
+P015,2025-06-01,108,2300,4.1,32,High,WearableMetrics_Current_20250703_131510.csv,UID_15

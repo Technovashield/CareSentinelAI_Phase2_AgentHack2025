@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48127968",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-02T23:26:27.173+00:00",
+    "source": "#vtXgS3MF6j4wiCVF"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Lisa <b>RODRIGUEZ </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>9341 Christopher Summit Suite 974 </span><br/><span>Reyeshaven </span><span>Alaska </span></td></tr><tr><td>Date of birth</td><td><span>10 June 2022</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "Rodriguez",
+    "given": [ "Lisa" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(270)021-4899x776"
+  }, {
+    "system": "email",
+    "value": "johnlarson@gmail.com"
+  } ],
+  "gender": "female",
+  "birthDate": "2022-06-10",
+  "address": [ {
+    "line": [ "9341 Christopher Summit Suite 974" ],
+    "city": "Reyeshaven",
+    "state": "Alaska",
+    "postalCode": "46115"
+  } ]
+}

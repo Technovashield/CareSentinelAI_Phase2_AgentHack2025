@@ -1,0 +1,1161 @@
+﻿Run Timestamp: 2025-05-28 21:05:15
+Output File: Data/LabResults\LabResults_Current_20250528_210515.csv
+Total Records Saved: 2
+Run Timestamp: 2025-05-28 21:05:15
+Output File: Data/LabResults\LabResults_Current_20250528_210515.csv
+Total Records Saved: 3
+Run Timestamp: 2025-05-28 21:07:20
+Output File: Data/LabResults\LabResults_Current_20250528_210720.csv
+Total Records Saved: 2
+Run Timestamp: 2025-05-28 21:12:55
+Output File: Data/LabResults\LabResults_Current_20250528_211254.csv
+Total Records Saved: 2
+Run Timestamp: 2025-05-28 21:12:55
+Output File: Data/LabResults\LabResults_Current_20250528_211254.csv
+Total Records Saved: 3
+Run Timestamp: 2025-05-28 21:16:23
+Output File: Data/LabResults\LabResults_Current_20250528_211623.csv
+Total Records Saved: 2
+Run Timestamp: 2025-05-28 21:16:23
+Output File: Data/LabResults\LabResults_Current_20250528_211623.csv
+Total Records Saved: 3
+Run Timestamp: 2025-05-28 21:16:23
+Output File: Data/LabResults\LabResults_Current_20250528_211623.csv
+Total Records Saved: 4
+Run Timestamp: 2025-05-28 21:16:23
+Output File: Data/LabResults\LabResults_Current_20250528_211623.csv
+Total Records Saved: 5
+Run Timestamp: 2025-05-28 21:16:23
+Output File: Data/LabResults\LabResults_Current_20250528_211623.csv
+Total Records Saved: 6
+Run Timestamp: 2025-05-28 21:16:23
+Output File: Data/LabResults\LabResults_Current_20250528_211623.csv
+Total Records Saved: 7
+Run Timestamp: 2025-05-28 21:16:23
+Output File: Data/LabResults\LabResults_Current_20250528_211623.csv
+Total Records Saved: 8
+Run Timestamp: 2025-05-28 21:16:23
+Output File: Data/LabResults\LabResults_Current_20250528_211623.csv
+Total Records Saved: 9
+Run Timestamp: 2025-05-28 21:16:23
+Output File: Data/LabResults\LabResults_Current_20250528_211623.csv
+Total Records Saved: 10
+Run Timestamp: 2025-05-28 21:16:23
+Output File: Data/LabResults\LabResults_Current_20250528_211623.csv
+Total Records Saved: 11
+Run Timestamp: 2025-05-28 21:16:23
+Output File: Data/LabResults\LabResults_Current_20250528_211623.csv
+Total Records Saved: 12
+Run Timestamp: 2025-05-28 21:21:15
+Output File: Data/LabResults\LabResults_Current_20250528_212115.csv
+Total Records Saved: 2
+Run Timestamp: 2025-05-28 21:21:15
+Output File: Data/LabResults\LabResults_Current_20250528_212115.csv
+Total Records Saved: 3
+Run Timestamp: 2025-05-28 21:21:16
+Output File: Data/LabResults\LabResults_Current_20250528_212115.csv
+Total Records Saved: 4
+Run Timestamp: 2025-05-28 21:21:16
+Output File: Data/LabResults\LabResults_Current_20250528_212115.csv
+Total Records Saved: 5
+Run Timestamp: 2025-05-28 21:21:16
+Output File: Data/LabResults\LabResults_Current_20250528_212115.csv
+Total Records Saved: 6
+Run Timestamp: 2025-05-28 21:21:16
+Output File: Data/LabResults\LabResults_Current_20250528_212115.csv
+Total Records Saved: 7
+Run Timestamp: 2025-05-28 21:21:16
+Output File: Data/LabResults\LabResults_Current_20250528_212115.csv
+Total Records Saved: 8
+Run Timestamp: 2025-05-28 21:21:16
+Output File: Data/LabResults\LabResults_Current_20250528_212115.csv
+Total Records Saved: 9
+Run Timestamp: 2025-05-28 21:21:16
+Output File: Data/LabResults\LabResults_Current_20250528_212115.csv
+Total Records Saved: 10
+Run Timestamp: 2025-05-28 21:21:16
+Output File: Data/LabResults\LabResults_Current_20250528_212115.csv
+Total Records Saved: 11
+Run Timestamp: 2025-05-28 21:21:16
+Output File: Data/LabResults\LabResults_Current_20250528_212115.csv
+Total Records Saved: 12
+Run Timestamp: 2025-05-29 11:22:35
+Output File: Data/LabResults\LabResults_Current_20250529_112235.csv
+Total Records Saved: 2
+Run Timestamp: 2025-05-29 11:22:35
+Output File: Data/LabResults\LabResults_Current_20250529_112235.csv
+Total Records Saved: 3
+Run Timestamp: 2025-05-29 11:22:35
+Output File: Data/LabResults\LabResults_Current_20250529_112235.csv
+Total Records Saved: 4
+Run Timestamp: 2025-05-29 11:22:35
+Output File: Data/LabResults\LabResults_Current_20250529_112235.csv
+Total Records Saved: 5
+Run Timestamp: 2025-05-29 11:22:35
+Output File: Data/LabResults\LabResults_Current_20250529_112235.csv
+Total Records Saved: 6
+Run Timestamp: 2025-05-29 11:22:35
+Output File: Data/LabResults\LabResults_Current_20250529_112235.csv
+Total Records Saved: 7
+Run Timestamp: 2025-05-29 11:22:35
+Output File: Data/LabResults\LabResults_Current_20250529_112235.csv
+Total Records Saved: 8
+Run Timestamp: 2025-05-29 11:22:35
+Output File: Data/LabResults\LabResults_Current_20250529_112235.csv
+Total Records Saved: 9
+Run Timestamp: 2025-05-29 11:22:35
+Output File: Data/LabResults\LabResults_Current_20250529_112235.csv
+Total Records Saved: 10
+Run Timestamp: 2025-05-29 11:22:35
+Output File: Data/LabResults\LabResults_Current_20250529_112235.csv
+Total Records Saved: 11
+Run Timestamp: 2025-05-29 11:22:35
+Output File: Data/LabResults\LabResults_Current_20250529_112235.csv
+Total Records Saved: 12
+Run Timestamp: 2025-05-29 12:44:25
+Output File: Data/LabResults\LabResults_Current_20250529_124425.csv
+Total Records Saved: 2
+Run Timestamp: 2025-05-29 12:44:25
+Output File: Data/LabResults\LabResults_Current_20250529_124425.csv
+Total Records Saved: 3
+Run Timestamp: 2025-05-29 12:44:25
+Output File: Data/LabResults\LabResults_Current_20250529_124425.csv
+Total Records Saved: 4
+Run Timestamp: 2025-05-29 12:44:26
+Output File: Data/LabResults\LabResults_Current_20250529_124425.csv
+Total Records Saved: 5
+Run Timestamp: 2025-05-29 12:44:26
+Output File: Data/LabResults\LabResults_Current_20250529_124425.csv
+Total Records Saved: 6
+Run Timestamp: 2025-05-29 12:44:26
+Output File: Data/LabResults\LabResults_Current_20250529_124425.csv
+Total Records Saved: 7
+Run Timestamp: 2025-05-29 12:44:26
+Output File: Data/LabResults\LabResults_Current_20250529_124425.csv
+Total Records Saved: 8
+Run Timestamp: 2025-05-29 12:44:26
+Output File: Data/LabResults\LabResults_Current_20250529_124425.csv
+Total Records Saved: 9
+Run Timestamp: 2025-05-29 12:44:26
+Output File: Data/LabResults\LabResults_Current_20250529_124425.csv
+Total Records Saved: 10
+Run Timestamp: 2025-05-29 12:44:26
+Output File: Data/LabResults\LabResults_Current_20250529_124425.csv
+Total Records Saved: 11
+Run Timestamp: 2025-05-29 12:44:26
+Output File: Data/LabResults\LabResults_Current_20250529_124425.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-05 10:01:53
+Output File: Data/LabResults\LabResults_Current_20250605_100153.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-05 10:01:53
+Output File: Data/LabResults\LabResults_Current_20250605_100153.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-05 10:01:54
+Output File: Data/LabResults\LabResults_Current_20250605_100153.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-05 10:01:54
+Output File: Data/LabResults\LabResults_Current_20250605_100153.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-05 10:01:54
+Output File: Data/LabResults\LabResults_Current_20250605_100153.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-05 10:01:54
+Output File: Data/LabResults\LabResults_Current_20250605_100153.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-05 10:01:54
+Output File: Data/LabResults\LabResults_Current_20250605_100153.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-05 10:01:54
+Output File: Data/LabResults\LabResults_Current_20250605_100153.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-05 10:01:54
+Output File: Data/LabResults\LabResults_Current_20250605_100153.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-05 10:01:54
+Output File: Data/LabResults\LabResults_Current_20250605_100153.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-05 10:01:54
+Output File: Data/LabResults\LabResults_Current_20250605_100153.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-05 11:32:24
+Output File: Data/LabResults\LabResults_Current_20250605_113224.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-05 11:32:24
+Output File: Data/LabResults\LabResults_Current_20250605_113224.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-05 11:32:24
+Output File: Data/LabResults\LabResults_Current_20250605_113224.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-05 11:32:24
+Output File: Data/LabResults\LabResults_Current_20250605_113224.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-05 11:32:24
+Output File: Data/LabResults\LabResults_Current_20250605_113224.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-05 11:32:25
+Output File: Data/LabResults\LabResults_Current_20250605_113224.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-05 11:32:25
+Output File: Data/LabResults\LabResults_Current_20250605_113224.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-05 11:32:25
+Output File: Data/LabResults\LabResults_Current_20250605_113224.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-05 11:32:25
+Output File: Data/LabResults\LabResults_Current_20250605_113224.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-05 11:32:25
+Output File: Data/LabResults\LabResults_Current_20250605_113224.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-05 11:32:25
+Output File: Data/LabResults\LabResults_Current_20250605_113224.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-05 11:54:59
+Output File: Data/LabResults\LabResults_Current_20250605_115459.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-05 11:54:59
+Output File: Data/LabResults\LabResults_Current_20250605_115459.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-05 11:54:59
+Output File: Data/LabResults\LabResults_Current_20250605_115459.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-05 11:54:59
+Output File: Data/LabResults\LabResults_Current_20250605_115459.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-05 11:54:59
+Output File: Data/LabResults\LabResults_Current_20250605_115459.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-05 11:54:59
+Output File: Data/LabResults\LabResults_Current_20250605_115459.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-05 11:54:59
+Output File: Data/LabResults\LabResults_Current_20250605_115459.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-05 11:54:59
+Output File: Data/LabResults\LabResults_Current_20250605_115459.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-05 11:54:59
+Output File: Data/LabResults\LabResults_Current_20250605_115459.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-05 11:54:59
+Output File: Data/LabResults\LabResults_Current_20250605_115459.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-05 11:54:59
+Output File: Data/LabResults\LabResults_Current_20250605_115459.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-05 12:56:33
+Output File: Data/LabResults\LabResults_Current_20250605_125633.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-05 12:56:33
+Output File: Data/LabResults\LabResults_Current_20250605_125633.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-05 12:56:33
+Output File: Data/LabResults\LabResults_Current_20250605_125633.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-05 12:56:33
+Output File: Data/LabResults\LabResults_Current_20250605_125633.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-05 12:56:33
+Output File: Data/LabResults\LabResults_Current_20250605_125633.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-05 12:56:33
+Output File: Data/LabResults\LabResults_Current_20250605_125633.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-05 12:56:34
+Output File: Data/LabResults\LabResults_Current_20250605_125633.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-05 12:56:34
+Output File: Data/LabResults\LabResults_Current_20250605_125633.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-05 12:56:34
+Output File: Data/LabResults\LabResults_Current_20250605_125633.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-05 12:56:34
+Output File: Data/LabResults\LabResults_Current_20250605_125633.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-05 12:56:34
+Output File: Data/LabResults\LabResults_Current_20250605_125633.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-06 12:44:45
+Output File: Data/LabResults\LabResults_Current_20250606_124445.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-06 12:44:45
+Output File: Data/LabResults\LabResults_Current_20250606_124445.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-06 12:44:45
+Output File: Data/LabResults\LabResults_Current_20250606_124445.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-06 12:44:45
+Output File: Data/LabResults\LabResults_Current_20250606_124445.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-06 12:44:45
+Output File: Data/LabResults\LabResults_Current_20250606_124445.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-06 12:44:45
+Output File: Data/LabResults\LabResults_Current_20250606_124445.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-06 12:44:45
+Output File: Data/LabResults\LabResults_Current_20250606_124445.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-06 12:44:45
+Output File: Data/LabResults\LabResults_Current_20250606_124445.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-06 12:44:45
+Output File: Data/LabResults\LabResults_Current_20250606_124445.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-06 12:44:45
+Output File: Data/LabResults\LabResults_Current_20250606_124445.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-06 12:44:45
+Output File: Data/LabResults\LabResults_Current_20250606_124445.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-06 16:42:18
+Output File: Data/LabResults\LabResults_Current_20250606_164218.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-06 16:42:18
+Output File: Data/LabResults\LabResults_Current_20250606_164218.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-06 16:42:18
+Output File: Data/LabResults\LabResults_Current_20250606_164218.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-06 16:42:18
+Output File: Data/LabResults\LabResults_Current_20250606_164218.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-06 16:42:18
+Output File: Data/LabResults\LabResults_Current_20250606_164218.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-06 16:42:18
+Output File: Data/LabResults\LabResults_Current_20250606_164218.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-06 16:42:18
+Output File: Data/LabResults\LabResults_Current_20250606_164218.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-06 16:42:18
+Output File: Data/LabResults\LabResults_Current_20250606_164218.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-06 16:42:18
+Output File: Data/LabResults\LabResults_Current_20250606_164218.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-06 16:42:18
+Output File: Data/LabResults\LabResults_Current_20250606_164218.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-06 16:42:18
+Output File: Data/LabResults\LabResults_Current_20250606_164218.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-06 16:57:59
+Output File: Data/LabResults\LabResults_Current_20250606_165759.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-06 16:57:59
+Output File: Data/LabResults\LabResults_Current_20250606_165759.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-06 16:57:59
+Output File: Data/LabResults\LabResults_Current_20250606_165759.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-06 16:57:59
+Output File: Data/LabResults\LabResults_Current_20250606_165759.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-06 16:57:59
+Output File: Data/LabResults\LabResults_Current_20250606_165759.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-06 16:57:59
+Output File: Data/LabResults\LabResults_Current_20250606_165759.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-06 16:57:59
+Output File: Data/LabResults\LabResults_Current_20250606_165759.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-06 16:57:59
+Output File: Data/LabResults\LabResults_Current_20250606_165759.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-06 16:58:00
+Output File: Data/LabResults\LabResults_Current_20250606_165759.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-06 16:58:00
+Output File: Data/LabResults\LabResults_Current_20250606_165759.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-06 16:58:00
+Output File: Data/LabResults\LabResults_Current_20250606_165759.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-06 17:09:50
+Output File: Data/LabResults\LabResults_Current_20250606_170950.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-06 17:09:50
+Output File: Data/LabResults\LabResults_Current_20250606_170950.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-06 17:09:50
+Output File: Data/LabResults\LabResults_Current_20250606_170950.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-06 17:09:50
+Output File: Data/LabResults\LabResults_Current_20250606_170950.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-06 17:09:51
+Output File: Data/LabResults\LabResults_Current_20250606_170950.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-06 17:09:51
+Output File: Data/LabResults\LabResults_Current_20250606_170950.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-06 17:09:51
+Output File: Data/LabResults\LabResults_Current_20250606_170950.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-06 17:09:51
+Output File: Data/LabResults\LabResults_Current_20250606_170950.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-06 17:09:51
+Output File: Data/LabResults\LabResults_Current_20250606_170950.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-06 17:09:51
+Output File: Data/LabResults\LabResults_Current_20250606_170950.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-06 17:09:51
+Output File: Data/LabResults\LabResults_Current_20250606_170950.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-06 17:19:42
+Output File: Data/LabResults\LabResults_Current_20250606_171942.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-06 17:19:42
+Output File: Data/LabResults\LabResults_Current_20250606_171942.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-06 17:19:42
+Output File: Data/LabResults\LabResults_Current_20250606_171942.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-06 17:19:42
+Output File: Data/LabResults\LabResults_Current_20250606_171942.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-06 17:19:42
+Output File: Data/LabResults\LabResults_Current_20250606_171942.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-06 17:19:42
+Output File: Data/LabResults\LabResults_Current_20250606_171942.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-06 17:19:42
+Output File: Data/LabResults\LabResults_Current_20250606_171942.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-06 17:19:42
+Output File: Data/LabResults\LabResults_Current_20250606_171942.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-06 17:19:42
+Output File: Data/LabResults\LabResults_Current_20250606_171942.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-06 17:19:42
+Output File: Data/LabResults\LabResults_Current_20250606_171942.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-06 17:19:42
+Output File: Data/LabResults\LabResults_Current_20250606_171942.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-06 17:43:46
+Output File: Data/LabResults\LabResults_Current_20250606_174346.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-06 17:43:46
+Output File: Data/LabResults\LabResults_Current_20250606_174346.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-06 17:43:46
+Output File: Data/LabResults\LabResults_Current_20250606_174346.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-06 17:43:46
+Output File: Data/LabResults\LabResults_Current_20250606_174346.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-06 17:43:46
+Output File: Data/LabResults\LabResults_Current_20250606_174346.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-06 17:43:46
+Output File: Data/LabResults\LabResults_Current_20250606_174346.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-06 17:43:46
+Output File: Data/LabResults\LabResults_Current_20250606_174346.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-06 17:43:46
+Output File: Data/LabResults\LabResults_Current_20250606_174346.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-06 17:43:46
+Output File: Data/LabResults\LabResults_Current_20250606_174346.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-06 17:43:46
+Output File: Data/LabResults\LabResults_Current_20250606_174346.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-06 17:43:46
+Output File: Data/LabResults\LabResults_Current_20250606_174346.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-06 17:46:56
+Output File: Data/LabResults\LabResults_Current_20250606_174656.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-06 17:46:56
+Output File: Data/LabResults\LabResults_Current_20250606_174656.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-06 17:46:56
+Output File: Data/LabResults\LabResults_Current_20250606_174656.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-06 17:46:56
+Output File: Data/LabResults\LabResults_Current_20250606_174656.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-06 17:46:56
+Output File: Data/LabResults\LabResults_Current_20250606_174656.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-06 17:46:56
+Output File: Data/LabResults\LabResults_Current_20250606_174656.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-06 17:46:57
+Output File: Data/LabResults\LabResults_Current_20250606_174656.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-06 17:46:57
+Output File: Data/LabResults\LabResults_Current_20250606_174656.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-06 17:46:57
+Output File: Data/LabResults\LabResults_Current_20250606_174656.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-06 17:46:57
+Output File: Data/LabResults\LabResults_Current_20250606_174656.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-06 17:46:57
+Output File: Data/LabResults\LabResults_Current_20250606_174656.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-06 17:50:42
+Output File: Data/LabResults\LabResults_Current_20250606_175042.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-06 17:50:43
+Output File: Data/LabResults\LabResults_Current_20250606_175042.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-06 17:50:43
+Output File: Data/LabResults\LabResults_Current_20250606_175042.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-06 17:50:43
+Output File: Data/LabResults\LabResults_Current_20250606_175042.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-06 17:50:43
+Output File: Data/LabResults\LabResults_Current_20250606_175042.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-06 17:50:43
+Output File: Data/LabResults\LabResults_Current_20250606_175042.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-06 17:50:43
+Output File: Data/LabResults\LabResults_Current_20250606_175042.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-06 17:50:43
+Output File: Data/LabResults\LabResults_Current_20250606_175042.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-06 17:50:43
+Output File: Data/LabResults\LabResults_Current_20250606_175042.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-06 17:50:43
+Output File: Data/LabResults\LabResults_Current_20250606_175042.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-06 17:50:43
+Output File: Data/LabResults\LabResults_Current_20250606_175042.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-06 17:52:37
+Output File: Data/LabResults\LabResults_Current_20250606_175237.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-06 17:52:37
+Output File: Data/LabResults\LabResults_Current_20250606_175237.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-06 17:52:37
+Output File: Data/LabResults\LabResults_Current_20250606_175237.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-06 17:52:37
+Output File: Data/LabResults\LabResults_Current_20250606_175237.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-06 17:52:37
+Output File: Data/LabResults\LabResults_Current_20250606_175237.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-06 17:52:37
+Output File: Data/LabResults\LabResults_Current_20250606_175237.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-06 17:52:37
+Output File: Data/LabResults\LabResults_Current_20250606_175237.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-06 17:52:37
+Output File: Data/LabResults\LabResults_Current_20250606_175237.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-06 17:52:37
+Output File: Data/LabResults\LabResults_Current_20250606_175237.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-06 17:52:37
+Output File: Data/LabResults\LabResults_Current_20250606_175237.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-06 17:52:37
+Output File: Data/LabResults\LabResults_Current_20250606_175237.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-06 18:17:24
+Output File: Data/LabResults\LabResults_Current_20250606_181724.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-06 18:17:24
+Output File: Data/LabResults\LabResults_Current_20250606_181724.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-06 18:17:24
+Output File: Data/LabResults\LabResults_Current_20250606_181724.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-06 18:17:24
+Output File: Data/LabResults\LabResults_Current_20250606_181724.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-06 18:17:24
+Output File: Data/LabResults\LabResults_Current_20250606_181724.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-06 18:17:24
+Output File: Data/LabResults\LabResults_Current_20250606_181724.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-06 18:17:24
+Output File: Data/LabResults\LabResults_Current_20250606_181724.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-06 18:17:24
+Output File: Data/LabResults\LabResults_Current_20250606_181724.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-06 18:17:24
+Output File: Data/LabResults\LabResults_Current_20250606_181724.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-06 18:17:25
+Output File: Data/LabResults\LabResults_Current_20250606_181724.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-06 18:17:25
+Output File: Data/LabResults\LabResults_Current_20250606_181724.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-07 10:55:15
+Output File: Data/LabResults\LabResults_Current_20250607_105515.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-07 10:55:15
+Output File: Data/LabResults\LabResults_Current_20250607_105515.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-07 10:55:15
+Output File: Data/LabResults\LabResults_Current_20250607_105515.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-07 10:55:15
+Output File: Data/LabResults\LabResults_Current_20250607_105515.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-07 10:55:15
+Output File: Data/LabResults\LabResults_Current_20250607_105515.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-07 10:55:15
+Output File: Data/LabResults\LabResults_Current_20250607_105515.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-07 10:55:15
+Output File: Data/LabResults\LabResults_Current_20250607_105515.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-07 10:55:15
+Output File: Data/LabResults\LabResults_Current_20250607_105515.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-07 10:55:15
+Output File: Data/LabResults\LabResults_Current_20250607_105515.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-07 10:55:15
+Output File: Data/LabResults\LabResults_Current_20250607_105515.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-07 10:55:15
+Output File: Data/LabResults\LabResults_Current_20250607_105515.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-07 11:29:45
+Output File: Data/LabResults\LabResults_Current_20250607_112945.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-07 11:29:45
+Output File: Data/LabResults\LabResults_Current_20250607_112945.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-07 11:29:45
+Output File: Data/LabResults\LabResults_Current_20250607_112945.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-07 11:29:45
+Output File: Data/LabResults\LabResults_Current_20250607_112945.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-07 11:29:45
+Output File: Data/LabResults\LabResults_Current_20250607_112945.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-07 11:29:46
+Output File: Data/LabResults\LabResults_Current_20250607_112945.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-07 11:29:46
+Output File: Data/LabResults\LabResults_Current_20250607_112945.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-07 11:29:46
+Output File: Data/LabResults\LabResults_Current_20250607_112945.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-07 11:29:46
+Output File: Data/LabResults\LabResults_Current_20250607_112945.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-07 11:29:46
+Output File: Data/LabResults\LabResults_Current_20250607_112945.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-07 11:29:46
+Output File: Data/LabResults\LabResults_Current_20250607_112945.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-07 13:38:58
+Output File: Data/LabResults\LabResults_Current_20250607_133858.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-07 13:38:58
+Output File: Data/LabResults\LabResults_Current_20250607_133858.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-07 13:38:58
+Output File: Data/LabResults\LabResults_Current_20250607_133858.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-07 13:38:58
+Output File: Data/LabResults\LabResults_Current_20250607_133858.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-07 13:38:58
+Output File: Data/LabResults\LabResults_Current_20250607_133858.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-07 13:38:58
+Output File: Data/LabResults\LabResults_Current_20250607_133858.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-07 13:38:58
+Output File: Data/LabResults\LabResults_Current_20250607_133858.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-07 13:38:58
+Output File: Data/LabResults\LabResults_Current_20250607_133858.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-07 13:38:58
+Output File: Data/LabResults\LabResults_Current_20250607_133858.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-07 13:38:58
+Output File: Data/LabResults\LabResults_Current_20250607_133858.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-07 13:38:58
+Output File: Data/LabResults\LabResults_Current_20250607_133858.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-07 14:03:03
+Output File: Data/LabResults\LabResults_Current_20250607_140303.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-07 14:03:03
+Output File: Data/LabResults\LabResults_Current_20250607_140303.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-07 14:03:03
+Output File: Data/LabResults\LabResults_Current_20250607_140303.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-07 14:03:03
+Output File: Data/LabResults\LabResults_Current_20250607_140303.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-07 14:03:03
+Output File: Data/LabResults\LabResults_Current_20250607_140303.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-07 14:03:03
+Output File: Data/LabResults\LabResults_Current_20250607_140303.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-07 14:03:03
+Output File: Data/LabResults\LabResults_Current_20250607_140303.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-07 14:03:03
+Output File: Data/LabResults\LabResults_Current_20250607_140303.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-07 14:03:03
+Output File: Data/LabResults\LabResults_Current_20250607_140303.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-07 14:03:03
+Output File: Data/LabResults\LabResults_Current_20250607_140303.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-07 14:03:03
+Output File: Data/LabResults\LabResults_Current_20250607_140303.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-07 14:16:02
+Output File: Data/LabResults\LabResults_Current_20250607_141602.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-07 14:16:02
+Output File: Data/LabResults\LabResults_Current_20250607_141602.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-07 14:16:02
+Output File: Data/LabResults\LabResults_Current_20250607_141602.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-07 14:16:02
+Output File: Data/LabResults\LabResults_Current_20250607_141602.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-07 14:16:02
+Output File: Data/LabResults\LabResults_Current_20250607_141602.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-07 14:16:02
+Output File: Data/LabResults\LabResults_Current_20250607_141602.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-07 14:16:02
+Output File: Data/LabResults\LabResults_Current_20250607_141602.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-07 14:16:02
+Output File: Data/LabResults\LabResults_Current_20250607_141602.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-07 14:16:02
+Output File: Data/LabResults\LabResults_Current_20250607_141602.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-07 14:16:02
+Output File: Data/LabResults\LabResults_Current_20250607_141602.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-07 14:16:02
+Output File: Data/LabResults\LabResults_Current_20250607_141602.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-09 11:41:37
+Output File: Data/LabResults\LabResults_Current_20250609_114137.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-09 11:41:37
+Output File: Data/LabResults\LabResults_Current_20250609_114137.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-09 11:41:37
+Output File: Data/LabResults\LabResults_Current_20250609_114137.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-09 11:41:37
+Output File: Data/LabResults\LabResults_Current_20250609_114137.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-09 11:41:37
+Output File: Data/LabResults\LabResults_Current_20250609_114137.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-09 11:41:37
+Output File: Data/LabResults\LabResults_Current_20250609_114137.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-09 11:41:37
+Output File: Data/LabResults\LabResults_Current_20250609_114137.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-09 11:41:37
+Output File: Data/LabResults\LabResults_Current_20250609_114137.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-09 11:41:37
+Output File: Data/LabResults\LabResults_Current_20250609_114137.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-09 11:41:37
+Output File: Data/LabResults\LabResults_Current_20250609_114137.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-09 11:41:37
+Output File: Data/LabResults\LabResults_Current_20250609_114137.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-09 11:41:37
+Output File: Data/LabResults\LabResults_Current_20250609_114137.csv
+Total Records Saved: 13
+Run Timestamp: 2025-06-09 11:41:37
+Output File: Data/LabResults\LabResults_Current_20250609_114137.csv
+Total Records Saved: 14
+Run Timestamp: 2025-06-09 11:41:37
+Output File: Data/LabResults\LabResults_Current_20250609_114137.csv
+Total Records Saved: 15
+Run Timestamp: 2025-06-09 11:41:37
+Output File: Data/LabResults\LabResults_Current_20250609_114137.csv
+Total Records Saved: 16
+Run Timestamp: 2025-06-09 12:29:29
+Output File: Data/LabResults\LabResults_Current_20250609_122929.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-09 12:29:29
+Output File: Data/LabResults\LabResults_Current_20250609_122929.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-09 12:29:29
+Output File: Data/LabResults\LabResults_Current_20250609_122929.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-09 12:29:29
+Output File: Data/LabResults\LabResults_Current_20250609_122929.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-09 12:29:29
+Output File: Data/LabResults\LabResults_Current_20250609_122929.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-09 12:29:29
+Output File: Data/LabResults\LabResults_Current_20250609_122929.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-09 12:29:29
+Output File: Data/LabResults\LabResults_Current_20250609_122929.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-09 12:29:29
+Output File: Data/LabResults\LabResults_Current_20250609_122929.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-09 12:29:29
+Output File: Data/LabResults\LabResults_Current_20250609_122929.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-09 12:29:29
+Output File: Data/LabResults\LabResults_Current_20250609_122929.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-09 12:29:29
+Output File: Data/LabResults\LabResults_Current_20250609_122929.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-09 12:29:29
+Output File: Data/LabResults\LabResults_Current_20250609_122929.csv
+Total Records Saved: 13
+Run Timestamp: 2025-06-09 12:29:29
+Output File: Data/LabResults\LabResults_Current_20250609_122929.csv
+Total Records Saved: 14
+Run Timestamp: 2025-06-09 12:29:29
+Output File: Data/LabResults\LabResults_Current_20250609_122929.csv
+Total Records Saved: 15
+Run Timestamp: 2025-06-09 12:29:29
+Output File: Data/LabResults\LabResults_Current_20250609_122929.csv
+Total Records Saved: 16
+Run Timestamp: 2025-06-09 12:49:06
+Output File: Data/LabResults\LabResults_Current_20250609_124906.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-09 12:49:06
+Output File: Data/LabResults\LabResults_Current_20250609_124906.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-09 12:49:06
+Output File: Data/LabResults\LabResults_Current_20250609_124906.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-09 12:49:06
+Output File: Data/LabResults\LabResults_Current_20250609_124906.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-09 12:49:06
+Output File: Data/LabResults\LabResults_Current_20250609_124906.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-09 12:49:06
+Output File: Data/LabResults\LabResults_Current_20250609_124906.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-09 12:49:06
+Output File: Data/LabResults\LabResults_Current_20250609_124906.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-09 12:49:06
+Output File: Data/LabResults\LabResults_Current_20250609_124906.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-09 12:49:06
+Output File: Data/LabResults\LabResults_Current_20250609_124906.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-09 12:49:06
+Output File: Data/LabResults\LabResults_Current_20250609_124906.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-09 12:49:06
+Output File: Data/LabResults\LabResults_Current_20250609_124906.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-09 13:21:15
+Output File: Data/LabResults\LabResults_Current_20250609_132115.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-09 13:21:15
+Output File: Data/LabResults\LabResults_Current_20250609_132115.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-09 13:21:15
+Output File: Data/LabResults\LabResults_Current_20250609_132115.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-09 13:21:15
+Output File: Data/LabResults\LabResults_Current_20250609_132115.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-09 13:21:16
+Output File: Data/LabResults\LabResults_Current_20250609_132115.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-09 13:21:16
+Output File: Data/LabResults\LabResults_Current_20250609_132115.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-09 13:21:16
+Output File: Data/LabResults\LabResults_Current_20250609_132115.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-09 13:21:16
+Output File: Data/LabResults\LabResults_Current_20250609_132115.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-09 13:21:16
+Output File: Data/LabResults\LabResults_Current_20250609_132115.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-09 13:21:16
+Output File: Data/LabResults\LabResults_Current_20250609_132115.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-09 13:21:16
+Output File: Data/LabResults\LabResults_Current_20250609_132115.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-09 13:50:53
+Output File: Data/LabResults\LabResults_Current_20250609_135053.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-09 13:50:53
+Output File: Data/LabResults\LabResults_Current_20250609_135053.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-09 13:50:53
+Output File: Data/LabResults\LabResults_Current_20250609_135053.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-09 13:50:53
+Output File: Data/LabResults\LabResults_Current_20250609_135053.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-09 13:50:54
+Output File: Data/LabResults\LabResults_Current_20250609_135053.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-09 13:50:54
+Output File: Data/LabResults\LabResults_Current_20250609_135053.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-09 13:50:54
+Output File: Data/LabResults\LabResults_Current_20250609_135053.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-09 13:50:54
+Output File: Data/LabResults\LabResults_Current_20250609_135053.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-09 13:50:54
+Output File: Data/LabResults\LabResults_Current_20250609_135053.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-09 13:50:54
+Output File: Data/LabResults\LabResults_Current_20250609_135053.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-09 13:50:54
+Output File: Data/LabResults\LabResults_Current_20250609_135053.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-09 14:03:06
+Output File: Data/LabResults\LabResults_Current_20250609_140306.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-09 14:03:06
+Output File: Data/LabResults\LabResults_Current_20250609_140306.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-09 14:03:06
+Output File: Data/LabResults\LabResults_Current_20250609_140306.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-09 14:03:06
+Output File: Data/LabResults\LabResults_Current_20250609_140306.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-09 14:03:06
+Output File: Data/LabResults\LabResults_Current_20250609_140306.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-09 14:03:06
+Output File: Data/LabResults\LabResults_Current_20250609_140306.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-09 14:03:06
+Output File: Data/LabResults\LabResults_Current_20250609_140306.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-09 14:03:06
+Output File: Data/LabResults\LabResults_Current_20250609_140306.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-09 14:03:06
+Output File: Data/LabResults\LabResults_Current_20250609_140306.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-09 14:03:06
+Output File: Data/LabResults\LabResults_Current_20250609_140306.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-09 14:03:06
+Output File: Data/LabResults\LabResults_Current_20250609_140306.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-11 15:58:06
+Output File: Data/LabResults\LabResults_Current_20250611_155806.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-11 15:58:06
+Output File: Data/LabResults\LabResults_Current_20250611_155806.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-11 15:58:06
+Output File: Data/LabResults\LabResults_Current_20250611_155806.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-11 15:58:07
+Output File: Data/LabResults\LabResults_Current_20250611_155806.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-11 15:58:07
+Output File: Data/LabResults\LabResults_Current_20250611_155806.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-11 15:58:07
+Output File: Data/LabResults\LabResults_Current_20250611_155806.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-11 15:58:07
+Output File: Data/LabResults\LabResults_Current_20250611_155806.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-11 15:58:07
+Output File: Data/LabResults\LabResults_Current_20250611_155806.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-11 15:58:07
+Output File: Data/LabResults\LabResults_Current_20250611_155806.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-11 15:58:07
+Output File: Data/LabResults\LabResults_Current_20250611_155806.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-11 15:58:07
+Output File: Data/LabResults\LabResults_Current_20250611_155806.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-11 20:12:50
+Output File: Data/LabResults\LabResults_Current_20250611_201250.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-11 20:12:50
+Output File: Data/LabResults\LabResults_Current_20250611_201250.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-11 20:12:50
+Output File: Data/LabResults\LabResults_Current_20250611_201250.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-11 20:12:50
+Output File: Data/LabResults\LabResults_Current_20250611_201250.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-11 20:12:50
+Output File: Data/LabResults\LabResults_Current_20250611_201250.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-11 20:12:50
+Output File: Data/LabResults\LabResults_Current_20250611_201250.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-11 20:12:50
+Output File: Data/LabResults\LabResults_Current_20250611_201250.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-11 20:12:50
+Output File: Data/LabResults\LabResults_Current_20250611_201250.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-11 20:12:50
+Output File: Data/LabResults\LabResults_Current_20250611_201250.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-11 20:12:50
+Output File: Data/LabResults\LabResults_Current_20250611_201250.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-11 20:12:50
+Output File: Data/LabResults\LabResults_Current_20250611_201250.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-15 09:32:05
+Output File: Data/LabResults\LabResults_Current_20250615_093205.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-15 09:32:05
+Output File: Data/LabResults\LabResults_Current_20250615_093205.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-15 09:32:05
+Output File: Data/LabResults\LabResults_Current_20250615_093205.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-15 09:32:05
+Output File: Data/LabResults\LabResults_Current_20250615_093205.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-15 09:32:05
+Output File: Data/LabResults\LabResults_Current_20250615_093205.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-15 09:32:05
+Output File: Data/LabResults\LabResults_Current_20250615_093205.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-15 09:32:05
+Output File: Data/LabResults\LabResults_Current_20250615_093205.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-15 09:32:05
+Output File: Data/LabResults\LabResults_Current_20250615_093205.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-15 09:32:05
+Output File: Data/LabResults\LabResults_Current_20250615_093205.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-15 09:32:05
+Output File: Data/LabResults\LabResults_Current_20250615_093205.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-15 09:32:05
+Output File: Data/LabResults\LabResults_Current_20250615_093205.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-15 11:48:43
+Output File: Data/LabResults\LabResults_Current_20250615_114843.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-15 11:48:43
+Output File: Data/LabResults\LabResults_Current_20250615_114843.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-15 11:48:43
+Output File: Data/LabResults\LabResults_Current_20250615_114843.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-15 11:48:43
+Output File: Data/LabResults\LabResults_Current_20250615_114843.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-15 11:48:43
+Output File: Data/LabResults\LabResults_Current_20250615_114843.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-15 11:48:43
+Output File: Data/LabResults\LabResults_Current_20250615_114843.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-15 11:48:43
+Output File: Data/LabResults\LabResults_Current_20250615_114843.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-15 11:48:44
+Output File: Data/LabResults\LabResults_Current_20250615_114843.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-15 11:48:44
+Output File: Data/LabResults\LabResults_Current_20250615_114843.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-15 11:48:44
+Output File: Data/LabResults\LabResults_Current_20250615_114843.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-15 11:48:44
+Output File: Data/LabResults\LabResults_Current_20250615_114843.csv
+Total Records Saved: 12
+Run Timestamp: 2025-06-15 14:31:53
+Output File: Data/LabResults\LabResults_Current_20250615_143153.csv
+Total Records Saved: 2
+Run Timestamp: 2025-06-15 14:31:53
+Output File: Data/LabResults\LabResults_Current_20250615_143153.csv
+Total Records Saved: 3
+Run Timestamp: 2025-06-15 14:31:53
+Output File: Data/LabResults\LabResults_Current_20250615_143153.csv
+Total Records Saved: 4
+Run Timestamp: 2025-06-15 14:31:53
+Output File: Data/LabResults\LabResults_Current_20250615_143153.csv
+Total Records Saved: 5
+Run Timestamp: 2025-06-15 14:31:53
+Output File: Data/LabResults\LabResults_Current_20250615_143153.csv
+Total Records Saved: 6
+Run Timestamp: 2025-06-15 14:31:53
+Output File: Data/LabResults\LabResults_Current_20250615_143153.csv
+Total Records Saved: 7
+Run Timestamp: 2025-06-15 14:31:53
+Output File: Data/LabResults\LabResults_Current_20250615_143153.csv
+Total Records Saved: 8
+Run Timestamp: 2025-06-15 14:31:53
+Output File: Data/LabResults\LabResults_Current_20250615_143153.csv
+Total Records Saved: 9
+Run Timestamp: 2025-06-15 14:31:53
+Output File: Data/LabResults\LabResults_Current_20250615_143153.csv
+Total Records Saved: 10
+Run Timestamp: 2025-06-15 14:31:53
+Output File: Data/LabResults\LabResults_Current_20250615_143153.csv
+Total Records Saved: 11
+Run Timestamp: 2025-06-15 14:31:53
+Output File: Data/LabResults\LabResults_Current_20250615_143153.csv
+Total Records Saved: 12

@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48138550",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-04T03:03:29.047+00:00",
+    "source": "#ijQJqWMH2tWxlPsY"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Paul <b>CARDENAS </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>80276 Miller Hollow Apt. 199 </span><br/><span>Lake Louis </span><span>Minnesota </span></td></tr><tr><td>Date of birth</td><td><span>06 January 2004</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "Cardenas",
+    "given": [ "Paul" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "6138468717"
+  }, {
+    "system": "email",
+    "value": "william37@gmail.com"
+  } ],
+  "gender": "other",
+  "birthDate": "2004-01-06",
+  "address": [ {
+    "line": [ "80276 Miller Hollow Apt. 199" ],
+    "city": "Lake Louis",
+    "state": "Minnesota",
+    "postalCode": "64605"
+  } ]
+}

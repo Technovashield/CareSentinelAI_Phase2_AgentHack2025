@@ -1,0 +1,34 @@
+{
+  "resourceType": "Patient",
+  "id": "P00006",
+  "name": [
+    {
+      "given": [
+        "Cameron"
+      ],
+      "family": "Hammond"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "2000-08-06",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "519.313.7388"
+    },
+    {
+      "system": "email",
+      "value": "adkinsbrittney@hotmail.com"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "7194 Nathan Shore Suite 201"
+      ],
+      "city": "Sharonburgh",
+      "state": "South Dakota",
+      "postalCode": "69799"
+    }
+  ]
+}

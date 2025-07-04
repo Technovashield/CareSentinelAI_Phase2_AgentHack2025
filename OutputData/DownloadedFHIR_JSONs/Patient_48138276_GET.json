@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48138276",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-04T02:15:31.549+00:00",
+    "source": "#T0QgXSFHYjjj1u9K"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Steven <b>STEWART </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>32589 Tonya View </span><br/><span>Martinfort </span><span>Ohio </span></td></tr><tr><td>Date of birth</td><td><span>18 March 1982</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "Stewart",
+    "given": [ "Steven" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(850)200-7670"
+  }, {
+    "system": "email",
+    "value": "daniel97@gmail.com"
+  } ],
+  "gender": "other",
+  "birthDate": "1982-03-18",
+  "address": [ {
+    "line": [ "32589 Tonya View" ],
+    "city": "Martinfort",
+    "state": "Ohio",
+    "postalCode": "59575"
+  } ]
+}

@@ -1,0 +1,34 @@
+{
+  "resourceType": "Patient",
+  "id": "P00003",
+  "name": [
+    {
+      "given": [
+        "Kayla"
+      ],
+      "family": "Young"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "2005-12-04",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "041.533.1875"
+    },
+    {
+      "system": "email",
+      "value": "gomezdaniel@hotmail.com"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "29662 Samuel Vista Suite 637"
+      ],
+      "city": "Martinezfort",
+      "state": "Michigan",
+      "postalCode": "09261"
+    }
+  ]
+}

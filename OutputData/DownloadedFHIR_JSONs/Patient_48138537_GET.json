@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48138537",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-04T03:03:16.047+00:00",
+    "source": "#pZ7a8AtP336QxYNr"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Mark <b>KELLY </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>6247 Ochoa Common </span><br/><span>New Kristy </span><span>Wyoming </span></td></tr><tr><td>Date of birth</td><td><span>03 January 1961</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "Kelly",
+    "given": [ "Mark" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(056)784-9214x041"
+  }, {
+    "system": "email",
+    "value": "gina74@gmail.com"
+  } ],
+  "gender": "other",
+  "birthDate": "1961-01-03",
+  "address": [ {
+    "line": [ "6247 Ochoa Common" ],
+    "city": "New Kristy",
+    "state": "Wyoming",
+    "postalCode": "76196"
+  } ]
+}

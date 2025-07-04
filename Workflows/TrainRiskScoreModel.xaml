@@ -1,0 +1,418 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TrainRiskScoreModel" this:TrainRiskScoreModel.in_modelSaveFolder="Models" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_mergedMetricsPath" Type="InArgument(x:String)" />
+    <x:Property Name="in_modelSaveFolder" Type="InArgument(x:String)" />
+    <x:Property Name="out_modelPath" Type="OutArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>TrainRiskScoreModel_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Python</x:String>
+      <x:String>UiPath.Python.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="TrainRiskScoreModel" sap:VirtualizedContainerService.HintSize="1017,1596" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="njl:JObject" Name="jObjectResult" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Module 5: TrainRiskScoreModel.xaml – Full Rebuild Checklist" sap:VirtualizedContainerService.HintSize="627,1573" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="strModelFileName">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String" Value="" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:String" Name="strModelFullPath">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String" Value="" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="p:PythonObject" Name="pyScope" />
+        <Variable x:TypeArguments="scg:List(x:Object)" Name="lstParams" />
+        <Variable x:TypeArguments="x:Object" Name="objResult" />
+        <Variable x:TypeArguments="x:String" Default="UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\" Name="strMLFolderPath" />
+        <Variable x:TypeArguments="x:String" Name="strJsonResult">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String" Value="" />
+          </Variable.Default>
+        </Variable>
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="593,122" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[strModelFileName]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">["RiskClassifier_" + Now.ToString("yyyyMMdd_HHmmss") + ".pkl"]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="593,122" sap2010:WorkflowViewState.IdRef="Assign_5">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[strMLFolderPath]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="593,122" sap2010:WorkflowViewState.IdRef="Assign_6">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[strModelFullPath]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[Path.Combine(strMLFolderPath, "Models\" + strModelFileName)]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Sequence sap2010:Annotation.AnnotationText="Purpose:&#xA;Wrap Steps 3 to 8 (Python execution, JSON handling, model logging) in a Try Catch block to:&#xA;&#xA;Capture any unexpected errors&#xA;&#xA;Log them properly&#xA;&#xA;Write a fallback JSON error summary (optional)" DisplayName="Step 9 - Fallback_Error_Handling" sap:VirtualizedContainerService.HintSize="593,1124" sap2010:WorkflowViewState.IdRef="Sequence_15">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="559,759" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+          <TryCatch.Try>
+            <Sequence DisplayName="Wrap Up Of Step 6 to 8" sap:VirtualizedContainerService.HintSize="557,489" sap2010:WorkflowViewState.IdRef="Sequence_19">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence sap2010:Annotation.AnnotationText="Goal&#xA;Run your ML model training Python script outside Python Scope using Start Process, then read the results from a file. Keep original Python Scope logic disabled but intact." DisplayName="Fallback Strategy: Start Process to Run Python Script in TrainRiskScoreModel.xaml" sap:VirtualizedContainerService.HintSize="523,153" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="strJsonResult" />
+                  <Variable x:TypeArguments="x:String" Name="strPythonPath" />
+                  <Variable x:TypeArguments="x:String" Name="strScriptPath" />
+                  <Variable x:TypeArguments="x:String" Name="strOutputPath" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:StartProcess Arguments="predict_risk.py" ContinueOnError="False" DisplayName="Start Process" FileName="python" sap:VirtualizedContainerService.HintSize="489,120" sap2010:WorkflowViewState.IdRef="StartProcess_2" StartType="Synchronously" WorkingDirectory="C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\OutputTrainedPredict" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="489,185" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;Prediction script executed successfully.&quot;]" />
+                <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="489,132" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                <ui:ReadTextFile File="{x:Null}" Content="[strJsonResult]" DisplayName="Read Text File" FileName="ML_Training - For Python Training\Models\OutputModels\model_result.json" sap:VirtualizedContainerService.HintSize="489,118" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="489,185" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[strJsonResult]" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="489,185" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Raw JSON: &quot; + strJsonResult]" />
+                <If Condition="[String.IsNullOrEmpty(strJsonResult)]" sap:VirtualizedContainerService.HintSize="489,559" sap2010:WorkflowViewState.IdRef="If_1">
+                  <If.Then>
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,236" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,176" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;JSON file is empty or missing.&quot;]" />
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="382,119" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[jObjectResult]" JsonString="[strJsonResult]" />
+                    </Sequence>
+                  </If.Else>
+                </If>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="489,176" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[If(jObjectResult IsNot Nothing AndAlso jObjectResult.HasValues, &quot;Model Accuracy: &quot; + jObjectResult(&quot;accuracy&quot;).ToString(), &quot;Warning: jObjectResult is empty or missing key&quot;)]" />
+              </Sequence>
+              <Sequence sap2010:Annotation.AnnotationText="Purpose:&#xA;Assign out_modelPath = strModelFullPath&#xA;&#xA;Append success message to train_model_log.txt" DisplayName="Step 7 - Assign_ModelPath_And_Log" sap:VirtualizedContainerService.HintSize="523,153" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_7">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[out_modelPath]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[strModelFullPath]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,185" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Set output argument to final model path&quot;]" />
+                <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="ML_Training - For Python Training\Logs\train_model_log.txt" sap:VirtualizedContainerService.HintSize="434,177" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[Now.ToString(&quot;yyyy-MM-dd HH:mm:ss&quot;) + &quot; - ✅ Model training completed. Model saved at: &quot; + out_modelPath]" UseDefaultEncoding="False" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,176" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Log successful model training to file&quot;]" />
+              </Sequence>
+              <Sequence sap2010:Annotation.AnnotationText="Purpose:&#xA;Save the content of strJsonResult as a .json file for audit or API reference." DisplayName="Step 8 – Step 8 - Write_TrainingSummary_JSON" sap:VirtualizedContainerService.HintSize="523,123" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="strJsonResultPath">
+                    <Variable.Default>
+                      <Literal x:TypeArguments="x:String" Value="" />
+                    </Variable.Default>
+                  </Variable>
+                  <Variable x:TypeArguments="x:String" Name="UTF8" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_8">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[strJsonResultPath]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">["ML_Training - For Python Training\Models\OutputModels\model_result_" + Now.ToString("yyyyMMdd_HHmmss") + ".json"]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,185" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Build result file name with timestamp&quot;]" />
+                <ui:CopyFile ContinueOnError="{x:Null}" Destination="[strJsonResultPath]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="434,204" sap2010:WorkflowViewState.IdRef="CopyFile_1" Path="ML_Training - For Python Training\Models\OutputModels\model_result.json" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,176" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;✅ Copied training summary JSON to: &quot; + strJsonResultPath]" />
+              </Sequence>
+            </Sequence>
+          </TryCatch.Try>
+          <TryCatch.Catches>
+            <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+              <ActivityAction x:TypeArguments="s:Exception">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="557,279" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="ML_Training - For Python Training\Logs\train_model_log.txt" sap:VirtualizedContainerService.HintSize="523,57" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="[Now.ToString(&quot;yyyy-MM-dd HH:mm:ss&quot;) + &quot; - Model training failed: &quot; + exception.Message]" UseDefaultEncoding="False">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:AppendLine>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="523,57" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Log failure to train_model_log.txt&quot;]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
+                  <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[&quot;ML_Training - For Python Training\Models\OutputModels\model_result_error_&quot; + Now.ToString(&quot;yyyyMMdd_HHmmss&quot;) + &quot;.json&quot;]" sap:VirtualizedContainerService.HintSize="523,57" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[&quot;{&quot;&quot;status&quot;&quot;:&quot;&quot;failed&quot;&quot;,&quot;&quot;error&quot;&quot;:&quot;&quot;&quot;&quot; &amp; exception.Message.Replace(&quot;&quot;&quot;&quot;&quot;&quot;, &quot;&quot;'&quot;&quot;) &amp; &quot;&quot;&quot;&quot;}&quot;]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:WriteTextFile>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="523,48" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Exception caught in model training: &quot; + exception.Message]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
+                </Sequence>
+              </ActivityAction>
+            </Catch>
+          </TryCatch.Catches>
+          <TryCatch.Finally>
+            <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="557,96" sap2010:WorkflowViewState.IdRef="Sequence_21">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Sequence>
+          </TryCatch.Finally>
+        </TryCatch>
+        <Sequence sap2010:Annotation.AnnotationText="Clean Up Json Files Leaving latest 3 Files" DisplayName="Step 5 :  Cleanup Logic for ML_Training - For Python Training Models/OutputModels model_Results files" sap:VirtualizedContainerService.HintSize="559,81" sap2010:WorkflowViewState.IdRef="Sequence_24">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Name="targetFolderPath" />
+            <Variable x:TypeArguments="s:String[]" Name="allCSVFiles" />
+            <Variable x:TypeArguments="s:String[]" Name="oldFilesToDelete" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign DisplayName="Assign    targetFolderPath" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_9">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[targetFolderPath]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ML_Training - For Python Training\Models\OutputModels</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign DisplayName="Assign     allCSVFiles" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_10">
+            <Assign.To>
+              <OutArgument x:TypeArguments="s:String[]">[allCSVFiles]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(targetFolderPath, "model_result_*.json")]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign DisplayName="Assign       oldFilesToDelete" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_11">
+            <Assign.To>
+              <OutArgument x:TypeArguments="s:String[]">[oldFilesToDelete]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="s:String[]">[allCSVFiles.OrderByDescending(Function(f) New FileInfo(f).CreationTime).Skip(3).ToArray()]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each    fileToDelete in oldFilesToDelete" sap:VirtualizedContainerService.HintSize="434,481" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[oldFilesToDelete]">
+            <ui:ForEach.Body>
+              <ActivityAction x:TypeArguments="x:String">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:String" Name="fileToDelete" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,354" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="382,118" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[fileToDelete]" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,176" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info" Message="[&quot;[CLEANUP] Deleted: &quot; + fileToDelete]" />
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEach.Body>
+          </ui:ForEach>
+        </Sequence>
+      </Sequence>
+    </Sequence>
+  </Sequence>
+</Activity>

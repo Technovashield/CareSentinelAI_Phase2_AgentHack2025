@@ -1,0 +1,47 @@
+[
+  {
+    "PatientID": "P001", "Timestamp": "2025-06-01", "HeartRate": 58, "Steps": 8200, "SleepHours": 7.5, "BMI": 22.1, "RiskLevel": "Low"
+  },
+  {
+    "PatientID": "P002", "Timestamp": "2025-06-01", "HeartRate": 102, "Steps": 2500, "SleepHours": 4.2, "BMI": 29.5, "RiskLevel": "High"
+  },
+  {
+    "PatientID": "P003", "Timestamp": "2025-06-01", "HeartRate": 76, "Steps": 6000, "SleepHours": 6.8, "BMI": 25.4, "RiskLevel": "Medium"
+  },
+  {
+    "PatientID": "P004", "Timestamp": "2025-06-01", "HeartRate": 110, "Steps": 1800, "SleepHours": 3.5, "BMI": 31.2, "RiskLevel": "High"
+  },
+  {
+    "PatientID": "P005", "Timestamp": "2025-06-01", "HeartRate": 64, "Steps": 9100, "SleepHours": 8.2, "BMI": 23.0, "RiskLevel": "Low"
+  },
+  {
+    "PatientID": "P006", "Timestamp": "2025-06-01", "HeartRate": 85, "Steps": 4500, "SleepHours": 5.7, "BMI": 27.6, "RiskLevel": "Medium"
+  },
+  {
+    "PatientID": "P007", "Timestamp": "2025-06-01", "HeartRate": 70, "Steps": 9800, "SleepHours": 7.9, "BMI": 21.8, "RiskLevel": "Low"
+  },
+  {
+    "PatientID": "P008", "Timestamp": "2025-06-01", "HeartRate": 95, "Steps": 3200, "SleepHours": 4.9, "BMI": 28.3, "RiskLevel": "High"
+  },
+  {
+    "PatientID": "P009", "Timestamp": "2025-06-01", "HeartRate": 78, "Steps": 6200, "SleepHours": 6.3, "BMI": 26.2, "RiskLevel": "Medium"
+  },
+  {
+    "PatientID": "P010", "Timestamp": "2025-06-01", "HeartRate": 65, "Steps": 8900, "SleepHours": 7.6, "BMI": 24.2, "RiskLevel": "Low"
+  },
+  {
+    "PatientID": "P011", "Timestamp": "2025-06-01", "HeartRate": 100, "Steps": 2100, "SleepHours": 3.9, "BMI": 30.5, "RiskLevel": "High"
+  },
+  {
+    "PatientID": "P012", "Timestamp": "2025-06-01", "HeartRate": 68, "Steps": 7600, "SleepHours": 6.9, "BMI": 23.8, "RiskLevel": "Low"
+  },
+  {
+    "PatientID": "P013", "Timestamp": "2025-06-01", "HeartRate": 88, "Steps": 5100, "SleepHours": 5.2, "BMI": 26.9, "RiskLevel": "Medium"
+  },
+  {
+    "PatientID": "P014", "Timestamp": "2025-06-01", "HeartRate": 60, "Steps": 9400, "SleepHours": 8.1, "BMI": 22.6, "RiskLevel": "Low"
+  },
+  {
+    "PatientID": "P015", "Timestamp": "2025-06-01", "HeartRate": 108, "Steps": 2300, "SleepHours": 4.1, "BMI": 32.0, "RiskLevel": "High"
+  }
+]

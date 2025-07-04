@@ -1,0 +1,1279 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="PatientDataIngestion_Phase2" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:snh="clr-namespace:System.Net.Http;assembly=System.Net.Http" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:umae="clr-namespace:UiPath.Mail.Activities.Enums;assembly=UiPath.Mail.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.Mail.Activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="out_dtPatientData" Type="OutArgument(sd:DataTable)" />
+    <x:Property Name="out_dtUniquePatients" Type="OutArgument(sd:DataTable)" />
+    <x:Property Name="out_dtComplianceReport" Type="OutArgument(sd:DataTable)" />
+    <x:Property Name="in_JsonFolderPath" Type="InArgument(x:String)" />
+    <x:Property Name="out_SuccessfulUploads" Type="OutArgument(scg:List(x:String))" />
+    <x:Property Name="out_FailedUploads" Type="OutArgument(scg:List(x:String))" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>PatientDataIngestion_Phase2_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Web</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.Platform</x:String>
+      <x:String>UiPath.Activities.System.Collections</x:String>
+      <x:String>System.IdentityModel</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Enums</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>System.Net.Http</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Web</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Http.WinHttpHandler</AssemblyReference>
+      <AssemblyReference>System.Net.Http</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="PatientDataIngestion_Phase2" sap:VirtualizedContainerService.HintSize="1017,1817" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="index">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">ForEach`1_1</x:String>
+            <x:String x:Key="SourcePropertyName">CurrentIndex</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="scg:List(x:String)" Name="successfulPatientUrls" />
+      <Variable x:TypeArguments="x:String" Name="targetFolderPath" />
+      <Variable x:TypeArguments="s:String[]" Name="oldFilesToDelete" />
+      <Variable x:TypeArguments="s:String[]" Name="allCSVFiles" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap2010:Annotation.AnnotationText="Dynamically process all keys in resource from a FHIR JSON API response, capture missing values, and output:&#xA;&#xA;PatientData_Phase2.csv: full dataset with &quot;Unknown&quot; placeholders.&#xA;&#xA;MissingFieldReport.csv: only rows with missing fields." DisplayName="STEP 1:    DynamicPatientDataRefactor_Test   NEW LOGIC" sap:VirtualizedContainerService.HintSize="471,216" sap2010:WorkflowViewState.IdRef="Sequence_76">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="jsonResponse" />
+        <Variable x:TypeArguments="njl:JObject" Name="jsonObj" />
+        <Variable x:TypeArguments="scg:List(x:String)" Name="columns" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dtPatients" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dtComplianceReport" />
+        <Variable x:TypeArguments="scg:List(x:String)" Name="rowData" />
+        <Variable x:TypeArguments="scg:List(x:String)" Name="missingFields" />
+        <Variable x:TypeArguments="njl:JToken" Name="currentEntry" />
+        <Variable x:TypeArguments="njl:JObject" Name="resourceObj" />
+        <Variable x:TypeArguments="x:String" Name="tokenResponseText" />
+        <Variable x:TypeArguments="x:String" Name="TokenResponse" />
+        <Variable x:TypeArguments="njl:JToken" Name="tokenJsonObj" />
+        <Variable x:TypeArguments="x:String" Name="accessToken" />
+        <Variable x:TypeArguments="x:String" Name="jsonString" />
+        <Variable x:TypeArguments="njl:JArray" Name="jsonArray" />
+        <Variable x:TypeArguments="njl:JObject" Name="patient" />
+        <Variable x:TypeArguments="x:String" Name="fhirPatientJson">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String" Value="" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:String" Name="responseString" />
+        <Variable x:TypeArguments="x:String" Name="fhirPatientJsonTemplate" />
+        <Variable x:TypeArguments="x:String" Name="firstName">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String" Value="" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:String" Name="lastName">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String" Value="" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:String" Name="dateOfBirth">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String" Value="" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:String" Name="gender">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String" Value="" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:String" Name="phoneNumber">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String" Value="" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:String" Name="email">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String" Value="" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:String" Name="street">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String" Value="" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:String" Name="city">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String" Value="" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:String" Name="state">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String" Value="" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:String" Name="postalCode">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String" Value="" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:Boolean" Default="False" Name="isProcessed" />
+        <Variable x:TypeArguments="x:Int32" Default="0" Name="successCount" />
+        <Variable x:TypeArguments="x:Int32" Default="0" Name="failureCount" />
+        <Variable x:TypeArguments="scg:List(x:String)" Default="[New List(Of String)]" Name="errorLogList" />
+        <Variable x:TypeArguments="x:String" Default="[&quot;C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\ErrorLog_&quot; &amp; Now.ToString(&quot;yyyyMMdd_HHmmss&quot;) &amp; &quot;.txt&quot;]" Name="errorLogFilePath" />
+        <Variable x:TypeArguments="x:String" Name="logDirPath" />
+        <Variable x:TypeArguments="s:String[]" Name="LogFiles" />
+        <Variable x:TypeArguments="scg:IEnumerable(x:String)" Name="filesToDelete" />
+        <Variable x:TypeArguments="x:String" Name="filePath" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ReadTextFile File="{x:Null}" Content="[jsonString]" DisplayName="Read Text File" FileName="Data\TestPatients\TestPatients.Json" sap:VirtualizedContainerService.HintSize="540,118" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="540,185" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;jsonString content length: &quot; &amp; jsonString.Length.ToString]" />
+      <Assign sap:VirtualizedContainerService.HintSize="540,122" sap2010:WorkflowViewState.IdRef="Assign_29">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[accessToken]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">FAKE_TOKEN</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="540,185" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Raw JSON content: &quot; &amp; jsonString]" />
+      <ui:DeserializeJsonArray DisplayName="Deserialize JSON Array" sap:VirtualizedContainerService.HintSize="540,92" sap2010:WorkflowViewState.IdRef="DeserializeJsonArray_1" JsonArray="[jsonArray]" JsonString="[jsonString]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="540,185" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;jsonArray contains &quot; &amp; jsonArray.Count.ToString &amp; &quot; records&quot;]" />
+      <ui:ForEach x:TypeArguments="njl:JObject" CurrentIndex="{x:Null}" DisplayName="For Each patient" sap:VirtualizedContainerService.HintSize="540,3693" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[jsonArray]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="njl:JObject">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="njl:JObject" Name="patient" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="538,3557" sap2010:WorkflowViewState.IdRef="Sequence_39">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap:VirtualizedContainerService.HintSize="504,122" sap2010:WorkflowViewState.IdRef="Assign_41">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[fhirPatientJson]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String" Value="" />
+                  </InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign DisplayName="Assign  The Template" sap:VirtualizedContainerService.HintSize="504,122" sap2010:WorkflowViewState.IdRef="Assign_27">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[fhirPatientJson]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">["{""resourceType"": ""Patient"", ""name"": [{""use"": ""official"", ""family"": ""Doe"", ""given"": [""John""]}], ""gender"": ""male"", ""birthDate"": ""1980-01-01"", ""telecom"": [{""system"": ""phone"", ""value"": ""123-456-7890""}, {""system"": ""email"", ""value"": ""john.doe@example.com""}], ""address"": [{""line"": [""123 Main Street""], ""city"": ""Springfield"", ""state"": ""IL"", ""postalCode"": ""62704""}]}"]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="504,185" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[If(patient IsNot Nothing, &quot;Patient record found: &quot; &amp; patient.ToString, &quot;⚠️ Patient object is null!&quot;)]" />
+              <Assign sap:VirtualizedContainerService.HintSize="504,122" sap2010:WorkflowViewState.IdRef="Assign_45">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Boolean">[isProcessed]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                </Assign.Value>
+              </Assign>
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="504,2339" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                <TryCatch.Try>
+                  <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="502,1724" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence sap:VirtualizedContainerService.HintSize="468,1551" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_31">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[firstName]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[If(patient("FirstName") IsNot Nothing, patient("FirstName").ToString(), "Unknown")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_32">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[lastName]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[If(patient("LastName") IsNot Nothing, patient("LastName").ToString(), "Unknown")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_33">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[dateOfBirth]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[If(patient("DateOfBirth") IsNot Nothing, patient("DateOfBirth").ToString, "Unknown")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_34">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[gender]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[If(patient("Gender") IsNot Nothing, patient("Gender").ToString.ToLower, "unknown")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_35">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[phoneNumber]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[If(patient("PhoneNumber") IsNot Nothing, patient("PhoneNumber").ToString, "Unknown")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_36">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[email]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[If(patient("Email") IsNot Nothing, patient("Email").ToString, "Unknown")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_37">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[street]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[If(patient("Address")("Street") IsNot Nothing, patient("Address")("Street").ToString, "Unknown")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_38">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[city]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[If(patient("Address")("City") IsNot Nothing, patient("Address")("City").ToString, "Unknown")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_39">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[state]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[If(patient("Address")("State") IsNot Nothing, patient("Address")("State").ToString, "Unknown")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_40">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[postalCode]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[If(patient("Address")("PostalCode") IsNot Nothing, patient("Address")("PostalCode").ToString, "Unknown")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign DisplayName="Assign   Dynamic field injection" sap:VirtualizedContainerService.HintSize="434,126" sap2010:WorkflowViewState.IdRef="Assign_46">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[fhirPatientJson]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String" xml:space="preserve">[fhirPatientJsonTemplate _
+    .Replace("Doe", lastName) _
+    .Replace("John", firstName) _
+    .Replace("1980-01-01", dateOfBirth) _
+    .Replace("male", gender) _
+    .Replace("123-456-7890", phoneNumber) _
+    .Replace("john.doe@example.com", email) _
+    .Replace("123 Main Street", street) _
+    .Replace("Springfield", city) _
+    .Replace("IL", state) _
+    .Replace("62704", postalCode)]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="Assign_44">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">[isProcessed]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                    <Assign sap:VirtualizedContainerService.HintSize="468,113" sap2010:WorkflowViewState.IdRef="Assign_47">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[successCount]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[successCount + 1]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                    <ActivityAction x:TypeArguments="s:Exception">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="502,345" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="468,122" sap2010:WorkflowViewState.IdRef="Assign_48">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">[failureCount]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">[failureCount + 1]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="468,163" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" MethodName="Add">
+                          <InvokeMethod.TargetObject>
+                            <InArgument x:TypeArguments="scg:List(x:String)">[errorLogList]</InArgument>
+                          </InvokeMethod.TargetObject>
+                          <InArgument x:TypeArguments="x:String">["❌ Patient failed: " &amp; firstName &amp; " " &amp; lastName &amp; vbCrLf &amp; patient.ToString]</InArgument>
+                        </InvokeMethod>
+                      </Sequence>
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+                <TryCatch.Finally>
+                  <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="502,96" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </TryCatch.Finally>
+              </TryCatch>
+              <If Condition="[isProcessed]" sap:VirtualizedContainerService.HintSize="504,607" sap2010:WorkflowViewState.IdRef="If_13">
+                <If.Then>
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,236" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,176" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Trace" Message="[&quot;✅ Successfully generated FHIR JSON for: &quot; &amp; firstName &amp; &quot; &quot; &amp; lastName]" />
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,236" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,176" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Info" Message="[&quot;⚠️ Failed to process patient: &quot; &amp; firstName &amp; &quot; &quot; &amp; lastName]" />
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+      </ui:ForEach>
+      <Assign DisplayName="Assign      logDirPath" sap:VirtualizedContainerService.HintSize="540,122" sap2010:WorkflowViewState.IdRef="Assign_57">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[logDirPath]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="540,122" sap2010:WorkflowViewState.IdRef="Assign_58">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:String[]">[LogFiles]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(logDirPath, "ErrorLog_*.txt")]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <If Condition="[logFiles.Length &gt; 3]" sap:VirtualizedContainerService.HintSize="540,1214" sap2010:WorkflowViewState.IdRef="If_15">
+        <If.Then>
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,974" sap2010:WorkflowViewState.IdRef="Sequence_63">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_59">
+              <Assign.To>
+                <OutArgument x:TypeArguments="scg:IEnumerable(x:String)">[filesToDelete]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="scg:IEnumerable(x:String)">[logFiles.OrderBy(Function(f) File.GetLastWriteTime(f)).Take(logFiles.Length - 3)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,792" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+              <TryCatch.Try>
+                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each filePath" sap:VirtualizedContainerService.HintSize="418,273" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[filesToDelete]">
+                  <ui:ForEach.Body>
+                    <ActivityAction x:TypeArguments="x:String">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,169" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="382,109" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[filePath]" />
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEach.Body>
+                </ui:ForEach>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="418,236" sap2010:WorkflowViewState.IdRef="Sequence_66">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="384,176" sap2010:WorkflowViewState.IdRef="LogMessage_25" Level="Warn" Message="[&quot;⚠️ Failed to delete old log file: &quot; + filePath + &quot; → &quot; + exception.Message]" />
+                    </Sequence>
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+              <TryCatch.Finally>
+                <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="418,96" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </TryCatch.Finally>
+            </TryCatch>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,96" sap2010:WorkflowViewState.IdRef="Sequence_64">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </If.Else>
+      </If>
+      <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[&quot;ErrorLog_&quot; &amp; Now.ToString(&quot;yyyyMMdd_HHmmss&quot;) &amp; &quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="540,177" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[String.Join(Environment.NewLine &amp; Environment.NewLine, errorLogList)]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="540,185" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="Info" Message="[&quot;✅ FHIR JSON successfully generated for &quot; &amp; successCount &amp; &quot; patients.&quot; &amp; vbCrLf &amp;&#xA;&quot;⚠️ &quot; &amp; failureCount &amp; &quot; patients failed. See error log file for details.&quot;]" />
+      <If Condition="[System.IO.File.Exists(errorLogFilePath)]" sap:VirtualizedContainerService.HintSize="540,788" sap2010:WorkflowViewState.IdRef="If_17">
+        <If.Then>
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,417" sap2010:WorkflowViewState.IdRef="Sequence_78">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" ResourceAttachmentList="{x:Null}" ResourceAttachments="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" AttachmentInputMode="FilePaths" AttachmentsCollection="[{errorLogFilePath}]" Body="&quot;Please find attached the failed patient log for your review.&quot;" ConnectionMode="LegacyConfiguration" DisplayName="Send SMTP Email" Email="patelroopa148@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="382,357" sap2010:WorkflowViewState.IdRef="SendMail_3" IgnoreCRL="False" IsBodyHtml="False" Password="xfkqccjocelzyzbi" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[&quot;❗ Patient Ingestion Error Report – &quot; &amp; Now.ToString(&quot;yyyy-MM-dd&quot;)]" To="admin@technovashield.com" UseISConnection="False">
+              <ui:SendMail.AttachmentsBackup>
+                <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="FilePaths">
+                  <usau:BackupSlot.BackupValues>
+                    <scg:List x:TypeArguments="x:Object" x:Key="Existing" Capacity="1">
+                      <x:Null />
+                    </scg:List>
+                  </usau:BackupSlot.BackupValues>
+                </usau:BackupSlot>
+              </ui:SendMail.AttachmentsBackup>
+              <ui:SendMail.ConnectionDetailsBackupSlot>
+                <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="LegacyConfiguration">
+                  <usau:BackupSlot.BackupValues>
+                    <scg:List x:TypeArguments="x:Object" x:Key="IntegrationService" Capacity="1">
+                      <x:String>098bb05d-878e-4b60-af08-aceffdfc4519</x:String>
+                    </scg:List>
+                  </usau:BackupSlot.BackupValues>
+                </usau:BackupSlot>
+              </ui:SendMail.ConnectionDetailsBackupSlot>
+              <ui:SendMail.Files>
+                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+              </ui:SendMail.Files>
+            </ui:SendMail>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,236" sap2010:WorkflowViewState.IdRef="Sequence_79">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,176" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Info" Message="[&quot;❕ No error log file found, skipping email notification.&quot;]" />
+          </Sequence>
+        </If.Else>
+      </If>
+    </Sequence>
+    <Sequence sap2010:Annotation.AnnotationText="Input: TestPatients.json (contains a JArray of raw patients)&#xA;&#xA;Output: One FHIR-compliant Patient JSON per patient in a new folder FHIR_JSONs/" DisplayName="STEP 2: GenerateFHIRPatientsFromRawJson" sap:VirtualizedContainerService.HintSize="471,153" sap2010:WorkflowViewState.IdRef="Sequence_77">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="rawPatientJsonPath" />
+        <Variable x:TypeArguments="x:String" Name="rawJsonText" />
+        <Variable x:TypeArguments="njl:JArray" Name="rawPatientsArray" />
+        <Variable x:TypeArguments="njl:JObject" Name="patientObj" />
+        <Variable x:TypeArguments="njl:JObject" Name="fhirPatientObj" />
+        <Variable x:TypeArguments="x:String" Name="outputFilePath" />
+        <Variable x:TypeArguments="x:String" Default="C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\Data\TestPatients\OutputFHIR_JSONs" Name="outputFolder" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="470,114" sap2010:WorkflowViewState.IdRef="Assign_53">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[rawPatientJsonPath]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\Data\TestPatients\TestPatients.json</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:ReadTextFile File="{x:Null}" Content="[rawJsonText]" DisplayName="Read Text File" FileName="[rawPatientJsonPath]" sap:VirtualizedContainerService.HintSize="470,112" sap2010:WorkflowViewState.IdRef="ReadTextFile_3" />
+      <ui:DeserializeJsonArray DisplayName="Deserialize JSON Array" sap:VirtualizedContainerService.HintSize="470,92" sap2010:WorkflowViewState.IdRef="DeserializeJsonArray_2" JsonArray="[rawPatientsArray]" JsonString="[rawJsonText]" />
+      <ui:ForEach x:TypeArguments="njl:JObject" CurrentIndex="{x:Null}" DisplayName="For Each patientObj" sap:VirtualizedContainerService.HintSize="470,739" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[rawPatientsArray]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="njl:JObject">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="njl:JObject" Name="patientObj" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,618" sap2010:WorkflowViewState.IdRef="Sequence_60">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_54">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="njl:JObject">[fhirPatientObj]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="njl:JObject" xml:space="preserve">[New JObject(
+  New JProperty("resourceType", "Patient"),
+  New JProperty("id", patientObj("PatientID")),
+  New JProperty("name", New JArray(
+      New JObject(
+          New JProperty("given", New JArray(patientObj("FirstName"))),
+          New JProperty("family", patientObj("LastName"))
+      )
+  )),
+  New JProperty("gender", patientObj("Gender").ToString().ToLower()),
+  New JProperty("birthDate", patientObj("DateOfBirth")),
+  New JProperty("telecom", New JArray(
+      New JObject(
+          New JProperty("system", "phone"),
+          New JProperty("value", patientObj("PhoneNumber"))
+      ),
+      New JObject(
+          New JProperty("system", "email"),
+          New JProperty("value", patientObj("Email"))
+      )
+  )),
+  New JProperty("address", New JArray(
+      New JObject(
+          New JProperty("line", New JArray(patientObj("Address")("Street"))),
+          New JProperty("city", patientObj("Address")("City")),
+          New JProperty("state", patientObj("Address")("State")),
+          New JProperty("postalCode", patientObj("Address")("PostalCode"))
+      )
+  ))
+)]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_55">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[outputFilePath]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[outputFolder + "\Patient_" + patientObj("PatientID").ToString() + ".json"]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[outputFilePath]" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[fhirPatientObj.ToString()]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="Info" Message="[&quot;FHIR JSON generated for patient: &quot; + patientObj(&quot;PatientID&quot;).ToString()]" />
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+      </ui:ForEach>
+    </Sequence>
+    <Sequence sap2010:Annotation.AnnotationText="Objective:&#xA;Send each FHIR JSON to the public FHIR server using an HTTP POST and log success or failure." DisplayName=" STEP 3: Upload FHIR Patient JSONs  " sap:VirtualizedContainerService.HintSize="471,132" sap2010:WorkflowViewState.IdRef="Sequence_75">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="s:String[]" Name="jsonFilePaths" />
+        <Variable x:TypeArguments="x:String" Name="currentJsonFile" />
+        <Variable x:TypeArguments="x:String" Name="fhirPatientJson" />
+        <Variable x:TypeArguments="snh:HttpResponseMessage" Name="httpResponse" />
+        <Variable x:TypeArguments="x:Int32" Name="statusCode" />
+        <Variable x:TypeArguments="x:String" Name="locationHeader" />
+        <Variable x:TypeArguments="x:String" Name="uploadLogPath" />
+        <Variable x:TypeArguments="x:String" Name="uploadErrorLogPath" />
+        <Variable x:TypeArguments="x:String" Name="httpResponseContent" />
+        <Variable x:TypeArguments="upr:ILocalResource" Name="responseAttachment">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:String x:Key="SourceIdRef">HttpClient_1</x:String>
+              <x:String x:Key="SourcePropertyName">ResponseAttachment</x:String>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Variable>
+        <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="responseHeaders" />
+        <Variable x:TypeArguments="x:String" Default="C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\Data\TestPatients\UploadLogs\SuccessfulPatientUrls.txt" Name="successLogPath" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="506,114" sap2010:WorkflowViewState.IdRef="Assign_49">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:String[]">[jsonFilePaths]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:String[]">[System.IO.Directory.GetFiles("C:\\Users\\PatelR\\OneDrive\\Documents\\UiPath\\CareSentinelAI_Phase2\\Data\\TestPatients\\OutputFHIR_JSONs")]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="506,114" sap2010:WorkflowViewState.IdRef="Assign_51">
+        <Assign.To>
+          <OutArgument x:TypeArguments="scg:List(x:String)">[successfulPatientUrls]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="scg:List(x:String)">[New List(Of String)]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each jsonFile" sap:VirtualizedContainerService.HintSize="506,1609" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[jsonFilePaths]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="x:String">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:String" Name="jsonFile" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="504,1479" sap2010:WorkflowViewState.IdRef="Sequence_56">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ReadTextFile File="{x:Null}" Content="[fhirPatientJson]" DisplayName="Read Text File" FileName="[jsonFile]" sap:VirtualizedContainerService.HintSize="470,112" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="470,173" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="Info" Message="[fhirPatientJson]" />
+              <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" Body="[fhirPatientJson]" BodyFormat="Raw" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="https://hapi.fhir.org/baseR4/Patient" sap:VirtualizedContainerService.HintSize="470,102" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="POST" ResponseHeaders="[responseHeaders]" Result="[httpResponseContent]" StatusCode="[statusCode]" TimeoutMS="6000">
+                <ui:HttpClient.Attachments>
+                  <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                </ui:HttpClient.Attachments>
+                <ui:HttpClient.Cookies>
+                  <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                </ui:HttpClient.Cookies>
+                <ui:HttpClient.Headers>
+                  <InArgument x:TypeArguments="x:String" x:Key="Content-Type">application/fhir+json</InArgument>
+                </ui:HttpClient.Headers>
+                <ui:HttpClient.Parameters>
+                  <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                </ui:HttpClient.Parameters>
+                <ui:HttpClient.UrlSegments>
+                  <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                </ui:HttpClient.UrlSegments>
+              </ui:HttpClient>
+              <If Condition="[statusCode = 201]" sap:VirtualizedContainerService.HintSize="470,1032" sap2010:WorkflowViewState.IdRef="If_14">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If.Then>
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,506" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_50">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[locationHeader]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[If(responseHeaders.ContainsKey("Location"), responseHeaders("Location"), "N/A")]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="434,168" sap2010:WorkflowViewState.IdRef="InvokeMethod_2" MethodName="Add">
+                      <InvokeMethod.TargetObject>
+                        <InArgument x:TypeArguments="scg:List(x:String)">[successfulPatientUrls]</InArgument>
+                      </InvokeMethod.TargetObject>
+                      <InArgument x:TypeArguments="x:String">[locationHeader]</InArgument>
+                    </InvokeMethod>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="Trace" Message="[&quot;SUCCESS: &quot; + Path.GetFileName(jsonFile) + &quot; → &quot; + locationHeader]" />
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,397" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="Info" Message="[&quot;FAILED: &quot; + Path.GetFileName(jsonFile) + &quot; → Status Code: &quot; + statusCode.ToString]" />
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="Info" Message="[&quot;FHIR Server Response: &quot; + httpResponseContent]" />
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+      </ui:ForEach>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="506,173" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="Info" Message="[&quot;✅ Total FHIR Patients successfully uploaded: &quot; + successfulPatientUrls.Count.ToString()]" />
+      <Assign sap:VirtualizedContainerService.HintSize="506,114" sap2010:WorkflowViewState.IdRef="Assign_56">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[successLogPath]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\Data\TestPatients\UploadLogs\SuccessfulPatientUrls.txt</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[successLogPath]" sap:VirtualizedContainerService.HintSize="506,156" sap2010:WorkflowViewState.IdRef="WriteTextFile_3" Text="[String.Join(Environment.NewLine, successfulPatientUrls)]" />
+    </Sequence>
+    <Sequence sap2010:Annotation.AnnotationText="Read each URL from the list successfulPatientUrls (already built in Step 3).&#xA;&#xA;Perform HTTP GET to retrieve patient record.&#xA;&#xA;Save each as a .json file (one per patient) in a folder:&#xA;📁 Data\DownloadedFHIR_JSONs\" DisplayName="Step 4: FHIR GET Patient Records" sap:VirtualizedContainerService.HintSize="471,216" sap2010:WorkflowViewState.IdRef="Sequence_68">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="downloadFolderPath" />
+        <Variable x:TypeArguments="x:String" Name="fhirGetResponseContent" />
+        <Variable x:TypeArguments="x:String" Name="patientIdFromUrl" />
+        <Variable x:TypeArguments="x:String" Name="downloadFilePath" />
+        <Variable x:TypeArguments="x:String" Name="url" />
+        <Variable x:TypeArguments="scg:List(x:String)" Name="failedPatientUrls" />
+        <Variable x:TypeArguments="x:Int32" Name="maxRetryCount" />
+        <Variable x:TypeArguments="x:Int32" Name="retryDelayMS" />
+        <Variable x:TypeArguments="x:Int32" Name="currentRetry" />
+        <Variable x:TypeArguments="x:String" Name="fhirEndpointUrl" />
+        <Variable x:TypeArguments="x:String" Name="outputFilePathStep4_1" />
+        <Variable x:TypeArguments="x:String" Name="logFilePathStep4_1" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign DisplayName="Assign     Create Output Folder (Assign)" sap:VirtualizedContainerService.HintSize="470,122" sap2010:WorkflowViewState.IdRef="Assign_60">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[downloadFolderPath]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\DownloadedFHIR_JSONs</InArgument>
+        </Assign.Value>
+      </Assign>
+      <If Condition="[Not Directory.Exists(downloadFolderPath)]" DisplayName="If      Create Folder (If Not Exist)" sap:VirtualizedContainerService.HintSize="470,409" sap2010:WorkflowViewState.IdRef="If_16">
+        <If.Then>
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,169" sap2010:WorkflowViewState.IdRef="Sequence_69">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="382,109" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[downloadFolderPath]" />
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,96" sap2010:WorkflowViewState.IdRef="Sequence_70">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </If.Else>
+      </If>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="470,185" sap2010:WorkflowViewState.IdRef="LogMessage_27" Level="Info" Message="[&quot;✅ Starting download for &quot; + successfulPatientUrls.Count.ToString() + &quot; patients.&quot;]" />
+      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each url" sap:VirtualizedContainerService.HintSize="470,901" sap2010:WorkflowViewState.IdRef="ForEach`1_8" Values="[successfulPatientUrls]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="x:String">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:String" Name="url" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,765" sap2010:WorkflowViewState.IdRef="Sequence_71">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[url]" sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="HttpClient_3" Method="GET" Result="[fhirGetResponseContent]" TimeoutMS="6000">
+                <ui:HttpClient.Attachments>
+                  <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                </ui:HttpClient.Attachments>
+                <ui:HttpClient.Cookies>
+                  <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                </ui:HttpClient.Cookies>
+                <ui:HttpClient.Headers>
+                  <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                </ui:HttpClient.Headers>
+                <ui:HttpClient.Parameters>
+                  <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                </ui:HttpClient.Parameters>
+                <ui:HttpClient.UrlSegments>
+                  <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                </ui:HttpClient.UrlSegments>
+              </ui:HttpClient>
+              <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_61">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[patientIdFromUrl]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(url, "Patient\/([a-zA-Z0-9\-]+)").Groups(1).Value]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_62">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[downloadFilePath]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[downloadFolderPath + "\Patient_" + patientIdFromUrl + "_GET.json"]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[downloadFilePath]" sap:VirtualizedContainerService.HintSize="434,177" sap2010:WorkflowViewState.IdRef="WriteTextFile_4" Text="[fhirGetResponseContent]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,176" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="Info" Message="[&quot;Downloaded FHIR record for: &quot; + patientIdFromUrl]" />
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+      </ui:ForEach>
+      <Sequence sap2010:Annotation.AnnotationText="Problem Solution&#xA;Network delay or transient failure when calling FHIR API Add retry mechanism inside Try-Catch with controlled attempts and delay&#xA;JSON malformed or incomplete Catch error and log the failed URL to separate list&#xA;Ensure patient downloads aren’t skipped silently Maintain a failed list (failedPatientUrls) for retry or audit&#xA;" DisplayName="Step 4.1  – Enhanced with Retry + Error Handling Logic" sap:VirtualizedContainerService.HintSize="470,249" sap2010:WorkflowViewState.IdRef="Sequence_80">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Assign DisplayName="Assign     fhirEndpointUrl" sap:VirtualizedContainerService.HintSize="494,122" sap2010:WorkflowViewState.IdRef="Assign_63">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">[fhirEndpointUrl]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">["https://hapi.fhir.org/baseR4/Patient/" &amp; patientIdFromUrl]</InArgument>
+          </Assign.Value>
+        </Assign>
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="494,185" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="Info" Message="[&quot;Starting FHIR GET request for PatientID: &quot; &amp; patientIdFromUrl]" />
+        <ui:RetryScope DisplayName="Retry Scope     Retry FHIR GET Request" sap:VirtualizedContainerService.HintSize="494,899" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+          <ui:RetryScope.ActivityBody>
+            <ActivityAction>
+              <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="452,680" sap2010:WorkflowViewState.IdRef="Sequence_81">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[fhirEndpointUrl]" sap:VirtualizedContainerService.HintSize="418,108" sap2010:WorkflowViewState.IdRef="HttpClient_5" Method="GET" Result="[fhirGetResponseContent]" TimeoutMS="6000">
+                  <ui:HttpClient.Attachments>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                  </ui:HttpClient.Attachments>
+                  <ui:HttpClient.Cookies>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                  </ui:HttpClient.Cookies>
+                  <ui:HttpClient.Headers>
+                    <InArgument x:TypeArguments="x:String" x:Key="Accept">application/fhir+json</InArgument>
+                  </ui:HttpClient.Headers>
+                  <ui:HttpClient.Parameters>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                  </ui:HttpClient.Parameters>
+                  <ui:HttpClient.UrlSegments>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                  </ui:HttpClient.UrlSegments>
+                </ui:HttpClient>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="418,185" sap2010:WorkflowViewState.IdRef="LogMessage_30" Level="Trace" Message="[&quot;FHIR GET attempt complete. Response length: &quot; &amp; If(fhirGetResponseContent IsNot Nothing, fhirGetResponseContent.Length.ToString(), &quot;0&quot;)]" />
+                <If Condition="[Not String.IsNullOrEmpty(fhirGetResponseContent)]" sap:VirtualizedContainerService.HintSize="418,327" sap2010:WorkflowViewState.IdRef="If_18">
+                  <If.Then>
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,96" sap2010:WorkflowViewState.IdRef="Sequence_82">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,96" sap2010:WorkflowViewState.IdRef="Sequence_83">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+            </ActivityAction>
+          </ui:RetryScope.ActivityBody>
+          <ui:RetryScope.Condition>
+            <ActivityFunc x:TypeArguments="x:Boolean" />
+          </ui:RetryScope.Condition>
+        </ui:RetryScope>
+        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="494,1618" sap2010:WorkflowViewState.IdRef="TryCatch_7">
+          <TryCatch.Try>
+            <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="468,822" sap2010:WorkflowViewState.IdRef="Sequence_84">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If Condition="[Not Directory.Exists(&quot;Data/FHIR_Responses&quot;)]" sap:VirtualizedContainerService.HintSize="434,409" sap2010:WorkflowViewState.IdRef="If_19">
+                <If.Then>
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,169" sap2010:WorkflowViewState.IdRef="Sequence_87">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="382,109" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="Data\FHIR_Responses" />
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,96" sap2010:WorkflowViewState.IdRef="Sequence_88">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+              <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File  Save Successful FHIR Response" FileName="[String.Format(&quot;Data/FHIR_Responses/Patient_{0}_{1:yyyyMMdd_HHmmss}.json&quot;, patientIdFromUrl, DateTime.Now)]" sap:VirtualizedContainerService.HintSize="434,177" sap2010:WorkflowViewState.IdRef="WriteTextFile_5" Text="[fhirGetResponseContent]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,176" sap2010:WorkflowViewState.IdRef="LogMessage_31" Level="Trace" Message="[&quot;FHIR response saved successfully to: &quot; &amp; outputFilePathStep4_1]" />
+            </Sequence>
+          </TryCatch.Try>
+          <TryCatch.Catches>
+            <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+              <ActivityAction x:TypeArguments="s:Exception">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,535" sap2010:WorkflowViewState.IdRef="Sequence_85">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_64">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[logFilePathStep4_1]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[String.Format("Logs/ErrorLog_{0}_{1:yyyyMMdd_HHmmss}.txt", patientIdFromUrl, Now)]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,185" sap2010:WorkflowViewState.IdRef="LogMessage_32" Level="Error" Message="[&quot;Error occurred for PatientID: &quot; &amp; patientIdFromUrl &amp; &quot;. Details: &quot; &amp; exception.Message]" />
+                  <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[logFilePathStep4_1]" sap:VirtualizedContainerService.HintSize="434,168" sap2010:WorkflowViewState.IdRef="WriteTextFile_6" Text="[&quot;FHIR GET failed for PatientID: &quot; &amp; patientIdFromUrl &amp; vbCrLf &amp; exception.Message]" />
+                </Sequence>
+              </ActivityAction>
+            </Catch>
+          </TryCatch.Catches>
+          <TryCatch.Finally>
+            <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="468,96" sap2010:WorkflowViewState.IdRef="Sequence_86">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Sequence>
+          </TryCatch.Finally>
+        </TryCatch>
+      </Sequence>
+    </Sequence>
+    <Sequence DisplayName="Step 5 :  Cleanup Logic for ErrorLog Files" sap:VirtualizedContainerService.HintSize="471,57" sap2010:WorkflowViewState.IdRef="Sequence_91">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="s:String[]" Name="allCSVFiles" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign DisplayName="Assign    targetFolderPath" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_65">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[targetFolderPath]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign DisplayName="Assign     allCSVFiles" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_66">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:String[]">[allCSVFiles]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(targetFolderPath, "ErrorLog_*.txt")]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign DisplayName="Assign       oldFilesToDelete" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_67">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:String[]">[oldFilesToDelete]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:String[]">[allCSVFiles.OrderByDescending(Function(f) New FileInfo(f).CreationTime).Skip(3).ToArray()]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each    fileToDelete in oldFilesToDelete" sap:VirtualizedContainerService.HintSize="434,481" sap2010:WorkflowViewState.IdRef="ForEach`1_9" Values="[oldFilesToDelete]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="x:String">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:String" Name="fileToDelete" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,354" sap2010:WorkflowViewState.IdRef="Sequence_92">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="382,118" sap2010:WorkflowViewState.IdRef="DeleteFileX_2" Path="[fileToDelete]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,176" sap2010:WorkflowViewState.IdRef="LogMessage_33" Level="Info" Message="[&quot;[CLEANUP] Deleted: &quot; + fileToDelete]" />
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+      </ui:ForEach>
+    </Sequence>
+    <Sequence DisplayName="Step 5 :  Cleanup Logic for CareSentinelAI_Phase2\Data\FHIR_Responses" sap:VirtualizedContainerService.HintSize="471,57" sap2010:WorkflowViewState.IdRef="Sequence_93">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign DisplayName="Assign    targetFolderPath" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_68">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[targetFolderPath]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\Data\FHIR_Responses\</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign DisplayName="Assign     allCSVFiles" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_69">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:String[]">[allCSVFiles]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(targetFolderPath, "*.json")]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign DisplayName="Assign       oldFilesToDelete" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_70">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:String[]">[oldFilesToDelete]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:String[]">[allCSVFiles.OrderByDescending(Function(f) New FileInfo(f).CreationTime).Skip(5).ToArray()]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each    fileToDelete in oldFilesToDelete" sap:VirtualizedContainerService.HintSize="434,481" sap2010:WorkflowViewState.IdRef="ForEach`1_10" Values="[oldFilesToDelete]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="x:String">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:String" Name="fileToDelete" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,354" sap2010:WorkflowViewState.IdRef="Sequence_94">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="382,118" sap2010:WorkflowViewState.IdRef="DeleteFileX_3" Path="[fileToDelete]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,176" sap2010:WorkflowViewState.IdRef="LogMessage_34" Level="Info" Message="[&quot;[CLEANUP] Deleted: &quot; + fileToDelete]" />
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+      </ui:ForEach>
+    </Sequence>
+    <Sequence sap2010:Annotation.AnnotationText="Cleanup Logic (Final Version for 25-File Sets)" DisplayName="Step 5 :  Cleanup Logic for CareSentinelAI_Phase2\OutputData\DownloadedFHIR_Jsons files saved per patient" sap:VirtualizedContainerService.HintSize="471,963" sap2010:WorkflowViewState.IdRef="Sequence_95">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign DisplayName="Assign    targetFolderPath" sap:VirtualizedContainerService.HintSize="437,122" sap2010:WorkflowViewState.IdRef="Assign_71">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[targetFolderPath]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">C:\Users\PatelR\OneDrive\Documents\UiPath\CareSentinelAI_Phase2\OutputData\DownloadedFHIR_JSONs</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign DisplayName="Assign     allCSVFiles" sap:VirtualizedContainerService.HintSize="437,122" sap2010:WorkflowViewState.IdRef="Assign_72">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:String[]">[allCSVFiles]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(targetFolderPath, "*.json")]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign DisplayName="Assign       oldFilesToDelete" sap:VirtualizedContainerService.HintSize="437,122" sap2010:WorkflowViewState.IdRef="Assign_73">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:String[]">[oldFilesToDelete]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:String[]">[allCSVFiles.OrderByDescending(Function(f) New FileInfo(f).CreationTime).Skip(50).ToArray()]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each    fileToDelete in oldFilesToDelete" sap:VirtualizedContainerService.HintSize="437,481" sap2010:WorkflowViewState.IdRef="ForEach`1_11" Values="[oldFilesToDelete]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="x:String">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:String" Name="fileToDelete" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,354" sap2010:WorkflowViewState.IdRef="Sequence_96">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="382,118" sap2010:WorkflowViewState.IdRef="DeleteFileX_4" Path="[fileToDelete]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,176" sap2010:WorkflowViewState.IdRef="LogMessage_35" Level="Info" Message="[&quot;[CLEANUP] Deleted: &quot; + fileToDelete]" />
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+      </ui:ForEach>
+    </Sequence>
+  </Sequence>
+</Activity>

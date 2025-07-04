@@ -1,0 +1,34 @@
+{
+  "resourceType": "Patient",
+  "id": "P00013",
+  "name": [
+    {
+      "given": [
+        "Marc"
+      ],
+      "family": "Thompson"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1941-10-24",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(429)697-9022x697"
+    },
+    {
+      "system": "email",
+      "value": "reidmark@ramirez.biz"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "6872 Williams Oval Suite 924"
+      ],
+      "city": "Calebberg",
+      "state": "Minnesota",
+      "postalCode": "17507"
+    }
+  ]
+}

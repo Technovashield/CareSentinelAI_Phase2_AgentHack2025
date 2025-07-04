@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48138289",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-04T02:15:44.581+00:00",
+    "source": "#Wy4qwNyXAIuLANBl"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Alec <b>JONES </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>36494 Janet Ford </span><br/><span>North Kristinemouth </span><span>Iowa </span></td></tr><tr><td>Date of birth</td><td><span>26 July 1952</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "Jones",
+    "given": [ "Alec" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "001-453-967-7684x970"
+  }, {
+    "system": "email",
+    "value": "tina08@hardin.com"
+  } ],
+  "gender": "female",
+  "birthDate": "1952-07-26",
+  "address": [ {
+    "line": [ "36494 Janet Ford" ],
+    "city": "North Kristinemouth",
+    "state": "Iowa",
+    "postalCode": "18879"
+  } ]
+}

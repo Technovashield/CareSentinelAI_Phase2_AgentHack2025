@@ -1,0 +1,34 @@
+{
+  "resourceType": "Patient",
+  "id": "P00011",
+  "name": [
+    {
+      "given": [
+        "Eric"
+      ],
+      "family": "Ortiz"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1973-03-07",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "001-234-714-3292x67091"
+    },
+    {
+      "system": "email",
+      "value": "xsandoval@daniels.net"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "5561 Eric Harbor"
+      ],
+      "city": "Kathyshire",
+      "state": "North Dakota",
+      "postalCode": "98721"
+    }
+  ]
+}

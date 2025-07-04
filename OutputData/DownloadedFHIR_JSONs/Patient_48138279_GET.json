@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48138279",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-04T02:15:34.581+00:00",
+    "source": "#el6dZjMcUJyVFwZy"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Raymond <b>GORDON </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>66601 Garrett Mountains Apt. 637 </span><br/><span>Williamsmouth </span><span>Nebraska </span></td></tr><tr><td>Date of birth</td><td><span>21 March 1946</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "Gordon",
+    "given": [ "Raymond" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "001-832-093-2575x4166"
+  }, {
+    "system": "email",
+    "value": "thall@barrett-gonzales.biz"
+  } ],
+  "gender": "male",
+  "birthDate": "1946-03-21",
+  "address": [ {
+    "line": [ "66601 Garrett Mountains Apt. 637" ],
+    "city": "Williamsmouth",
+    "state": "Nebraska",
+    "postalCode": "45785"
+  } ]
+}

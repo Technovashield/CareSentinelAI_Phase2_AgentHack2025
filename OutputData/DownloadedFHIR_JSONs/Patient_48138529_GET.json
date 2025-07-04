@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48138529",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-04T03:03:12.031+00:00",
+    "source": "#d9PX2xsVRTU0Px29"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Kayla <b>YOUNG </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>29662 Samuel Vista Suite 637 </span><br/><span>Martinezfort </span><span>Michigan </span></td></tr><tr><td>Date of birth</td><td><span>04 December 2005</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "Young",
+    "given": [ "Kayla" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "041.533.1875"
+  }, {
+    "system": "email",
+    "value": "gomezdaniel@hotmail.com"
+  } ],
+  "gender": "male",
+  "birthDate": "2005-12-04",
+  "address": [ {
+    "line": [ "29662 Samuel Vista Suite 637" ],
+    "city": "Martinezfort",
+    "state": "Michigan",
+    "postalCode": "09261"
+  } ]
+}

@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48138553",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-04T03:03:32.047+00:00",
+    "source": "#nv1kB63VZtBlmPCQ"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Ryan <b>WEBB </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>5140 Lisa Crescent </span><br/><span>Michelletown </span><span>Wisconsin </span></td></tr><tr><td>Date of birth</td><td><span>31 July 1993</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "Webb",
+    "given": [ "Ryan" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "945-102-5110"
+  }, {
+    "system": "email",
+    "value": "jeffrey31@yahoo.com"
+  } ],
+  "gender": "male",
+  "birthDate": "1993-07-31",
+  "address": [ {
+    "line": [ "5140 Lisa Crescent" ],
+    "city": "Michelletown",
+    "state": "Wisconsin",
+    "postalCode": "79342"
+  } ]
+}

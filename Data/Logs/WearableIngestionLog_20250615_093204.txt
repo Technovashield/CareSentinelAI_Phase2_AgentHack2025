@@ -1,0 +1,3 @@
+Wearable data ingested on 2025-06-15 09:32:04
+File Saved: Data/Wearable/WearableMetrics_Current_20250615_093204.csv
+Total Records: 16

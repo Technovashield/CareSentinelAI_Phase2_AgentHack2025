@@ -1,0 +1,34 @@
+{
+  "resourceType": "Patient",
+  "id": "P00001",
+  "name": [
+    {
+      "given": [
+        "Phillip"
+      ],
+      "family": "Harvey"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1991-04-21",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(547)074-1557"
+    },
+    {
+      "system": "email",
+      "value": "owilson@gmail.com"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "466 Watkins Pike Suite 217"
+      ],
+      "city": "South Angelaville",
+      "state": "Nevada",
+      "postalCode": "72780"
+    }
+  ]
+}

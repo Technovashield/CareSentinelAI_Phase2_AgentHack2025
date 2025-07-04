@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48138275",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-04T02:15:30.377+00:00",
+    "source": "#bFyC241pXZ7keZsk"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Phillip <b>HARVEY </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>466 Watkins Pike Suite 217 </span><br/><span>South Angelaville </span><span>Nevada </span></td></tr><tr><td>Date of birth</td><td><span>21 April 1991</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "Harvey",
+    "given": [ "Phillip" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(547)074-1557"
+  }, {
+    "system": "email",
+    "value": "owilson@gmail.com"
+  } ],
+  "gender": "male",
+  "birthDate": "1991-04-21",
+  "address": [ {
+    "line": [ "466 Watkins Pike Suite 217" ],
+    "city": "South Angelaville",
+    "state": "Nevada",
+    "postalCode": "72780"
+  } ]
+}

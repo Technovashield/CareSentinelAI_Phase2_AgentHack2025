@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48138548",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-04T03:03:27.047+00:00",
+    "source": "#GmjdA1Hy87fDaYdV"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Jason <b>LE </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>909 Robert Roads </span><br/><span>Johnberg </span><span>New Jersey </span></td></tr><tr><td>Date of birth</td><td><span>21 January 2018</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "Le",
+    "given": [ "Jason" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "785.829.1521x7501"
+  }, {
+    "system": "email",
+    "value": "qsmith@morris.com"
+  } ],
+  "gender": "other",
+  "birthDate": "2018-01-21",
+  "address": [ {
+    "line": [ "909 Robert Roads" ],
+    "city": "Johnberg",
+    "state": "New Jersey",
+    "postalCode": "41558"
+  } ]
+}

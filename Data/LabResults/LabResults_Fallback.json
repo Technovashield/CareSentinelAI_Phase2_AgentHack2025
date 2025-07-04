@@ -1,0 +1,46 @@
+[
+  {
+    "PatientID": "P001", "WhiteBloodCellCount": 5.8, "RedBloodCellCount": 4.9, "PlateletCount": 240, "Creatinine": 0.8,
+    "eGFR": 100, "ALT": 25, "AST": 22, "CRP": 0.5, "A1C": 5.4, "TSH": 1.5, "VitaminD": 40, "IronLevels": 80, "FreeT3": 3.2, "FreeT4": 1.2
+  },
+  {
+    "PatientID": "P002", "WhiteBloodCellCount": 6, "RedBloodCellCount": 5.1, "PlateletCount": 230, "Creatinine": 0.9,
+    "eGFR": 95, "ALT": 18, "AST": 22, "CRP": 1, "A1C": 5.5, "TSH": 2, "VitaminD": 35, "IronLevels": 75, "FreeT3": 3, "FreeT4": 1.3
+  },
+  {
+    "PatientID": "P003", "WhiteBloodCellCount": 6.1, "RedBloodCellCount": 4.7, "PlateletCount": 250, "Creatinine": 1.2,
+    "eGFR": 85, "ALT": 25, "AST": 30, "CRP": 1.2, "A1C": 5.8, "TSH": 2.5, "VitaminD": 28, "IronLevels": 70, "FreeT3": 2.9, "FreeT4": 1.1
+  },
+  {
+    "PatientID": "P004", "WhiteBloodCellCount": 9, "RedBloodCellCount": 4.3, "PlateletCount": 280, "Creatinine": 1.2,
+    "eGFR": 75, "ALT": 32, "AST": 38, "CRP": 3.5, "A1C": 6.4, "TSH": 3.8, "VitaminD": 22, "IronLevels": 50, "FreeT3": 2.5, "FreeT4": 0.9
+  },
+  {
+    "PatientID": "P005", "WhiteBloodCellCount": 11.5, "RedBloodCellCount": 3.1, "PlateletCount": 210, "Creatinine": 1.4,
+    "eGFR": 65, "ALT": 35, "AST": 42, "CRP": 0.5, "A1C": 6.8, "TSH": 4.5, "VitaminD": 18, "IronLevels": 45, "FreeT3": 2.1, "FreeT4": 0.8
+  },
+  {
+    "PatientID": "P006", "WhiteBloodCellCount": 10.8, "RedBloodCellCount": 3.9, "PlateletCount": 320, "Creatinine": 1.5,
+    "eGFR": 60, "ALT": 38, "AST": 45, "CRP": 0.6, "A1C": 6.6, "TSH": 4, "VitaminD": 20, "IronLevels": 40, "FreeT3": 2.3, "FreeT4": 0.9
+  },
+  {
+    "PatientID": "P007", "WhiteBloodCellCount": 15.2, "RedBloodCellCount": 3.2, "PlateletCount": 400, "Creatinine": 2.1,
+    "eGFR": 40, "ALT": 60, "AST": 65, "CRP": 0.8, "A1C": 6.5, "TSH": 3, "VitaminD": 10, "IronLevels": 35, "FreeT3": 2, "FreeT4": 0.8
+  },
+  {
+    "PatientID": "P008", "WhiteBloodCellCount": 13.5, "RedBloodCellCount": 3.8, "PlateletCount": 420, "Creatinine": 2.3,
+    "eGFR": 35, "ALT": 68, "AST": 75, "CRP": 1.6, "A1C": 9.5, "TSH": 8.1, "VitaminD": 8, "IronLevels": 20, "FreeT3": 1.6, "FreeT4": 0.6
+  },
+  {
+    "PatientID": "P009", "WhiteBloodCellCount": 14.2, "RedBloodCellCount": 3.6, "PlateletCount": 390, "Creatinine": 1.7,
+    "eGFR": 28, "ALT": 60, "AST": 69, "CRP": 0.9, "A1C": 6.8, "TSH": 3.2, "VitaminD": 25, "IronLevels": 30, "FreeT3": 1.7, "FreeT4": 0.65
+  },
+  {
+    "PatientID": "P010", "WhiteBloodCellCount": 8.5, "RedBloodCellCount": 4.5, "PlateletCount": 270, "Creatinine": 1.1,
+    "eGFR": 80, "ALT": 28, "AST": 33, "CRP": 2.5, "A1C": 6.5, "TSH": 2.7, "VitaminD": 30, "IronLevels": 25, "FreeT3": 2.7, "FreeT4": 1
+  },
+  {
+    "PatientID": "P011", "WhiteBloodCellCount": 12, "RedBloodCellCount": 4.2, "PlateletCount": 310, "Creatinine": 1.7,
+    "eGFR": 55, "ALT": 40, "AST": 50, "CRP": 6, "A1C": 7.5, "TSH": 5.2, "VitaminD": 15, "IronLevels": 35, "FreeT3": 2, "FreeT4": 0.85
+  }
+]

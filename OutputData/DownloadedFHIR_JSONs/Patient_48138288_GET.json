@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48138288",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-04T02:15:43.581+00:00",
+    "source": "#7z2endd0mkp2nfS0"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Aaron <b>HOGAN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>2087 Clark Road Suite 685 </span><br/><span>Jonchester </span><span>Montana </span></td></tr><tr><td>Date of birth</td><td><span>16 April 1976</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "Hogan",
+    "given": [ "Aaron" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "843-435-7927x0548"
+  }, {
+    "system": "email",
+    "value": "craigwilson@crawford.net"
+  } ],
+  "gender": "male",
+  "birthDate": "1976-04-16",
+  "address": [ {
+    "line": [ "2087 Clark Road Suite 685" ],
+    "city": "Jonchester",
+    "state": "Montana",
+    "postalCode": "39281"
+  } ]
+}

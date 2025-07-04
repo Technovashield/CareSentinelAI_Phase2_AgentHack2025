@@ -1,0 +1,34 @@
+{
+  "resourceType": "Patient",
+  "id": "P00012",
+  "name": [
+    {
+      "given": [
+        "Jackson"
+      ],
+      "family": "Beck"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1972-11-23",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "276-945-3661x36625"
+    },
+    {
+      "system": "email",
+      "value": "smithkimberly@hotmail.com"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "49487 Arnold Overpass Apt. 398"
+      ],
+      "city": "New Kennethberg",
+      "state": "Maine",
+      "postalCode": "23420"
+    }
+  ]
+}

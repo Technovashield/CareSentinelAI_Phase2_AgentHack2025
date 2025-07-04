@@ -1,0 +1,1246 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="BuildMasterPatientList" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:st="clr-namespace:System.Text;assembly=System.Private.CoreLib" xmlns:uasc="clr-namespace:UiPath.Activities.System.Collections;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="out_dtMasterPatientList" Type="OutArgument(sd:DataTable)" />
+    <x:Property Name="in_dtPatientProfile" Type="InArgument(sd:DataTable)" />
+    <x:Property Name="in_dtWearableMetrics" Type="InArgument(sd:DataTable)" />
+    <x:Property Name="in_dtLabResults" Type="InArgument(sd:DataTable)" />
+    <x:Property Name="io_dtMasterPatientList" Type="InOutArgument(sd:DataTable)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>BuildMasterPatientList_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Activities.System.Collections</x:String>
+      <x:String>System.Text</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="BuildMasterPatientList" sap:VirtualizedContainerService.HintSize="931,4345" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="572,4322" sap2010:WorkflowViewState.IdRef="Sequence_10">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Name="dtPatientProfile" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dtWearableMetrics" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dtLabResults" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dtMasterPatientList" />
+        <Variable x:TypeArguments="x:Int32" Name="unifiedIdCounter" />
+        <Variable x:TypeArguments="x:String" Name="unifiedId" />
+        <Variable x:TypeArguments="s:String[]" Name="arrWearableFiles" />
+        <Variable x:TypeArguments="x:String" Name="wearableDataFilePath" />
+        <Variable x:TypeArguments="scg:List(sd:DataTable)" Name="arrDataTables" />
+        <Variable x:TypeArguments="sd:DataTable" Name="currentTable" />
+        <Variable x:TypeArguments="sd:DataRow" Name="currentRow" />
+        <Variable x:TypeArguments="sd:DataRow" Name="profileRow" />
+        <Variable x:TypeArguments="sd:DataTable" Name="arrWearableMatches" />
+        <Variable x:TypeArguments="sd:DataTable" Name="arrLabMatches" />
+        <Variable x:TypeArguments="sd:DataRow" Name="wearableRow" />
+        <Variable x:TypeArguments="sd:DataRow" Name="labRow" />
+        <Variable x:TypeArguments="sd:DataRow" Name="newRowData" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dtExportPatientData" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dtExportWearableData" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dtWearableMetricsRaw" />
+        <Variable x:TypeArguments="x:String" Name="patientTimestamp" />
+        <Variable x:TypeArguments="s:String[]" Name="matchedFiles" />
+        <Variable x:TypeArguments="x:String" Name="oldFile" />
+        <Variable x:TypeArguments="x:String" Name="latestWearableFilePath" />
+        <Variable x:TypeArguments="x:String" Name="wearableTimestamp" />
+        <Variable x:TypeArguments="x:String" Name="wearableOutputPath" />
+        <Variable x:TypeArguments="s:String[]" Name="wearableUnifiedFiles" />
+        <Variable x:TypeArguments="x:String" Name="labResultsFilePath" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dtLabResultsRaw" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dtExportLabResults" />
+        <Variable x:TypeArguments="x:String" Name="labTimestamp" />
+        <Variable x:TypeArguments="x:String" Name="labOutputPath" />
+        <Variable x:TypeArguments="s:String[]" Name="labFiles" />
+        <Variable x:TypeArguments="s:String[]" Name="labFilesToDelete" />
+        <Variable x:TypeArguments="x:String" Name="labResultsDataFilePath" />
+        <Variable x:TypeArguments="x:String" Name="latestPatientFilePath" />
+        <Variable x:TypeArguments="x:String" Name="latestLabFilePath" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dtPatientWithUnifiedID" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dtWearableWithUnifiedID" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dtLabResultsWithUnifiedID" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dtExportMasterList" />
+        <Variable x:TypeArguments="sd:DataRow" Name="matchedWearableRow" />
+        <Variable x:TypeArguments="sd:DataRow" Name="matchedLabRow" />
+        <Variable x:TypeArguments="x:String" Name="masterTimestamp" />
+        <Variable x:TypeArguments="x:String" Name="masterOutputPath" />
+        <Variable x:TypeArguments="s:String[]" Name="masterFiles" />
+        <Variable x:TypeArguments="s:String[]" Name="masterFilesToDelete" />
+        <Variable x:TypeArguments="st:Encoding" Name="utf8Encoding" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence sap2010:Annotation.AnnotationText="Collect all patients across all input files,&#xA;Assign Unified Patient IDs,&#xA;Preserve original Source File and ID,&#xA;Consolidate into one Master List." DisplayName="Sequence - Step 1  Read All Input Files (Dynamic and Static)" sap:VirtualizedContainerService.HintSize="538,129" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ReadCsvFile FilePath="{x:Null}" DataTable="[dtPatientProfile]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV - PatientData_Phase2" sap:VirtualizedContainerService.HintSize="470,168" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" PathResource="[LocalResource.FromPath(&quot;Data\\PatientData_Phase2.csv&quot;)]" />
+        <Assign DisplayName="Assign wearableMetrics Data" sap:VirtualizedContainerService.HintSize="470,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+          <Assign.To>
+            <OutArgument x:TypeArguments="s:String[]">[arrWearableFiles]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles("Data", "WearableMetrics_*.csv")]</InArgument>
+          </Assign.Value>
+        </Assign>
+        <If Condition="[arrWearableFiles.Count &gt; 0]" sap:VirtualizedContainerService.HintSize="470,868" sap2010:WorkflowViewState.IdRef="If_1">
+          <If.Then>
+            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,506" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[wearableDataFilePath]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[arrWearableFiles.OrderByDescending(Function(f) New FileInfo(f).LastWriteTime).First()]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:ReadCsvFile PathResource="{x:Null}" DataTable="[dtWearableMetrics]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV Latest WearableMetrics" FilePath="[wearableDataFilePath]" sap:VirtualizedContainerService.HintSize="434,168" sap2010:WorkflowViewState.IdRef="ReadCsvFile_2" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Loaded latest WearableMetrics file: &quot; &amp; wearableDataFilePath]" />
+            </Sequence>
+          </If.Then>
+          <If.Else>
+            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,224" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;No WearableMetrics files found in Data folder.&quot;]" />
+            </Sequence>
+          </If.Else>
+        </If>
+        <ui:ReadCsvFile FilePath="{x:Null}" DataTable="[dtLabResults]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV DtLabResults" sap:VirtualizedContainerService.HintSize="470,159" sap2010:WorkflowViewState.IdRef="ReadCsvFile_4" PathResource="[LocalResource.FromPath(&quot;Data\\DtLabResults.csv&quot;)]" />
+      </Sequence>
+      <Sequence sap2010:Annotation.AnnotationText="For Each DataTable (dtPatientProfile, dtWearableMetrics, dtLabResults)" DisplayName="Sequence Step 2: Add Tracking Columns (UnifiedID, SourceID, SourceFile)" sap:VirtualizedContainerService.HintSize="538,88" sap2010:WorkflowViewState.IdRef="Sequence_52">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Assign sap:VirtualizedContainerService.HintSize="448,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+          <Assign.To>
+            <OutArgument x:TypeArguments="scg:List(sd:DataTable)">[arrDataTables]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="scg:List(sd:DataTable)">[New List(Of DataTable)]</InArgument>
+          </Assign.Value>
+        </Assign>
+        <uasc:AppendItemToCollection x:TypeArguments="sd:DataTable" Collection="[arrDataTables]" DisplayName="Append Items to Collection" sap:VirtualizedContainerService.HintSize="448,173" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_1">
+          <uasc:AppendItemToCollection.Items>
+            <scg:List x:TypeArguments="InArgument(sd:DataTable)" Capacity="4">
+              <InArgument x:TypeArguments="sd:DataTable">[dtPatientProfile]</InArgument>
+            </scg:List>
+          </uasc:AppendItemToCollection.Items>
+        </uasc:AppendItemToCollection>
+        <uasc:AppendItemToCollection x:TypeArguments="sd:DataTable" Collection="[arrDataTables]" DisplayName="Append Items to Collection" sap:VirtualizedContainerService.HintSize="448,173" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_2">
+          <uasc:AppendItemToCollection.Items>
+            <scg:List x:TypeArguments="InArgument(sd:DataTable)" Capacity="4">
+              <InArgument x:TypeArguments="sd:DataTable">[dtLabResults]</InArgument>
+            </scg:List>
+          </uasc:AppendItemToCollection.Items>
+        </uasc:AppendItemToCollection>
+        <If Condition="[arrWearableFiles.Count &gt; 0]" sap:VirtualizedContainerService.HintSize="448,586" sap2010:WorkflowViewState.IdRef="If_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <If.Then>
+            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,224" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uasc:AppendItemToCollection x:TypeArguments="sd:DataTable" Collection="[arrDataTables]" DisplayName="Append Items to Collection" sap:VirtualizedContainerService.HintSize="382,164" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_3">
+                <uasc:AppendItemToCollection.Items>
+                  <scg:List x:TypeArguments="InArgument(sd:DataTable)" Capacity="4">
+                    <InArgument x:TypeArguments="sd:DataTable">[dtWearableMetrics]</InArgument>
+                  </scg:List>
+                </uasc:AppendItemToCollection.Items>
+              </uasc:AppendItemToCollection>
+            </Sequence>
+          </If.Then>
+          <If.Else>
+            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,224" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,164" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;No WearableMetrics file found. Skipping this file.&quot;]" />
+            </Sequence>
+          </If.Else>
+        </If>
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="448,173" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Total loaded DataTables to process: &quot; &amp; arrDataTables.Count.ToString]" />
+        <ui:ForEach x:TypeArguments="sd:DataTable" CurrentIndex="{x:Null}" DisplayName="For Each currentDataTable" sap:VirtualizedContainerService.HintSize="448,584" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[arrDataTables]">
+          <ui:ForEach.Body>
+            <ActivityAction x:TypeArguments="sd:DataTable">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="sd:DataTable" Name="currentDataTable" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,454" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message Temporary" sap:VirtualizedContainerService.HintSize="382,173" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Processing DataTable: &quot; &amp; currentDataTable.TableName &amp; &quot;, Rows: &quot; &amp; currentDataTable.Rows.Count.ToString]" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,173" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Column count for DataTable: &quot; &amp; currentDataTable.Columns.Count.ToString]" />
+                <If Condition="[currentDataTable IsNot Nothing AndAlso currentDataTable.Rows.Count &gt; 0]" DisplayName="If Defensive and Optional Id Check" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="If_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If.Then>
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="520,1191" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,380" sap2010:WorkflowViewState.IdRef="CommentOut_13">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,269" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="UnifiedID" DataTable="[currentDataTable]" DisplayName="Add Data Column UnifiedID Column" sap:VirtualizedContainerService.HintSize="416,209" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_4" />
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                      </ui:CommentOut>
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,380" sap2010:WorkflowViewState.IdRef="CommentOut_14">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,269" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" DataTable="[currentDataTable]" DisplayName="Add Data Column SourceID Column" sap:VirtualizedContainerService.HintSize="416,209" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_7">
+                              <ui:AddDataColumn.ColumnName>
+                                <InArgument x:TypeArguments="x:String">
+                                  <Literal x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Literal`1_1">SourceID</Literal>
+                                </InArgument>
+                              </ui:AddDataColumn.ColumnName>
+                            </ui:AddDataColumn>
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                      </ui:CommentOut>
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,371" sap2010:WorkflowViewState.IdRef="CommentOut_15">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,269" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="SourceFile" DataTable="[currentDataTable]" DisplayName="Add Data Column SourceFile Column" sap:VirtualizedContainerService.HintSize="416,209" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_6" />
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                      </ui:CommentOut>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="520,224" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,164" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Columns added to all loaded DataTables successfully.&quot;]" />
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+            </ActivityAction>
+          </ui:ForEach.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ForEach>
+        <ui:ForEach x:TypeArguments="sd:DataTable" CurrentIndex="{x:Null}" DisplayName="For Each currentDataTable" sap:VirtualizedContainerService.HintSize="448,48" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[arrDataTables]">
+          <ui:ForEach.Body>
+            <ActivityAction x:TypeArguments="sd:DataTable">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="sd:DataTable" Name="currentDataTable" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="610,2237" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[currentDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="576,2177" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                  <ui:ForEachRow.Body>
+                    <ActivityAction x:TypeArguments="sd:DataRow">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="574,2006" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="540,276" sap2010:WorkflowViewState.IdRef="CommentOut_16">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Int32">[unifiedIdCounter]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Int32">[unifiedIdCounter + 1]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="540,276" sap2010:WorkflowViewState.IdRef="CommentOut_17">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Object">[CurrentRow("UnifiedID")]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Object">["U" &amp; unifiedIdCounter.ToString("D3")]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
+                        <If Condition="[currentDataTable.Columns.Contains(&quot;PatientID&quot;)]" sap:VirtualizedContainerService.HintSize="540,792" sap2010:WorkflowViewState.IdRef="If_4">
+                          <If.Then>
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="538,327" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="504,267" sap2010:WorkflowViewState.IdRef="CommentOut_18">
+                                <ui:CommentOut.Body>
+                                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_59">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_9">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:Object">[CurrentRow("SourceID")]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:Object">[CurrentRow("PatientID").ToString]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                  </Sequence>
+                                </ui:CommentOut.Body>
+                              </ui:CommentOut>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="538,327" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="504,267" sap2010:WorkflowViewState.IdRef="CommentOut_19">
+                                <ui:CommentOut.Body>
+                                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:Object">[CurrentRow("SourceID")]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:Object">["Unknown"]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                  </Sequence>
+                                </ui:CommentOut.Body>
+                              </ui:CommentOut>
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="540,276" sap2010:WorkflowViewState.IdRef="CommentOut_20">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Object">[currentRow("SourceFile")]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Object">["ResolvedFileName.csv"]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="540,326" sap2010:WorkflowViewState.IdRef="CommentOut_21">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,224" sap2010:WorkflowViewState.IdRef="Sequence_62">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,164" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Assigned UnifiedID: &quot; &amp; currentRow(&quot;UnifiedID&quot;).ToString &amp; &quot;, SourceID: &quot; &amp; currentRow(&quot;SourceID&quot;).ToString]" />
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEachRow.Body>
+                </ui:ForEachRow>
+              </Sequence>
+            </ActivityAction>
+          </ui:ForEach.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ForEach>
+      </Sequence>
+      <Sequence sap2010:Annotation.AnnotationText="Consolidate all data from arrDataTables into dtMasterPatientList by:&#xA;&#xA;Cloning schema from the first table&#xA;&#xA;Appending all rows from all tables&#xA;&#xA;" DisplayName="Sequence Step 3: Append All DataTables to Build Master Patient List" sap:VirtualizedContainerService.HintSize="538,174" sap2010:WorkflowViewState.IdRef="Sequence_63">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Assign sap:VirtualizedContainerService.HintSize="454,114" sap2010:WorkflowViewState.IdRef="Assign_11">
+          <Assign.To>
+            <OutArgument x:TypeArguments="sd:DataTable">[dtMasterPatientList]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="sd:DataTable">[arrDataTables(0).Clone( )]</InArgument>
+          </Assign.Value>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Assign>
+        <ui:ForEach x:TypeArguments="sd:DataTable" CurrentIndex="{x:Null}" DisplayName="For Each currentDataTable" sap:VirtualizedContainerService.HintSize="454,580" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[arrDataTables]">
+          <ui:ForEach.Body>
+            <ActivityAction x:TypeArguments="sd:DataTable">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="sd:DataTable" Name="currentDataTable" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,450" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[currentDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="418,390" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                  <ui:ForEachRow.Body>
+                    <ActivityAction x:TypeArguments="sd:DataRow">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,219" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="382,159" sap2010:WorkflowViewState.IdRef="InvokeMethod_2" MethodName="ImportRow">
+                          <InvokeMethod.TargetObject>
+                            <InArgument x:TypeArguments="sd:DataTable">[dtMasterPatientList]</InArgument>
+                          </InvokeMethod.TargetObject>
+                          <InArgument x:TypeArguments="sd:DataRow">[CurrentRow]</InArgument>
+                        </InvokeMethod>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEachRow.Body>
+                </ui:ForEachRow>
+              </Sequence>
+            </ActivityAction>
+          </ui:ForEach.Body>
+        </ui:ForEach>
+        <Assign sap:VirtualizedContainerService.HintSize="454,114" sap2010:WorkflowViewState.IdRef="Assign_12">
+          <Assign.To>
+            <OutArgument x:TypeArguments="sd:DataTable">[out_dtMasterPatientList]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="sd:DataTable">[dtMasterPatientList]</InArgument>
+          </Assign.Value>
+        </Assign>
+        <ui:AppendWriteCsvFile PathResource="{x:Null}" AddHeaders="True" CsvAction="Write" DataTable="[dtMasterPatientList]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Write CSV" FilePath="OutputData/MasterPatientList.csv" sap:VirtualizedContainerService.HintSize="454,269" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_1" ShouldQuote="True" />
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="454,164" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info" Message="[&quot;Total rows in MasterPatientList: &quot; &amp; dtMasterPatientList.Rows.Count.ToString]" />
+      </Sequence>
+      <Sequence sap2010:Annotation.AnnotationText="Write Enriched PatientData_Phase2_WithUnifiedIDs.csv" DisplayName="Sequence  Step 4:   Write Enriched PatientData_Phase2_WithUnifiedIDs.csv" sap:VirtualizedContainerService.HintSize="538,88" sap2010:WorkflowViewState.IdRef="Sequence_64">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:BuildDataTable DataTable="[dtExportPatientData]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="490,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;UnifiedID&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;PatientID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;FirstName&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;LastName&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Gender&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;DOB&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;SourceFile&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;UnifiedID&gt;text&lt;/UnifiedID&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtPatientProfile]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="490,1451" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+          <ui:ForEachRow.Body>
+            <ActivityAction x:TypeArguments="sd:DataRow">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="sd:DataRow" Name="profileRow" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="488,1280" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&#xD;&#xA;  Guid.NewGuid().ToString,&#xD;&#xA;  profileRow(&quot;PatientID&quot;).ToString,&#xD;&#xA;  profileRow(&quot;FirstName&quot;).ToString,&#xD;&#xA;  profileRow(&quot;LastName&quot;).ToString,&#xD;&#xA;  profileRow(&quot;Gender&quot;).ToString,&#xD;&#xA;  profileRow(&quot;DOB&quot;).ToString,&#xD;&#xA;  &quot;PatientData_Phase2&quot;&#xD;&#xA;}]" DataTable="[dtExportPatientData]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="454,218" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                <Assign sap:VirtualizedContainerService.HintSize="454,114" sap2010:WorkflowViewState.IdRef="Assign_15">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[patientTimestamp]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[Now.ToString("yyyyMMdd_HHmmss")]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:AppendWriteCsvFile PathResource="{x:Null}" AddHeaders="True" CsvAction="Write" DataTable="[dtExportPatientData]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Write CSV" FilePath="[&quot;Data\PatientData_Phase2_WithUnifiedID_&quot; &amp; patientTimestamp &amp; &quot;.csv&quot;]" sap:VirtualizedContainerService.HintSize="454,269" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_2" ShouldQuote="True" />
+                <Assign DisplayName="Assign   Get Matching Files" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="Assign_16">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="s:String[]">[matchedFiles]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles("Data", "PatientData_Phase2_WithUnifiedID_*.csv").OrderByDescending(Function(f) File.GetLastWriteTime(f)).ToArray()]</InArgument>
+                  </Assign.Value>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Assign>
+                <If Condition="[matchedFiles.Length &gt; 2]" DisplayName="If      Check if More Than 2 Files Exist" sap:VirtualizedContainerService.HintSize="454,562" sap2010:WorkflowViewState.IdRef="If_9">
+                  <If.Then>
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="452,344" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each oldFile" sap:VirtualizedContainerService.HintSize="418,284" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[matchedFiles.Skip(2).ToArray()]">
+                        <ui:ForEach.Body>
+                          <ActivityAction x:TypeArguments="x:String">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:String" Name="oldFile" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,163" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="382,103" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[oldFile]" />
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ForEach.Body>
+                      </ui:ForEach>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="452,89" sap2010:WorkflowViewState.IdRef="Sequence_66">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+            </ActivityAction>
+          </ui:ForEachRow.Body>
+        </ui:ForEachRow>
+      </Sequence>
+      <Sequence sap2010:Annotation.AnnotationText="Write Enriched WearableMetrics_WithUnifiedID_&lt;Timestamp&gt;.csv" DisplayName="Sequence Step 5: Write Enriched WearableMetrics_WithUnifiedID_&lt;Timestamp&gt;.csv" sap:VirtualizedContainerService.HintSize="538,88" sap2010:WorkflowViewState.IdRef="Sequence_68">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Assign sap:VirtualizedContainerService.HintSize="526,114" sap2010:WorkflowViewState.IdRef="Assign_17">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">[wearableDataFilePath]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">[System.IO.Directory.GetFiles("Data", "WearableMetrics_Current_*.csv").Where(Function(f) Not System.IO.Path.GetFileName(f).Contains("WithUnifiedID")).OrderByDescending(Function(f) System.IO.File.GetLastWriteTime(f)).FirstOrDefault()]</InArgument>
+          </Assign.Value>
+        </Assign>
+        <ui:ReadCsvFile PathResource="{x:Null}" DataTable="[dtWearableMetricsRaw]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV" FilePath="[wearableDataFilePath]" sap:VirtualizedContainerService.HintSize="526,168" sap2010:WorkflowViewState.IdRef="ReadCsvFile_5" IncludeColumnNames="False" />
+        <ui:InvokeCode ContinueOnError="{x:Null}" Code="dtWearableMetricsRaw.Columns(0).ColumnName = &quot;PatientID&quot;&#xD;&#xA;dtWearableMetricsRaw.Columns(1).ColumnName = &quot;Steps&quot;&#xD;&#xA;dtWearableMetricsRaw.Columns(2).ColumnName = &quot;Calories&quot;&#xD;&#xA;dtWearableMetricsRaw.Columns(3).ColumnName = &quot;HeartRate&quot;&#xD;&#xA;dtWearableMetricsRaw.Columns(4).ColumnName = &quot;FitnessScore&quot;&#xD;&#xA;dtWearableMetricsRaw.Columns(5).ColumnName = &quot;RiskLevel&quot;&#xD;&#xA;" DisplayName="Rename Wearable Headers" sap:VirtualizedContainerService.HintSize="526,197" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+          <ui:InvokeCode.Arguments>
+            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtWearableMetricsRaw">
+              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtWearableMetricsRaw" />
+            </InOutArgument>
+          </ui:InvokeCode.Arguments>
+        </ui:InvokeCode>
+        <Assign sap:VirtualizedContainerService.HintSize="526,114" sap2010:WorkflowViewState.IdRef="Assign_21">
+          <Assign.To>
+            <OutArgument x:TypeArguments="sd:DataTable">[dtWearableMetrics]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="sd:DataTable">[dtWearableMetricsRaw]</InArgument>
+          </Assign.Value>
+        </Assign>
+        <ui:BuildDataTable DataTable="[dtExportWearableData]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="526,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;UnifiedID&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;PatientID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Steps&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Calories&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;HeartRate&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;FitnessScore&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;RiskLevel&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;SourceFile&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;UnifiedID&gt;text&lt;/UnifiedID&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtWearableMetrics]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="526,2075" sap2010:WorkflowViewState.IdRef="ForEachRow_6">
+          <ui:ForEachRow.Body>
+            <ActivityAction x:TypeArguments="sd:DataRow">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="sd:DataRow" Name="wearableRow" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="524,1904" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&#xD;&#xA;  Guid.NewGuid().ToString,                        ' UnifiedID&#xD;&#xA;  wearableRow(&quot;PatientID&quot;).ToString,              ' PatientID&#xD;&#xA;  wearableRow(&quot;HeartRate&quot;).ToString,              ' HeartRate&#xD;&#xA;  wearableRow(&quot;Steps&quot;).ToString,                  ' Steps&#xD;&#xA;  wearableRow(&quot;Calories&quot;).ToString,               ' Calories&#xD;&#xA;  &quot;&quot;,                                             ' FitnessScore (placeholder)&#xD;&#xA;  &quot;&quot;,                                             ' RiskLevel (placeholder)&#xD;&#xA;  Path.GetFileName(wearableDataFilePath)          ' SourceFile&#xD;&#xA;}]" DataTable="[dtExportWearableData]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="490,218" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                <Assign sap:VirtualizedContainerService.HintSize="490,114" sap2010:WorkflowViewState.IdRef="Assign_18">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[wearableTimestamp]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[Now.ToString("yyyyMMdd_HHmmss")]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <Assign sap:VirtualizedContainerService.HintSize="490,114" sap2010:WorkflowViewState.IdRef="Assign_19">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[wearableOutputPath]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">["Data/WearableMetrics_Current_WithUnifiedID_" &amp; wearableTimestamp &amp; ".csv"]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:AppendWriteCsvFile PathResource="{x:Null}" AddHeaders="True" CsvAction="Write" DataTable="[dtExportWearableData]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Write CSV" FilePath="[wearableOutputPath]" sap:VirtualizedContainerService.HintSize="490,269" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_3" ShouldQuote="True" />
+                <Assign sap:VirtualizedContainerService.HintSize="490,114" sap2010:WorkflowViewState.IdRef="Assign_20">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="s:String[]">[wearableUnifiedFiles]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles("Data", "WearableMetrics_Current_WithUnifiedID_*.csv").OrderByDescending(Function(f) File.GetLastWriteTime(f)).ToArray()]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <If Condition="[wearableUnifiedFiles.Length &gt; 2]" sap:VirtualizedContainerService.HintSize="490,1015" sap2010:WorkflowViewState.IdRef="If_10">
+                  <If.Then>
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="488,796" sap2010:WorkflowViewState.IdRef="Sequence_70">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each oldFile" sap:VirtualizedContainerService.HintSize="454,736" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[wearableUnifiedFiles.Skip(2)]">
+                        <ui:ForEach.Body>
+                          <ActivityAction x:TypeArguments="x:String">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:String" Name="oldFile" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,615" sap2010:WorkflowViewState.IdRef="Sequence_69">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If Condition="[Not String.IsNullOrWhiteSpace(oldFile)]" sap:VirtualizedContainerService.HintSize="418,555" sap2010:WorkflowViewState.IdRef="If_11">
+                                <If.Then>
+                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,336" sap2010:WorkflowViewState.IdRef="Sequence_72">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,173" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Info" Message="[&quot;Deleting old wearable file: &quot; &amp; oldFile]" />
+                                    <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="382,103" sap2010:WorkflowViewState.IdRef="DeleteFileX_2" Path="[oldFile]" />
+                                  </Sequence>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90" sap2010:WorkflowViewState.IdRef="Sequence_73">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ForEach.Body>
+                      </ui:ForEach>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="488,90" sap2010:WorkflowViewState.IdRef="Sequence_71">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+            </ActivityAction>
+          </ui:ForEachRow.Body>
+        </ui:ForEachRow>
+      </Sequence>
+      <Sequence sap2010:Annotation.AnnotationText="Goal:&#xA;Ingest lab results from a raw CSV file.&#xA;&#xA;Clean/rename headers.&#xA;&#xA;Enrich each row with a UnifiedID (GUID) if applicable.&#xA;&#xA;Save the enriched file with a timestamped name.&#xA;&#xA;Retain only the latest 2 files in the folder (for traceability)." DisplayName="Sequence   Step 6 – LabResultsIngestion_Phase2.xaml " sap:VirtualizedContainerService.HintSize="538,219" sap2010:WorkflowViewState.IdRef="Sequence_74">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Assign DisplayName="Assign     Assign Latest Lab Results File" sap:VirtualizedContainerService.HintSize="526,115" sap2010:WorkflowViewState.IdRef="Assign_22">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">[labResultsFilePath]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String" xml:space="preserve">[System.IO.Directory.GetFiles("Data", "DtLabResults*.csv").
+OrderByDescending(Function(f) System.IO.File.GetLastWriteTime(f)).
+FirstOrDefault()]</InArgument>
+          </Assign.Value>
+        </Assign>
+        <ui:ReadCsvFile PathResource="{x:Null}" DataTable="[dtLabResultsRaw]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV" FilePath="[labResultsFilePath]" sap:VirtualizedContainerService.HintSize="526,168" sap2010:WorkflowViewState.IdRef="ReadCsvFile_6" />
+        <ui:InvokeCode ContinueOnError="{x:Null}" Code="If dtLabResultsRaw IsNot Nothing AndAlso dtLabResultsRaw.Columns.Count &gt;= 15 Then&#xD;&#xA;    dtLabResultsRaw.Columns(0).ColumnName = &quot;PatientID&quot;&#xD;&#xA;    dtLabResultsRaw.Columns(1).ColumnName = &quot;WhiteBloodCellCount&quot;&#xD;&#xA;    dtLabResultsRaw.Columns(2).ColumnName = &quot;RedBloodCellCount&quot;&#xD;&#xA;    dtLabResultsRaw.Columns(3).ColumnName = &quot;PlateletCount&quot;&#xD;&#xA;    dtLabResultsRaw.Columns(4).ColumnName = &quot;Creatinine&quot;&#xD;&#xA;    dtLabResultsRaw.Columns(5).ColumnName = &quot;#NAME?&quot;&#xD;&#xA;    dtLabResultsRaw.Columns(6).ColumnName = &quot;ALT&quot;&#xD;&#xA;    dtLabResultsRaw.Columns(7).ColumnName = &quot;AST&quot;&#xD;&#xA;    dtLabResultsRaw.Columns(8).ColumnName = &quot;CRP&quot;&#xD;&#xA;    dtLabResultsRaw.Columns(9).ColumnName = &quot;A1C&quot;&#xD;&#xA;    dtLabResultsRaw.Columns(10).ColumnName = &quot;TSH&quot;&#xD;&#xA;    dtLabResultsRaw.Columns(11).ColumnName = &quot;VitaminD&quot;&#xD;&#xA;    dtLabResultsRaw.Columns(12).ColumnName = &quot;IronLevels&quot;&#xD;&#xA;    dtLabResultsRaw.Columns(13).ColumnName = &quot;FreeT3&quot;&#xD;&#xA;    dtLabResultsRaw.Columns(14).ColumnName = &quot;FreeT4&quot;&#xD;&#xA;End If&#xD;&#xA;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="526,197" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
+          <ui:InvokeCode.Arguments>
+            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtLabResultsRaw">
+              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtLabResultsRaw" />
+            </InOutArgument>
+          </ui:InvokeCode.Arguments>
+        </ui:InvokeCode>
+        <ui:BuildDataTable DataTable="[dtExportLabResults]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="526,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;UnifiedID&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;PatientID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;WhiteBloodCellCount&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;RedBloodCellCount&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;PlateletCount&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Creatinine&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;_x0023_NAME_x003F_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ALT&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;AST&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;CRP&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;A1C&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;TSH&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;VitaminD&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;IronLevels&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;FreeT3&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;FreeT4&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;SourceFile&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;UnifiedID&gt;text&lt;/UnifiedID&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+        <Assign sap:VirtualizedContainerService.HintSize="526,114" sap2010:WorkflowViewState.IdRef="Assign_27">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">[labResultsDataFilePath]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">Data/DtLabResults.csv</InArgument>
+          </Assign.Value>
+        </Assign>
+        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtLabResultsRaw]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="526,2189" sap2010:WorkflowViewState.IdRef="ForEachRow_7">
+          <ui:ForEachRow.Body>
+            <ActivityAction x:TypeArguments="sd:DataRow">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="sd:DataRow" Name="labRow" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="524,2018" sap2010:WorkflowViewState.IdRef="Sequence_75">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="490,173" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info" Message="[&quot;dtExportLabResults columns count: &quot; &amp; dtExportLabResults.Columns.Count.ToString]" />
+                <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&#xD;&#xA;  Guid.NewGuid().ToString,&#xD;&#xA;  labRow(&quot;PatientID&quot;).ToString,&#xD;&#xA;  labRow(&quot;WhiteBloodCellCount&quot;).ToString,&#xD;&#xA;  labRow(&quot;RedBloodCellCount&quot;).ToString,&#xD;&#xA;  labRow(&quot;PlateletCount&quot;).ToString,&#xD;&#xA;  labRow(&quot;Creatinine&quot;).ToString,&#xD;&#xA;  labRow(&quot;#NAME?&quot;).ToString,&#xD;&#xA;  labRow(&quot;ALT&quot;).ToString,&#xD;&#xA;  labRow(&quot;AST&quot;).ToString,&#xD;&#xA;  labRow(&quot;CRP&quot;).ToString,&#xD;&#xA;  labRow(&quot;A1C&quot;).ToString,&#xD;&#xA;  labRow(&quot;TSH&quot;).ToString,&#xD;&#xA;  labRow(&quot;VitaminD&quot;).ToString,&#xD;&#xA;  labRow(&quot;IronLevels&quot;).ToString,&#xD;&#xA;  labRow(&quot;FreeT3&quot;).ToString,&#xD;&#xA;  labRow(&quot;FreeT4&quot;).ToString,&#xD;&#xA; Path.GetFileName(labResultsDataFilePath) &#xD;&#xA;}]" DataTable="[dtExportLabResults]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="490,218" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                <Assign sap:VirtualizedContainerService.HintSize="490,114" sap2010:WorkflowViewState.IdRef="Assign_23">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[labTimestamp]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[Now.ToString("yyyyMMdd_HHmmss")]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <Assign sap:VirtualizedContainerService.HintSize="490,114" sap2010:WorkflowViewState.IdRef="Assign_24">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[labOutputPath]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">["Data/LabResults_WithUnifiedID_" &amp; labTimestamp &amp; ".csv"]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:AppendWriteCsvFile PathResource="{x:Null}" AddHeaders="True" CsvAction="Write" DataTable="[dtExportLabResults]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Write CSV" FilePath="[labOutputPath]" sap:VirtualizedContainerService.HintSize="490,269" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_4" ShouldQuote="True" />
+                <Assign sap:VirtualizedContainerService.HintSize="490,114" sap2010:WorkflowViewState.IdRef="Assign_25">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="s:String[]">[labFiles]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="s:String[]">[System.IO.Directory.GetFiles("Data", "LabResults_WithUnifiedID_*.csv").OrderByDescending(Function(f) System.IO.File.GetLastWriteTime(f)).ToArray()]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <Assign sap:VirtualizedContainerService.HintSize="490,114" sap2010:WorkflowViewState.IdRef="Assign_26">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="s:String[]">[labFilesToDelete]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="s:String[]">[labFiles.Skip(2).ToArray()]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <If Condition="[labFiles.Length &gt; 2]" sap:VirtualizedContainerService.HintSize="490,842" sap2010:WorkflowViewState.IdRef="If_12">
+                  <If.Then>
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="488,623" sap2010:WorkflowViewState.IdRef="Sequence_76">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each oldFile" sap:VirtualizedContainerService.HintSize="454,563" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[labFilesToDelete]">
+                        <ui:ForEach.Body>
+                          <ActivityAction x:TypeArguments="x:String">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:String" Name="oldFile" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,442" sap2010:WorkflowViewState.IdRef="Sequence_78">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If Condition="[Not String.IsNullOrWhiteSpace(oldFile)]" sap:VirtualizedContainerService.HintSize="418,382" sap2010:WorkflowViewState.IdRef="If_13">
+                                <If.Then>
+                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,163" sap2010:WorkflowViewState.IdRef="Sequence_79">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="382,103" sap2010:WorkflowViewState.IdRef="DeleteFileX_3" Path="[oldFile]" />
+                                  </Sequence>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90" sap2010:WorkflowViewState.IdRef="Sequence_80">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ForEach.Body>
+                      </ui:ForEach>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="488,90" sap2010:WorkflowViewState.IdRef="Sequence_77">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+            </ActivityAction>
+          </ui:ForEachRow.Body>
+        </ui:ForEachRow>
+      </Sequence>
+      <Sequence sap2010:Annotation.AnnotationText="PatientData_Phase2_WithUnifiedID_*.csv&#xA;&#xA;WearableMetrics_Current_WithUnifiedID_*.csv&#xA;&#xA;LabResults_WithUnifiedID_*.csv&#xA;&#xA;Then merge them into:&#xA;&#xA;Data/MasterPatientList_Phase2_&lt;timestamp&gt;.csv" DisplayName="Sequence  Step 7 – Merge CSVs by UnifiedID" sap:VirtualizedContainerService.HintSize="538,3405" sap2010:WorkflowViewState.IdRef="Sequence_83">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Assign DisplayName="Assign Enriched Files Are Saved" sap:VirtualizedContainerService.HintSize="490,114" sap2010:WorkflowViewState.IdRef="Assign_28">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">[latestPatientFilePath]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">[Directory.GetFiles("Data", "PatientData_Phase2_WithUnifiedID_*.csv").OrderByDescending(Function(f) File.GetLastWriteTime(f)).FirstOrDefault()]</InArgument>
+          </Assign.Value>
+        </Assign>
+        <Assign DisplayName="Assign Enriched Files Are Saved" sap:VirtualizedContainerService.HintSize="490,114" sap2010:WorkflowViewState.IdRef="Assign_29">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">[latestWearableFilePath]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">[Directory.GetFiles("Data", "WearableMetrics_Current_WithUnifiedID_*.csv").OrderByDescending(Function(f) File.GetLastWriteTime(f)).FirstOrDefault()]</InArgument>
+          </Assign.Value>
+        </Assign>
+        <Assign DisplayName="Assign Enriched Files Are Saved" sap:VirtualizedContainerService.HintSize="490,114" sap2010:WorkflowViewState.IdRef="Assign_30">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">[latestLabFilePath]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">[Directory.GetFiles("Data", "LabResults_WithUnifiedID_*.csv").OrderByDescending(Function(f) File.GetLastWriteTime(f)).FirstOrDefault()]</InArgument>
+          </Assign.Value>
+        </Assign>
+        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="490,57" sap2010:WorkflowViewState.IdRef="CommentOut_23">
+          <ui:CommentOut.Body>
+            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_88">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_37">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="st:Encoding">[utf8Encoding]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="st:Encoding">[System.Text.Encoding.UTF8]</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+          </ui:CommentOut.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:CommentOut>
+        <ui:ReadCsvFile PathResource="{x:Null}" DataTable="[dtPatientWithUnifiedID]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV Read Latest PatientData File" Encoding="utf-8" FilePath="[latestPatientFilePath]" sap:VirtualizedContainerService.HintSize="490,168" sap2010:WorkflowViewState.IdRef="ReadCsvFile_7" />
+        <ui:ReadCsvFile PathResource="{x:Null}" DataTable="[dtWearableWithUnifiedID]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV  Read Latest WearableMetrics File" Encoding="utf-8" FilePath="[latestWearableFilePath]" sap:VirtualizedContainerService.HintSize="490,168" sap2010:WorkflowViewState.IdRef="ReadCsvFile_8" />
+        <ui:ReadCsvFile PathResource="{x:Null}" DataTable="[dtLabResultsWithUnifiedID]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV  Read Latest LabResults File" Encoding="utf-8" FilePath="[latestLabFilePath]" sap:VirtualizedContainerService.HintSize="490,168" sap2010:WorkflowViewState.IdRef="ReadCsvFile_9" />
+        <ui:BuildDataTable DataTable="[dtExportMasterList]" DisplayName="Build Data Table  Build Export DataTable for MasterPatientList" sap:VirtualizedContainerService.HintSize="490,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_4" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;UnifiedID&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;PatientID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;FirstName&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;LastName&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;HeartRate&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ALT&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;A1C&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Source_Patient&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Source_Wearable&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Source_Lab&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Merge Rows and Add to dtExportMasterList" DataTable="[dtPatientWithUnifiedID]" DisplayName="For Each Row in Data Table    Merge Rows and Add to dtExportMasterList" sap:VirtualizedContainerService.HintSize="490,2171" sap2010:WorkflowViewState.IdRef="ForEachRow_8">
+          <ui:ForEachRow.Body>
+            <ActivityAction x:TypeArguments="sd:DataRow">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="sd:DataRow" Name="patientRow" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="488,1969" sap2010:WorkflowViewState.IdRef="Sequence_84">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Assign DisplayName="Assign   matchedWearableRow" sap:VirtualizedContainerService.HintSize="454,115" sap2010:WorkflowViewState.IdRef="Assign_31">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="sd:DataRow">[matchedWearableRow]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="sd:DataRow" xml:space="preserve">[(From row In dtWearableWithUnifiedID.AsEnumerable()
+ Where row("UnifiedID").ToString = patientRow("UnifiedID").ToString
+ Select row).FirstOrDefault()]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <Assign DisplayName="Assign   matchedLabRow" sap:VirtualizedContainerService.HintSize="454,115" sap2010:WorkflowViewState.IdRef="Assign_32">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="sd:DataRow">[matchedLabRow]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="sd:DataRow" xml:space="preserve">[(From row In dtLabResultsWithUnifiedID.AsEnumerable()
+ Where row("UnifiedID").ToString = patientRow("UnifiedID").ToString
+ Select row).FirstOrDefault()]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&#xD;&#xA;  patientRow(&quot;UnifiedID&quot;).ToString,&#xD;&#xA;  patientRow(&quot;PatientID&quot;).ToString,&#xD;&#xA;  patientRow(&quot;FirstName&quot;).ToString,&#xD;&#xA;  patientRow(&quot;LastName&quot;).ToString,&#xD;&#xA;  If(matchedWearableRow IsNot Nothing, matchedWearableRow(&quot;HeartRate&quot;).ToString, &quot;&quot;),&#xD;&#xA;  If(matchedLabRow IsNot Nothing, matchedLabRow(&quot;ALT&quot;).ToString, &quot;&quot;),&#xD;&#xA;  If(matchedLabRow IsNot Nothing, matchedLabRow(&quot;A1C&quot;).ToString, &quot;&quot;),&#xD;&#xA;  Path.GetFileName(latestPatientFilePath),&#xD;&#xA;  Path.GetFileName(latestWearableFilePath),&#xD;&#xA;  Path.GetFileName(latestLabFilePath)&#xD;&#xA;}]" DataTable="[dtExportMasterList]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="454,218" sap2010:WorkflowViewState.IdRef="AddDataRow_4" />
+                <Assign DisplayName="Assign  Timestamp" sap:VirtualizedContainerService.HintSize="454,114" sap2010:WorkflowViewState.IdRef="Assign_33">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[masterTimestamp]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[Now.ToString("yyyyMMdd_HHmmss")]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <Assign sap:VirtualizedContainerService.HintSize="454,114" sap2010:WorkflowViewState.IdRef="Assign_34">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[masterOutputPath]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">["Data/MasterPatientList_Phase2_" &amp; masterTimestamp &amp; ".csv"]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:AppendWriteCsvFile PathResource="{x:Null}" AddHeaders="True" CsvAction="Write" DataTable="[dtExportMasterList]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Write CSV" FilePath="[masterOutputPath]" sap:VirtualizedContainerService.HintSize="454,269" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_5" ShouldQuote="True" />
+                <Assign DisplayName="Assign  Add Cleanup Logic" sap:VirtualizedContainerService.HintSize="454,114" sap2010:WorkflowViewState.IdRef="Assign_35">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="s:String[]">[masterFiles]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles("Data", "MasterPatientList_Phase2_*.csv").OrderByDescending(Function(f) File.GetLastWriteTime(f)).ToArray()]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <Assign sap:VirtualizedContainerService.HintSize="454,114" sap2010:WorkflowViewState.IdRef="Assign_36">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="s:String[]">[masterFilesToDelete]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="s:String[]">[masterFiles.Skip(2).ToArray()]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each  Delete Older Master Files" sap:VirtualizedContainerService.HintSize="454,736" sap2010:WorkflowViewState.IdRef="ForEach`1_8" Values="[masterFilesToDelete]">
+                  <ui:ForEach.Body>
+                    <ActivityAction x:TypeArguments="x:String">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:String" Name="oldFile" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,615" sap2010:WorkflowViewState.IdRef="Sequence_85">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If Condition="[Not String.IsNullOrWhiteSpace(oldFile)]" sap:VirtualizedContainerService.HintSize="418,555" sap2010:WorkflowViewState.IdRef="If_14">
+                          <If.Then>
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,336" sap2010:WorkflowViewState.IdRef="Sequence_86">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,173" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Info" Message="[&quot;Deleting old MasterPatientList file: &quot; &amp; oldFile]" />
+                              <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="382,103" sap2010:WorkflowViewState.IdRef="DeleteFileX_4" Path="[oldFile]" />
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90" sap2010:WorkflowViewState.IdRef="Sequence_87">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEach.Body>
+                </ui:ForEach>
+              </Sequence>
+            </ActivityAction>
+          </ui:ForEachRow.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ForEachRow>
+      </Sequence>
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="538,48" sap2010:WorkflowViewState.IdRef="CommentOut_22">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="486,966" sap2010:WorkflowViewState.IdRef="Sequence_82">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence sap2010:Annotation.AnnotationText="Bring together related records across PatientData, WearableMetrics, and LabResults for the same PatientID." DisplayName="SequenceStep 4: Join Matching Records Across Files" sap:VirtualizedContainerService.HintSize="452,906" sap2010:WorkflowViewState.IdRef="Sequence_81">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtPatientProfile]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="418,781" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="profileRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,610" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:FilterDataTable DataTable="[dtWearableMetrics]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="382,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[arrWearableMatches]" SelectColumnsMode="Remove">
+                        <ui:FilterDataTable.Filters>
+                          <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                            <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                              <ui:FilterOperationArgument.Column>
+                                <InArgument x:TypeArguments="x:String">["text"]</InArgument>
+                              </ui:FilterOperationArgument.Column>
+                              <ui:FilterOperationArgument.Operand>
+                                <InArgument x:TypeArguments="x:String">[profileRow("PatientID").ToString]</InArgument>
+                              </ui:FilterOperationArgument.Operand>
+                            </ui:FilterOperationArgument>
+                          </scg:List>
+                        </ui:FilterDataTable.Filters>
+                        <ui:FilterDataTable.SelectColumns>
+                          <scg:List x:TypeArguments="InArgument" Capacity="4">
+                            <x:Null />
+                          </scg:List>
+                        </ui:FilterDataTable.SelectColumns>
+                      </ui:FilterDataTable>
+                      <ui:FilterDataTable DataTable="[dtLabResults]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="382,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[arrLabMatches]" SelectColumnsMode="Remove">
+                        <ui:FilterDataTable.Filters>
+                          <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                            <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                              <ui:FilterOperationArgument.Column>
+                                <InArgument x:TypeArguments="x:String">["PatientID"]</InArgument>
+                              </ui:FilterOperationArgument.Column>
+                              <ui:FilterOperationArgument.Operand>
+                                <InArgument x:TypeArguments="x:String">[profileRow("PatientID").ToString]</InArgument>
+                              </ui:FilterOperationArgument.Operand>
+                            </ui:FilterOperationArgument>
+                          </scg:List>
+                        </ui:FilterDataTable.Filters>
+                        <ui:FilterDataTable.SelectColumns>
+                          <scg:List x:TypeArguments="InArgument" Capacity="4">
+                            <x:Null />
+                          </scg:List>
+                        </ui:FilterDataTable.SelectColumns>
+                      </ui:FilterDataTable>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,164" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Matched Wearable Rows: &quot; &amp; arrWearableMatches.Rows.Count.ToString() &amp; &quot;, Lab Rows: &quot; &amp; arrLabMatches.Rows.Count.ToString()]" />
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+              </ui:ForEachRow>
+            </Sequence>
+          </Sequence>
+        </ui:CommentOut.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:CommentOut>
+    </Sequence>
+  </Sequence>
+</Activity>

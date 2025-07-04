@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48138549",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-04T03:03:28.047+00:00",
+    "source": "#e5H0tXvSFIX3n9SP"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Sandra <b>WHITE </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>883 Jennifer Falls Apt. 777 </span><br/><span>Millerbury </span><span>Alaska </span></td></tr><tr><td>Date of birth</td><td><span>01 October 2018</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "White",
+    "given": [ "Sandra" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "+1-598-215-2232x4943"
+  }, {
+    "system": "email",
+    "value": "vcosta@miller.net"
+  } ],
+  "gender": "other",
+  "birthDate": "2018-10-01",
+  "address": [ {
+    "line": [ "883 Jennifer Falls Apt. 777" ],
+    "city": "Millerbury",
+    "state": "Alaska",
+    "postalCode": "78073"
+  } ]
+}

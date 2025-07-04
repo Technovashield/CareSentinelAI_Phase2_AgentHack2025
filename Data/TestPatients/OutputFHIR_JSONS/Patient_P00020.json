@@ -1,0 +1,34 @@
+{
+  "resourceType": "Patient",
+  "id": "P00020",
+  "name": [
+    {
+      "given": [
+        "Paul"
+      ],
+      "family": "Cardenas"
+    }
+  ],
+  "gender": "other",
+  "birthDate": "2004-01-06",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "6138468717"
+    },
+    {
+      "system": "email",
+      "value": "william37@gmail.com"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "80276 Miller Hollow Apt. 199"
+      ],
+      "city": "Lake Louis",
+      "state": "Minnesota",
+      "postalCode": "64605"
+    }
+  ]
+}

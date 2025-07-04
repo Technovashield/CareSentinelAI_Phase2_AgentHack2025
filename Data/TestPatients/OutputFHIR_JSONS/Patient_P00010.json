@@ -1,0 +1,34 @@
+{
+  "resourceType": "Patient",
+  "id": "P00010",
+  "name": [
+    {
+      "given": [
+        "Julie"
+      ],
+      "family": "Wood"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "2013-09-10",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(467)932-8390x87636"
+    },
+    {
+      "system": "email",
+      "value": "carlaconrad@clark-phillips.org"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "7344 Gray Inlet"
+      ],
+      "city": "Rachelburgh",
+      "state": "New Jersey",
+      "postalCode": "38197"
+    }
+  ]
+}

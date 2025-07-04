@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48138286",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-04T02:15:41.581+00:00",
+    "source": "#a5sOwQR8G9YDNyb6"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Jackson <b>BECK </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>49487 Arnold Overpass Apt. 398 </span><br/><span>New Kennethberg </span><span>Maine </span></td></tr><tr><td>Date of birth</td><td><span>23 November 1972</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "Beck",
+    "given": [ "Jackson" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "276-945-3661x36625"
+  }, {
+    "system": "email",
+    "value": "smithkimberly@hotmail.com"
+  } ],
+  "gender": "female",
+  "birthDate": "1972-11-23",
+  "address": [ {
+    "line": [ "49487 Arnold Overpass Apt. 398" ],
+    "city": "New Kennethberg",
+    "state": "Maine",
+    "postalCode": "23420"
+  } ]
+}

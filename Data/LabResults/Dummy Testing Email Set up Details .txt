@@ -1,0 +1,25 @@
+Nurse Email Set up :
+Dummy email set up for testing purpose. 
+test.nurse824@gmail.com
+password: nurse824
+
+
+For Doctors we have used localdoctors35@gmail.com
+Password is R1p12@1964
+for patients we have used roopa12_patel@yahoo.co.nz
+
+
+🧩 Required Variables (Scope: SendAlertEmailAgent)
+Variable Name	Type	Description
+strToEmail	String	Patient's email (To)
+strCCEmails	String	Combined GP, Nurse, Doctor emails (CC)
+strSubject	String	Email subject line
+strBody	String	Email message body
+
+For sending Emails we will use caresentinel94@gmail.com      (App Password:    "eefxpsrxrhqkapdz"
+Passsword for this email is Rp12@1964
+
+
+
+
+"xfkqccjocelzyzbi"

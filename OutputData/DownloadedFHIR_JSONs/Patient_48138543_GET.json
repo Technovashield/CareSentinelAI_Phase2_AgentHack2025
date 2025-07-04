@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "48138543",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-04T03:03:22.046+00:00",
+    "source": "#6v0sv5eOatDnqOoL"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Marc <b>THOMPSON </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>6872 Williams Oval Suite 924 </span><br/><span>Calebberg </span><span>Minnesota </span></td></tr><tr><td>Date of birth</td><td><span>24 October 1941</span></td></tr></tbody></table></div>"
+  },
+  "name": [ {
+    "family": "Thompson",
+    "given": [ "Marc" ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(429)697-9022x697"
+  }, {
+    "system": "email",
+    "value": "reidmark@ramirez.biz"
+  } ],
+  "gender": "male",
+  "birthDate": "1941-10-24",
+  "address": [ {
+    "line": [ "6872 Williams Oval Suite 924" ],
+    "city": "Calebberg",
+    "state": "Minnesota",
+    "postalCode": "17507"
+  } ]
+}

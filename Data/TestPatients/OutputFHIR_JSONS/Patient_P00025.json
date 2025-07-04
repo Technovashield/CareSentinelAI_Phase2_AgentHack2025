@@ -1,0 +1,34 @@
+{
+  "resourceType": "Patient",
+  "id": "P00025",
+  "name": [
+    {
+      "given": [
+        "Lisa"
+      ],
+      "family": "Rodriguez"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "2022-06-10",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(270)021-4899x776"
+    },
+    {
+      "system": "email",
+      "value": "johnlarson@gmail.com"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "9341 Christopher Summit Suite 974"
+      ],
+      "city": "Reyeshaven",
+      "state": "Alaska",
+      "postalCode": "46115"
+    }
+  ]
+}
