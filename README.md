@@ -24,10 +24,10 @@ This **Phase 2** implementation focuses on building a fully automated health ris
 
 # 📁 Folder Structure
 CareSentinelAI_Phase2_AgentHack2025/
-├── Workflows/                   # UiPath workflows for metrics, ML, alerting
-├── PythonModel/                 # ML training and prediction scripts
-├── MergedFinalOutput/          # Generated predictions and Excel dashboards
-├── SubmissionAssets/           # Docs: Presentation, Checklist, Enhancement Plan
+├── Workflows/
+├── PythonModel/
+├── MergedFinalOutput/
+├── SubmissionAssets/
 ├── README.md
 ├── .gitignore
 └── LICENSE
