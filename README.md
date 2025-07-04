@@ -23,6 +23,7 @@ This **Phase 2** implementation focuses on building a fully automated health ris
 ---
 
 # 📁 Folder Structure
+```
 CareSentinelAI_Phase2_AgentHack2025/
 ├── Workflows/
 ├── PythonModel/
@@ -31,7 +32,7 @@ CareSentinelAI_Phase2_AgentHack2025/
 ├── README.md
 ├── .gitignore
 └── LICENSE
----
+```
 
 ## ✅ Key Features
 
